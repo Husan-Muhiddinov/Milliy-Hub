@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-07 17:35+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\blog\models.py:9 .\blog\models.py:54
+msgid "email"
+msgstr "email"
+
+#: .\blog\models.py:10
+msgid "address"
+msgstr "Manzil"
+
+#: .\blog\models.py:11
+msgid "start_work"
+msgstr "Ish boshlaninsh kuni"
+
+#: .\blog\models.py:12
+msgid "finish_work"
+msgstr "Ish tugash kuni"
+
+#: .\blog\models.py:13
+msgid "work_created_at"
+msgstr "Ish boshlash vaqti"
+
+#: .\blog\models.py:14
+msgid "work_updated_at"
+msgstr "Ish tugash vaqti"
+
+#: .\blog\models.py:15
+msgid "phone_number"
+msgstr "telefon nomer"
+
+#: .\blog\models.py:16
+msgid "facebook_link"
+msgstr "facebook link"
+
+#: .\blog\models.py:17
+msgid "linkedin_link"
+msgstr "linkedin link"
+
+#: .\blog\models.py:18
+msgid "youtube_link"
+msgstr "youtube link"
+
+#: .\blog\models.py:19
+msgid "instagram_link"
+msgstr "instagram link"
+
+#: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
+msgid "title"
+msgstr "sarlavha"
+
+#: .\blog\models.py:27 .\blog\models.py:36
+msgid "body"
+msgstr "tanasi"
+
+#: .\blog\models.py:34
+msgid "icon"
+msgstr "ikon"
+
+#: .\blog\models.py:43
+msgid "image"
+msgstr "rasm"
+
+#: .\blog\models.py:45
+msgid "work"
+msgstr "ish"
+
+#: .\blog\models.py:46
+msgid "position"
+msgstr "lavozimi"
+
+#: .\blog\models.py:53
+msgid "name"
+msgstr "ismi"
+
+#: .\blog\models.py:55
+msgid "subject"
+msgstr "Mavzu"
+
+#: .\blog\models.py:56
+#, fuzzy
+#| msgid "Pages"
+msgid "messages"
+msgstr "Sahifalar"
+
+#: .\main\settings.py:118
+msgid "English"
+msgstr "English"
+
+#: .\main\settings.py:119
+msgid "Russian"
+msgstr "Russian"
+
+#: .\main\settings.py:120
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: .\templates\base.html:7
+#, fuzzy
+#| msgid "Grow Your Business"
+msgid "Business"
+msgstr "Biznes"
+
+#: .\templates\base.html:7
+msgid "Finance"
+msgstr "Moliya"
+
+#: .\templates\base.html:76
+msgid "Address"
+msgstr "Manzil"
+
+#: .\templates\base.html:85 .\templates\base.html:302
+msgid "to"
+msgstr "dan"
+
+#: .\templates\base.html:86
+msgid "Sunday Closed"
+msgstr "Yakshanba Yopiq"
+
+#: .\templates\base.html:95
+msgid "Call Us for Any Questions"
+msgstr "Har qanday savol uchun bizga qo'ng'iroq qiling"
+
+#: .\templates\base.html:133 .\templates\base.html:223
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: .\templates\base.html:147 .\templates\base.html:237
+#: .\templates\base.html:368 .\templates\index-3.html:186
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\templates\base.html:148 .\templates\base.html:150
+#: .\templates\base.html:238 .\templates\base.html:240
+msgid "Services"
+msgstr "Xizmatlar"
+
+#: .\templates\base.html:151 .\templates\base.html:241
+msgid "Financial Planning"
+msgstr "Moliyaviy rejalashtirish"
+
+#: .\templates\base.html:152 .\templates\base.html:242
+msgid "Trade & Stock"
+msgstr "Savdo & birja"
+
+#: .\templates\base.html:153 .\templates\base.html:243
+msgid "Audit & Assurance"
+msgstr "Audit & Ishonchnoma"
+
+#: .\templates\base.html:154 .\templates\base.html:244
+msgid "Saving Strategy"
+msgstr "Saqlash strategiyasi"
+
+#: .\templates\base.html:155 .\templates\base.html:245
+msgid "Strategic Planning"
+msgstr "Strategik rejalashtirish"
+
+#: .\templates\base.html:156 .\templates\base.html:246
+msgid "Service Detail"
+msgstr "Xizmat tafsilotlari"
+
+#: .\templates\base.html:159 .\templates\base.html:161
+#: .\templates\base.html:249 .\templates\base.html:251
+msgid "Cases"
+msgstr "Ishlar"
+
+#: .\templates\base.html:162 .\templates\base.html:252
+msgid "Case Detail"
+msgstr "Ish tafsilotlari"
+
+#: .\templates\base.html:165 .\templates\base.html:255
+msgid "Pages"
+msgstr "Sahifalar"
+
+#: .\templates\base.html:167 .\templates\base.html:257
+msgid "Pricing"
+msgstr "Narxlash"
+
+#: .\templates\base.html:168 .\templates\base.html:258
+msgid "Our Team"
+msgstr "Bizning Jamoamiz"
+
+#: .\templates\base.html:171 .\templates\base.html:173
+#: .\templates\base.html:261 .\templates\base.html:263
+msgid "Blog"
+msgstr "Blog"
+
+#: .\templates\base.html:174 .\templates\base.html:264
+msgid "Blog Detail"
+msgstr "Blog tafsilotlari"
+
+#: .\templates\base.html:177 .\templates\base.html:267
+#: .\templates\base.html:372
+msgid "Contact"
+msgstr "Bog'lanish"
+
+#: .\templates\base.html:300
+msgid ""
+"We provide expert Business Coaching to both individuals and businesses. With "
+"over 30 years of experience we’ll ensure that you’re always getting the best "
+"guidance from the top people in the entire industry."
+msgstr ""
+"Biz jismoniy shaxslarga ham, korxonalarga ham mutaxassis biznes kouchingini "
+"taqdim etamiz. Ancha yillik tajribamiz bilan biz har doim butun sohadagi eng "
+"yaxshi odamlardan eng yaxshi yo'l-yo'riq olishingizni ta'minlaymiz."
+
+#: .\templates\base.html:313
+msgid "Latest News"
+msgstr "So'ngi yangiliklar"
+
+#: .\templates\base.html:335
+msgid "Newsletter"
+msgstr "Yangiliklar xati"
+
+#: .\templates\base.html:337
+msgid "Sign up for our mailing list to Get Latest updates And offers."
+msgstr ""
+"So'nggi yangilanishlar va takliflarni olish uchun pochta ro'yxatimizga obuna "
+"bo'ling."
+
+#: .\templates\base.html:347
+msgid "Follow Us"
+msgstr "Bizni kuzatib boring"
+
+#: .\templates\base.html:369
+msgid "Privacy Policy"
+msgstr "Maxfiylik siyosati"
+
+#: .\templates\base.html:370
+msgid "Investors"
+msgstr "Investorlar"
+
+#: .\templates\base.html:371
+msgid "Legals"
+msgstr "Qonunchilik"
+
+#: .\templates\base.html:376
+msgid "Designed By"
+msgstr "tomonidan ishlab chiqilgan:"
+
+#: .\templates\base.html:376
+msgid "ARY Themes"
+msgstr "Sanjarbek Usmonov"
+
+#: .\templates\base.html:397
+msgid "Choose Your Color"
+msgstr "Rangingizni tanlang"
+
+#: .\templates\base.html:413
+msgid "Purchase now"
+msgstr "Hozir sotib oling"
+
+#: .\templates\base.html:416
+msgid ""
+"You will find much more options for colors and styling in admin panel. This "
+"color picker is used only for demonstation purposes."
+msgstr ""
+"Administrator panelida ranglar va uslublar uchun ko'proq variantlarni "
+"topasiz. Ushbu rang tanlash vositasi faqat namoyish qilish uchun ishlatiladi."
+
+#: .\templates\index-3.html:32
+msgid "Hight Quality Market"
+msgstr "Yuqori sifatli bozor"
+
+#: .\templates\index-3.html:50
+msgid "Experaiences"
+msgstr "Tajribalar"
+
+#: .\templates\index-3.html:69 .\templates\index-3.html:151
+msgid ""
+"Nobody’s more committed to connecting you with the exceptional top talents "
+"with the right fit for your business than us"
+msgstr ""
+"Hech kim sizni biznesingizga mos keladigan ajoyib iste'dodlar bilan "
+"bog'lashga bizdan ko'ra ko'proq intilmaydi."
+
+#: .\templates\index-3.html:88 .\templates\index-3.html:169
+msgid "Know MORE"
+msgstr "KO'PROQ BILISH"
+
+#: .\templates\index-3.html:89 .\templates\index-3.html:170
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Service"
+msgstr "Bizning xizmatimiz"
+
+#: .\templates\index-3.html:114
+msgid "We Provide Solution to"
+msgstr "Biz Yechimni Ta'minlaymiz"
+
+#: .\templates\index-3.html:133
+msgid "Grow Your Business"
+msgstr "Biznesingizni rivojlantiring"
+
+#: .\templates\index-3.html:187
+msgid "We Aim to Provide Expert Advice and Quality Service."
+msgstr "Biz ekspert maslahati va sifatli xizmat ko'rsatishni maqsad qilganmiz."
+
+#: .\templates\index-3.html:188
+msgid ""
+"We are rethoric question ran over her cheek When she reached the first hills "
+"of the Italic Mountains, she had a last view back on the skyline of her "
+"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
+"her own road, the Line Lane."
+msgstr ""
+"U kursiv tog'larning birinchi tepaliklariga etib kelganida, u o'z shahrining "
+"Bookmarksgrove osmonini, Alphabet qishlog'ining sarlavhasini va o'z "
+"yo'lining pastki chizig'i - Chiziq chizig'ini oxirgi marta ko'rdi."
+
+#: .\templates\index-3.html:190
+#, fuzzy
+#| msgid "About"
+msgid "About More"
+msgstr "Biz haqimizda"
+
+#: .\templates\index-3.html:212
+msgid "How We Work"
+msgstr "Biz qanday ishlaymiz"
+
+#: .\templates\index-3.html:213
+msgid "We Make Successful Business in"
+msgstr "Biz muvaffaqiyatli biznes qilamiz"
+
+#: .\templates\index-3.html:213
+msgid "Steps"
+msgstr "ta Qadam"
+
+#: .\templates\index-3.html:237
+msgid "Integrity"
+msgstr "Butunlik"
+
+#: .\templates\index-3.html:238
+msgid "Thinking of Building"
+msgstr "Bino haqida o'ylash"
+
+#: .\templates\index-3.html:239
+msgid ""
+"We help global leaders with their organization’s most critical issues and "
+"opportunities. Together, we create enduring change and results"
+msgstr ""
+"Biz global yetakchilarga tashkilotning eng muhim masalalari va imkoniyatlari "
+"bilan yordam beramiz. Birgalikda biz doimiy o'zgarishlar va natijalarni "
+"yaratamiz"
+
+#: .\templates\index-3.html:242
+msgid "Explore All Cases"
+msgstr "Barcha holatlarni o'rganing"

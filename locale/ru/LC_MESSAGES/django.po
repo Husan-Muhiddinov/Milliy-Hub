@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-07 17:34+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\blog\models.py:9 .\blog\models.py:54
+msgid "email"
+msgstr "электронная почта"
+
+#: .\blog\models.py:10
+msgid "address"
+msgstr "адрес"
+
+#: .\blog\models.py:11
+msgid "start_work"
+msgstr "Дата начала"
+
+#: .\blog\models.py:12
+msgid "finish_work"
+msgstr "Конец рабочего дня"
+
+#: .\blog\models.py:13
+msgid "work_created_at"
+msgstr "Время окончания"
+
+#: .\blog\models.py:14
+msgid "work_updated_at"
+msgstr "Время начать"
+
+#: .\blog\models.py:15
+msgid "phone_number"
+msgstr "номер телефона"
+
+#: .\blog\models.py:16
+msgid "facebook_link"
+msgstr "ссылка на фейсбук"
+
+#: .\blog\models.py:17
+msgid "linkedin_link"
+msgstr "Ссылка на linkedin"
+
+#: .\blog\models.py:18
+msgid "youtube_link"
+msgstr "ссылка на ютуб"
+
+#: .\blog\models.py:19
+msgid "instagram_link"
+msgstr "ссылка на инстаграм"
+
+#: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
+msgid "title"
+msgstr "заголовок"
+
+#: .\blog\models.py:27 .\blog\models.py:36
+msgid "body"
+msgstr "тело"
+
+#: .\blog\models.py:34
+msgid "icon"
+msgstr "икона"
+
+#: .\blog\models.py:43
+msgid "image"
+msgstr "изображение"
+
+#: .\blog\models.py:45
+msgid "work"
+msgstr "работа"
+
+#: .\blog\models.py:46
+msgid "position"
+msgstr "позиция"
+
+#: .\blog\models.py:53
+msgid "name"
+msgstr "имя"
+
+#: .\blog\models.py:55
+msgid "subject"
+msgstr "предмет"
+
+#: .\blog\models.py:56
+#, fuzzy
+#| msgid "Pages"
+msgid "messages"
+msgstr "Страницы"
+
+#: .\main\settings.py:118
+msgid "English"
+msgstr "Английский"
+
+#: .\main\settings.py:119
+msgid "Russian"
+msgstr "Русский"
+
+#: .\main\settings.py:120
+msgid "Uzbek"
+msgstr "узбекский"
+
+#: .\templates\base.html:7
+#, fuzzy
+#| msgid "Grow Your Business"
+msgid "Business"
+msgstr "Бизнес"
+
+#: .\templates\base.html:7
+msgid "Finance"
+msgstr "Финансы"
+
+#: .\templates\base.html:76
+msgid "Address"
+msgstr "Адрес"
+
+#: .\templates\base.html:85 .\templates\base.html:302
+msgid "to"
+msgstr "от"
+
+#: .\templates\base.html:86
+msgid "Sunday Closed"
+msgstr "Воскресенье Закрыто"
+
+#: .\templates\base.html:95
+msgid "Call Us for Any Questions"
+msgstr "Позвоните нам по любым вопросам"
+
+#: .\templates\base.html:133 .\templates\base.html:223
+msgid "Home"
+msgstr "Главная"
+
+#: .\templates\base.html:147 .\templates\base.html:237
+#: .\templates\base.html:368 .\templates\index-3.html:186
+msgid "About"
+msgstr "насчет нас"
+
+#: .\templates\base.html:148 .\templates\base.html:150
+#: .\templates\base.html:238 .\templates\base.html:240
+msgid "Services"
+msgstr "Услуги"
+
+#: .\templates\base.html:151 .\templates\base.html:241
+msgid "Financial Planning"
+msgstr "Финансовое планирование"
+
+#: .\templates\base.html:152 .\templates\base.html:242
+msgid "Trade & Stock"
+msgstr "Торговля & акции"
+
+#: .\templates\base.html:153 .\templates\base.html:243
+msgid "Audit & Assurance"
+msgstr "Торговля & акции"
+
+#: .\templates\base.html:154 .\templates\base.html:244
+msgid "Saving Strategy"
+msgstr "Стратегия сохранения"
+
+#: .\templates\base.html:155 .\templates\base.html:245
+msgid "Strategic Planning"
+msgstr "Стратегическое планирование"
+
+#: .\templates\base.html:156 .\templates\base.html:246
+msgid "Service Detail"
+msgstr "Сведения об услуге"
+
+#: .\templates\base.html:159 .\templates\base.html:161
+#: .\templates\base.html:249 .\templates\base.html:251
+msgid "Cases"
+msgstr "Случаи"
+
+#: .\templates\base.html:162 .\templates\base.html:252
+msgid "Case Detail"
+msgstr "Детали случаев"
+
+#: .\templates\base.html:165 .\templates\base.html:255
+msgid "Pages"
+msgstr "Страницы"
+
+#: .\templates\base.html:167 .\templates\base.html:257
+msgid "Pricing"
+msgstr "Цены"
+
+#: .\templates\base.html:168 .\templates\base.html:258
+msgid "Our Team"
+msgstr "Наша команда"
+
+#: .\templates\base.html:171 .\templates\base.html:173
+#: .\templates\base.html:261 .\templates\base.html:263
+msgid "Blog"
+msgstr "Блог"
+
+#: .\templates\base.html:174 .\templates\base.html:264
+msgid "Blog Detail"
+msgstr "Детали блога"
+
+#: .\templates\base.html:177 .\templates\base.html:267
+#: .\templates\base.html:372
+msgid "Contact"
+msgstr "Контакт"
+
+#: .\templates\base.html:300
+msgid ""
+"We provide expert Business Coaching to both individuals and businesses. With "
+"over 30 years of experience we’ll ensure that you’re always getting the best "
+"guidance from the top people in the entire industry."
+msgstr ""
+"Мы предоставляем экспертное бизнес-коучинг как для частных лиц, так и для "
+"бизнеса. Имея многолетний опыт, мы всегда гарантируем, что вы получите "
+"лучшее руководство от лучших людей во всей отрасли."
+
+#: .\templates\base.html:313
+msgid "Latest News"
+msgstr "Последние новости"
+
+#: .\templates\base.html:335
+msgid "Newsletter"
+msgstr "Новостная рассылка"
+
+#: .\templates\base.html:337
+msgid "Sign up for our mailing list to Get Latest updates And offers."
+msgstr ""
+"Подпишитесь на нашу рассылку, чтобы получать последние обновления и "
+"предложения."
+
+#: .\templates\base.html:347
+msgid "Follow Us"
+msgstr "Подписывайтесь на нас"
+
+#: .\templates\base.html:369
+msgid "Privacy Policy"
+msgstr "политика конфиденциальности"
+
+#: .\templates\base.html:370
+msgid "Investors"
+msgstr "Инвесторы"
+
+#: .\templates\base.html:371
+msgid "Legals"
+msgstr "Юристы"
+
+#: .\templates\base.html:376
+msgid "Designed By"
+msgstr "Разработано:"
+
+#: .\templates\base.html:376
+msgid "ARY Themes"
+msgstr "Sanjarbek Usmonov"
+
+#: .\templates\base.html:397
+msgid "Choose Your Color"
+msgstr "Выберите свой цвет"
+
+#: .\templates\base.html:413
+msgid "Purchase now"
+msgstr "Купить сейчас"
+
+#: .\templates\base.html:416
+msgid ""
+"You will find much more options for colors and styling in admin panel. This "
+"color picker is used only for demonstation purposes."
+msgstr ""
+"Вы найдете больше вариантов цветов и стилей в панели администратора. Эта "
+"палитра цветов предназначена только для демонстрационных целей."
+
+#: .\templates\index-3.html:32
+msgid "Hight Quality Market"
+msgstr "Рынок высокого качества"
+
+#: .\templates\index-3.html:50
+msgid "Experaiences"
+msgstr "Опыт"
+
+#: .\templates\index-3.html:69 .\templates\index-3.html:151
+msgid ""
+"Nobody’s more committed to connecting you with the exceptional top talents "
+"with the right fit for your business than us"
+msgstr ""
+"Никто так не заинтересован в том, чтобы связать вас с исключительными "
+"лучшими талантами, подходящими для вашего бизнеса, чем мы."
+
+#: .\templates\index-3.html:88 .\templates\index-3.html:169
+msgid "Know MORE"
+msgstr "Узнать больше"
+
+#: .\templates\index-3.html:89 .\templates\index-3.html:170
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Service"
+msgstr "Наш сервис"
+
+#: .\templates\index-3.html:114
+msgid "We Provide Solution to"
+msgstr "Мы предоставляем решение для"
+
+#: .\templates\index-3.html:133
+msgid "Grow Your Business"
+msgstr "Развивайте свой бизнес"
+
+#: .\templates\index-3.html:187
+msgid "We Aim to Provide Expert Advice and Quality Service."
+msgstr ""
+"Мы стремимся предоставлять экспертные консультации и качественное "
+"обслуживание."
+
+#: .\templates\index-3.html:188
+msgid ""
+"We are rethoric question ran over her cheek When she reached the first hills "
+"of the Italic Mountains, she had a last view back on the skyline of her "
+"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
+"her own road, the Line Lane."
+msgstr ""
+"Мы риторический вопрос пробежал по ее щеке Когда она достигла первых холмов "
+"Италийских гор, она в последний раз увидела горизонт своего родного города "
+"Букмарксгроув, заголовок Деревни Алфавит и нижнюю линию ее собственной "
+"дороги, Лайн-лейн."
+
+#: .\templates\index-3.html:190
+#, fuzzy
+#| msgid "About"
+msgid "About More"
+msgstr "насчет нас"
+
+#: .\templates\index-3.html:212
+msgid "How We Work"
+msgstr "Как мы работаем"
+
+#: .\templates\index-3.html:213
+msgid "We Make Successful Business in"
+msgstr "Мы делаем успешный бизнес в"
+
+#: .\templates\index-3.html:213
+msgid "Steps"
+msgstr "Шаги"
+
+#: .\templates\index-3.html:237
+msgid "Integrity"
+msgstr "Честность"
+
+#: .\templates\index-3.html:238
+msgid "Thinking of Building"
+msgstr "Думая о строительстве"
+
+#: .\templates\index-3.html:239
+msgid ""
+"We help global leaders with their organization’s most critical issues and "
+"opportunities. Together, we create enduring change and results"
+msgstr ""
+"Мы помогаем мировым лидерам с наиболее важными проблемами и возможностями их "
+"организаций. Вместе мы создаем устойчивые изменения и результаты"
+
+#: .\templates\index-3.html:242
+msgid "Explore All Cases"
+msgstr "Исследуйте все дела"

@@ -1,0 +1,201 @@
+
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+     <!--Page Title-->
+    <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
+        <div class="auto-container">
+            <h1>Cases</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index.html">Home</a></li>
+                <li>Cases</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
+    <!-- Cases Section Section -->
+    <section class="cases-section">
+        <div class="auto-container">
+             <!--MixitUp Galery-->
+            <div class="mixitup-gallery">
+                <div class="inner-container clearfix">
+                    <!--Filter-->
+                    <div class="filters text-center clearfix">                     
+                        <ul class="filter-tabs filter-btns clearfix">
+                            <li class="filter active" data-role="button" data-filter="all">All</li>
+                            <li class="filter" data-role="button" data-filter=".fintech">Fintech</li>
+                            <li class="filter" data-role="button" data-filter=".investing">Investing</li>
+                            <li class="filter" data-role="button" data-filter=".marketing">Marketing</li>
+                            <li class="filter" data-role="button" data-filter=".planning">Planning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="filter-list row clearfix">
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing marketing">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/1.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing planning fintech">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/2.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/2.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 marketing investing planning">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/3.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/3.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech marketing">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/4.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/4.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech planning marketing">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/5.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/5.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech investing marketing">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/6.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/6.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 planning fintech marketing">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/7.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/7.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing planning">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/8.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/8.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cases Block -->
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 planning fintech">
+                    <div class="image-box">
+                        <div class="image"><a href="{% static 'images/gallery/9.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/9.jpg' %}" alt=""></a></div>
+                        <div class="caption-box">
+                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <ul class="info">
+                                <li>Business</li>
+                                <li>Corporate</li>
+                            </ul>
+                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn-box">
+                <a href="services.html" class="theme-btn btn-style-three">View All</a>
+            </div>
+        </div>
+    </section>
+    <!--End Cases Section -->
+
+    <!--Clients Section-->
+    <section class="clients-section style-two">
+        <div class="auto-container">
+            <div class="sponsors-outer">
+                <!--Sponsors Carousel-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/3.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/4.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/5.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/3.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/4.png' %}" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="cases.html#"><img src="{% static 'images/clients/5.png' %}" alt=""></a></figure></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--End Clients Section-->
+{% endblock content %}
