@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 17:34+0500\n"
+"POT-Creation-Date: 2023-07-07 17:58+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,7 +223,7 @@ msgstr ""
 "бизнеса. Имея многолетний опыт, мы всегда гарантируем, что вы получите "
 "лучшее руководство от лучших людей во всей отрасли."
 
-#: .\templates\base.html:313
+#: .\templates\base.html:313 .\templates\index-3.html:369
 msgid "Latest News"
 msgstr "Последние новости"
 
@@ -366,3 +366,61 @@ msgstr ""
 #: .\templates\index-3.html:242
 msgid "Explore All Cases"
 msgstr "Исследуйте все дела"
+
+#: .\templates\index-3.html:259
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Services"
+msgstr "Наш сервис"
+
+#: .\templates\index-3.html:260
+msgid "What We Provide"
+msgstr "Что мы предоставляем"
+
+#: .\templates\index-3.html:283
+msgid "Our Best Work"
+msgstr "Наша лучшая работа"
+
+#: .\templates\index-3.html:284
+#, fuzzy
+#| msgid "We Make Successful Business in"
+msgid "Our Successful Cases"
+msgstr "Мы делаем успешный бизнес в"
+
+#: .\templates\index-3.html:307
+msgid "View All"
+msgstr "Посмотреть все"
+
+#: .\templates\index-3.html:320
+msgid "You are"
+msgstr "Ты"
+
+#: .\templates\index-3.html:320
+msgid "10 minitues away from the Help you need"
+msgstr "10 минут до нужной вам помощи"
+
+#: .\templates\index-3.html:321
+msgid ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+msgstr "Извлеките выгоду из низко висящих фруктов, чтобы определить примерную деятельность с добавленной стоимостью для бета-тестирования."
+
+#: .\templates\index-3.html:330
+msgid "We are always ready"
+msgstr "Мы всегда готовы"
+
+#: .\templates\index-3.html:331
+msgid "Request a call back"
+msgstr "Чтобы мы перезвонили"
+
+#: .\templates\index-3.html:352
+#, fuzzy
+#| msgid "Pages"
+msgid "Send Massage"
+msgstr "Страницы"
+
+#: .\templates\index-3.html:368
+#, fuzzy
+#| msgid "Blog"
+msgid "Our Blogs"
+msgstr "Блог"

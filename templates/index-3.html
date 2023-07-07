@@ -256,8 +256,8 @@
     <section class="services-section-two" style="background-image: url(/static/images/background/5.jpg);">
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <span class="title">Our Services</span>
-                <h2>What We Provide</h2>
+                <span class="title">{% trans 'Our Services' %}</span>
+                <h2>{% trans 'What We Provide' %}</h2>
             </div>
 
             <div class="row clearfix">
@@ -280,8 +280,8 @@
     <section class="cases-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="title">Our Best Work</span>
-                <h2>Our Successful Cases</h2>
+                <span class="title">{% trans 'Our Best Work' %}</span>
+                <h2>{% trans 'Our Successful Cases' %}</h2>
             </div>
 
             <div class="row clearfix">
@@ -304,7 +304,7 @@
             </div>
 
             <div class="btn-box">
-                <a href="{% url 'services' %}" class="theme-btn btn-style-three">View All</a>
+                <a href="{% url 'services' %}" class="theme-btn btn-style-three">{% trans 'View All' %}</a>
             </div>
         </div>
     </section>
@@ -317,8 +317,8 @@
                 <div class="row clearfix">
                     <div class="content-column col-lg-6 col-md-12 col-sm-12">
                         <div class="inner-column">
-                            <h3>You are <br> 10 minitues away from the Help you need</h3>
-                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</div>
+                            <h3>{% trans 'You are' %} <br> {% trans '10 minitues away from the Help you need' %}</h3>
+                            <div class="text">{% trans 'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.' %}</div>
                         </div>
                     </div>
 
@@ -327,8 +327,8 @@
                         <div class="inner-column">
                             <div class="appointment-form">
                                 <div class="title-box">
-                                    <span>We are always ready</span>
-                                    <h3>Request a call back</h3>
+                                    <span>{% trans 'We are always ready' %}</span>
+                                    <h3>{% trans 'Request a call back' %}</h3>
                                 </div>
                                 <form method="post" action="{% url 'index' %}">
                                     {% csrf_token %}
@@ -349,7 +349,7 @@
                                     </div>
 
                                     <div class="form-group text-right">
-                                        <button class="theme-btn btn-style-two" type="submit" name="submit-form">Send Massage</button>
+                                        <button class="theme-btn btn-style-two" type="submit" name="submit-form">{% trans 'Send Massage' %}</button>
                                     </div>
                                 </form>
                             </div>
@@ -365,8 +365,8 @@
     <section class="news-section-two">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="title">Our Blogs</span>
-                <h2>Latest News</h2>
+                <span class="title">{% trans 'Our Blogs' %}</span>
+                <h2>{% trans 'Latest News' %}</h2>
             </div>
             <div class="row clearfix">
                 <!-- News Block -->

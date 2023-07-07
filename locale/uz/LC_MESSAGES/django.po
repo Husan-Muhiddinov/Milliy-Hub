@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 17:35+0500\n"
+"POT-Creation-Date: 2023-07-07 17:58+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,7 +221,7 @@ msgstr ""
 "taqdim etamiz. Ancha yillik tajribamiz bilan biz har doim butun sohadagi eng "
 "yaxshi odamlardan eng yaxshi yo'l-yo'riq olishingizni ta'minlaymiz."
 
-#: .\templates\base.html:313
+#: .\templates\base.html:313 .\templates\index-3.html:369
 msgid "Latest News"
 msgstr "So'ngi yangiliklar"
 
@@ -253,7 +253,7 @@ msgstr "Qonunchilik"
 
 #: .\templates\base.html:376
 msgid "Designed By"
-msgstr "tomonidan ishlab chiqilgan:"
+msgstr "Tomonidan ishlab chiqilgan:"
 
 #: .\templates\base.html:376
 msgid "ARY Themes"
@@ -362,3 +362,61 @@ msgstr ""
 #: .\templates\index-3.html:242
 msgid "Explore All Cases"
 msgstr "Barcha holatlarni o'rganing"
+
+#: .\templates\index-3.html:259
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Services"
+msgstr "Bizning xizmatlarimiz"
+
+#: .\templates\index-3.html:260
+msgid "What We Provide"
+msgstr "Biz nima taqdim etamiz"
+
+#: .\templates\index-3.html:283
+msgid "Our Best Work"
+msgstr "Bizning eng yaxshi ishimiz"
+
+#: .\templates\index-3.html:284
+#, fuzzy
+#| msgid "We Make Successful Business in"
+msgid "Our Successful Cases"
+msgstr "Biz muvaffaqiyatli biznes qilamiz"
+
+#: .\templates\index-3.html:307
+msgid "View All"
+msgstr "Hammasini ko'rish"
+
+#: .\templates\index-3.html:320
+msgid "You are"
+msgstr "Siz"
+
+#: .\templates\index-3.html:320
+msgid "10 minitues away from the Help you need"
+msgstr "Sizga kerak bo'lgan yordamdan 10 daqiqa uzoqlikda"
+
+#: .\templates\index-3.html:321
+msgid ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+msgstr "Beta-testga qo'shilgan qiymatli faollikni aniqlash uchun past osilgan mevalarni kapitallashtiring."
+
+#: .\templates\index-3.html:330
+msgid "We are always ready"
+msgstr "Biz har doim tayyormiz"
+
+#: .\templates\index-3.html:331
+msgid "Request a call back"
+msgstr "Qayta qo'ng'iroq qilishimiz uchun"
+
+#: .\templates\index-3.html:352
+#, fuzzy
+#| msgid "Pages"
+msgid "Send Massage"
+msgstr "Sahifalar"
+
+#: .\templates\index-3.html:368
+#, fuzzy
+#| msgid "Blog"
+msgid "Our Blogs"
+msgstr "Blog"

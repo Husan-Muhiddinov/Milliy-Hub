@@ -57,3 +57,33 @@ class CallBack(models.Model):
 
     def __str__(self):
         return self.name
+    
+
+
+class Blog(models.Model):
+    title=models.CharField(max_length=250, null=True, verbose_name=_('title'))
+    summary=models.CharField(max_length=500, null=True, verbose_name=_('summary'))
+    body=models.CharField(max_length=900, null=True, verbose_name=_('body'))
+    author = models.CharField(max_length=70, null=True, verbose_name=_('author'))
+    photo=models.ImageField(upload_to='images',blank=True, null=True, verbose_name=_('photo'))
+    day=models.CharField(max_length=50, null=True, help_text="E.x: 15 April 2023", verbose_name=_('day'))
+
+    class Meta:
+        ordering = ["-id"]
+
+
+
+    def __str__(self):
+        return self.title
+    
+
+class Comment(models.Model):
+    blog=models.ForeignKey(Blog, on_delete=models.CASCADE, verbose_name=_('blog'))
+    comment=models.CharField(max_length=150, verbose_name=_('comment'))
+    # author=models.ForeignKey(
+    #     get_user_model(),
+    #     on_delete=models.CASCADE,
+    # )
+
+    def __str__(self):
+        return self.comment

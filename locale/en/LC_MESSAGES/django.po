@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 17:34+0500\n"
+"POT-Creation-Date: 2023-07-07 17:57+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,79 +20,79 @@ msgstr ""
 
 #: .\blog\models.py:9 .\blog\models.py:54
 msgid "email"
-msgstr ""
+msgstr "email"
 
 #: .\blog\models.py:10
 msgid "address"
-msgstr ""
+msgstr "address"
 
 #: .\blog\models.py:11
 msgid "start_work"
-msgstr ""
+msgstr "start_work"
 
 #: .\blog\models.py:12
 msgid "finish_work"
-msgstr ""
+msgstr "finish_work"
 
 #: .\blog\models.py:13
 msgid "work_created_at"
-msgstr ""
+msgstr "work_created_at"
 
 #: .\blog\models.py:14
 msgid "work_updated_at"
-msgstr ""
+msgstr "work_updated_at"
 
 #: .\blog\models.py:15
 msgid "phone_number"
-msgstr ""
+msgstr "phone_number"
 
 #: .\blog\models.py:16
 msgid "facebook_link"
-msgstr ""
+msgstr "facebook_link"
 
 #: .\blog\models.py:17
 msgid "linkedin_link"
-msgstr ""
+msgstr "linkedin_link"
 
 #: .\blog\models.py:18
 msgid "youtube_link"
-msgstr ""
+msgstr "youtube_link"
 
 #: .\blog\models.py:19
 msgid "instagram_link"
-msgstr ""
+msgstr "instagram_link"
 
 #: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
 msgid "title"
-msgstr ""
+msgstr "title"
 
 #: .\blog\models.py:27 .\blog\models.py:36
 msgid "body"
-msgstr ""
+msgstr "body"
 
 #: .\blog\models.py:34
 msgid "icon"
-msgstr ""
+msgstr "icon"
 
 #: .\blog\models.py:43
 msgid "image"
-msgstr ""
+msgstr "image"
 
 #: .\blog\models.py:45
 msgid "work"
-msgstr ""
+msgstr "work"
 
 #: .\blog\models.py:46
 msgid "position"
-msgstr ""
+msgstr "position"
 
 #: .\blog\models.py:53
 msgid "name"
-msgstr ""
+msgstr "name"
 
 #: .\blog\models.py:55
 msgid "subject"
-msgstr ""
+msgstr "subject"
 
 #: .\blog\models.py:56
 #, fuzzy
@@ -120,23 +120,23 @@ msgstr "Grow Your Business"
 
 #: .\templates\base.html:7
 msgid "Finance"
-msgstr ""
+msgstr "Finance"
 
 #: .\templates\base.html:76
 msgid "Address"
-msgstr ""
+msgstr "Address"
 
 #: .\templates\base.html:85 .\templates\base.html:302
 msgid "to"
-msgstr ""
+msgstr "to"
 
 #: .\templates\base.html:86
 msgid "Sunday Closed"
-msgstr ""
+msgstr "Sunday Closed"
 
 #: .\templates\base.html:95
 msgid "Call Us for Any Questions"
-msgstr ""
+msgstr "Call Us for Any Questions"
 
 #: .\templates\base.html:133 .\templates\base.html:223
 msgid "Home"
@@ -221,7 +221,7 @@ msgstr ""
 "years of experience, we always ensure that you get the best guidance from "
 "the best people in the entire industry."
 
-#: .\templates\base.html:313
+#: .\templates\base.html:313 .\templates\index-3.html:369
 msgid "Latest News"
 msgstr "Latest News"
 
@@ -239,15 +239,15 @@ msgstr "Follow Us"
 
 #: .\templates\base.html:369
 msgid "Privacy Policy"
-msgstr ""
+msgstr "Privacy Policy"
 
 #: .\templates\base.html:370
 msgid "Investors"
-msgstr ""
+msgstr "Investors"
 
 #: .\templates\base.html:371
 msgid "Legals"
-msgstr ""
+msgstr "Legals"
 
 #: .\templates\base.html:376
 msgid "Designed By"
@@ -360,3 +360,61 @@ msgstr ""
 #: .\templates\index-3.html:242
 msgid "Explore All Cases"
 msgstr "Explore All Cases"
+
+#: .\templates\index-3.html:259
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Services"
+msgstr "Our Service"
+
+#: .\templates\index-3.html:260
+msgid "What We Provide"
+msgstr "What We Provide"
+
+#: .\templates\index-3.html:283
+msgid "Our Best Work"
+msgstr "Our Best Work"
+
+#: .\templates\index-3.html:284
+#, fuzzy
+#| msgid "We Make Successful Business in"
+msgid "Our Successful Cases"
+msgstr "We Make Successful Business in"
+
+#: .\templates\index-3.html:307
+msgid "View All"
+msgstr "View All"
+
+#: .\templates\index-3.html:320
+msgid "You are"
+msgstr "You are"
+
+#: .\templates\index-3.html:320
+msgid "10 minitues away from the Help you need"
+msgstr "10 minitues away from the Help you need"
+
+#: .\templates\index-3.html:321
+msgid ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+msgstr "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test."
+
+#: .\templates\index-3.html:330
+msgid "We are always ready"
+msgstr "We are always ready"
+
+#: .\templates\index-3.html:331
+msgid "Request a call back"
+msgstr "Request a call back"
+
+#: .\templates\index-3.html:352
+#, fuzzy
+#| msgid "Pages"
+msgid "Send Massage"
+msgstr "Pages"
+
+#: .\templates\index-3.html:368
+#, fuzzy
+#| msgid "Blog"
+msgid "Our Blogs"
+msgstr "Blog"

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django.contrib import messages
-from .models import Contact, Steps, Card, Team, CallBack
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment
 # Create your views here.
 
 def for_all_pages(request):
@@ -81,7 +81,11 @@ def team(request):
 
 
 def blog(request):
-    return render(request, 'blog.html')
+    blog = Blog.objects.all()
+    context = {
+        'blog': blog, 
+        }
+    return render(request, 'blog.html', context=context)
 
 
 def blog_detail(request):

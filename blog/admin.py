@@ -41,3 +41,13 @@ class TeamModelAdmin(MyTranslationAdmin):
 @admin.register(CallBack)
 class CallBackModelAdmin(admin.ModelAdmin):
     list_display = ['name', 'email', 'subject', 'message']
+
+
+@admin.register(Comment)
+class CommentkModelAdmin(admin.ModelAdmin):
+    list_display = ['blog', 'comment']
+
+
+@admin.register(Blog)
+class BlogModelAdmin(MyTranslationAdmin):
+    list_display = ['title', 'summary', 'body', 'author', 'photo', 'day']
