@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 17:58+0500\n"
+"POT-Creation-Date: 2023-07-08 21:25+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,14 +63,16 @@ msgid "instagram_link"
 msgstr "instagram link"
 
 #: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
+#: .\blog\models.py:64 .\blog\models.py:94
 msgid "title"
 msgstr "sarlavha"
 
-#: .\blog\models.py:27 .\blog\models.py:36
+#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:66
+#: .\blog\models.py:96
 msgid "body"
 msgstr "tanasi"
 
-#: .\blog\models.py:34
+#: .\blog\models.py:34 .\blog\models.py:93
 msgid "icon"
 msgstr "ikon"
 
@@ -100,6 +102,30 @@ msgstr "Mavzu"
 msgid "messages"
 msgstr "Sahifalar"
 
+#: .\blog\models.py:65 .\blog\models.py:95
+msgid "summary"
+msgstr "sarlavha"
+
+#: .\blog\models.py:67
+msgid "author"
+msgstr "avtor"
+
+#: .\blog\models.py:68 .\blog\models.py:97
+msgid "photo"
+msgstr "rasm"
+
+#: .\blog\models.py:69
+msgid "day"
+msgstr "kun"
+
+#: .\blog\models.py:81
+msgid "blog"
+msgstr "blog"
+
+#: .\blog\models.py:8
+msgid "comment"
+msgstr "izoh"
+
 #: .\main\settings.py:118
 msgid "English"
 msgstr "English"
@@ -111,6 +137,96 @@ msgstr "Russian"
 #: .\main\settings.py:120
 msgid "Uzbek"
 msgstr "Uzbek"
+
+#: .\templates\about.html:102 .\templates\index-3.html:320
+msgid "You are"
+msgstr "Siz"
+
+#: .\templates\about.html:102 .\templates\index-3.html:320
+msgid "10 minitues away from the Help you need"
+msgstr "Sizga kerak bo'lgan yordamdan 10 daqiqa uzoqlikda"
+
+#: .\templates\about.html:103 .\templates\index-3.html:321
+msgid ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+msgstr ""
+"Beta-testga qo'shilgan qiymatli faollikni aniqlash uchun past osilgan "
+"mevalarni kapitallashtiring."
+
+#: .\templates\about.html:112 .\templates\index-3.html:330
+msgid "We are always ready"
+msgstr "Biz har doim tayyormiz"
+
+#: .\templates\about.html:113 .\templates\index-3.html:331
+msgid "Request a call back"
+msgstr "Qayta qo'ng'iroq qilishimiz uchun"
+
+#: .\templates\about.html:134 .\templates\index-3.html:352
+#, fuzzy
+#| msgid "Pages"
+msgid "Send Massage"
+msgstr "Sahifalar"
+
+#: .\templates\about.html:153 .\templates\index-3.html:237
+msgid "Integrity"
+msgstr "Butunlik"
+
+#: .\templates\about.html:154 .\templates\index-3.html:238
+msgid "Thinking of Building"
+msgstr "Bino haqida o'ylash"
+
+#: .\templates\about.html:155 .\templates\index-3.html:239
+msgid ""
+"We help global leaders with their organization’s most critical issues and "
+"opportunities. Together, we create enduring change and results"
+msgstr ""
+"Biz global yetakchilarga tashkilotning eng muhim masalalari va imkoniyatlari "
+"bilan yordam beramiz. Birgalikda biz doimiy o'zgarishlar va natijalarni "
+"yaratamiz"
+
+#: .\templates\about.html:158 .\templates\index-3.html:242
+msgid "Explore All Cases"
+msgstr "Barcha holatlarni o'rganing"
+
+#: .\templates\about.html:311 .\templates\index-3.html:212
+msgid "How We Work"
+msgstr "Biz qanday ishlaymiz"
+
+#: .\templates\about.html:312 .\templates\index-3.html:213
+msgid "We Make Successful Business in"
+msgstr "Biz muvaffaqiyatli biznes qilamiz"
+
+#: .\templates\about.html:312 .\templates\index-3.html:213
+msgid "Steps"
+msgstr "ta Qadam"
+
+#: .\templates\about.html:359 .\templates\base.html:147
+#: .\templates\base.html:237 .\templates\base.html:368
+#: .\templates\index-3.html:186
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\templates\about.html:360 .\templates\index-3.html:187
+msgid "We Aim to Provide Expert Advice and Quality Service."
+msgstr "Biz ekspert maslahati va sifatli xizmat ko'rsatishni maqsad qilganmiz."
+
+#: .\templates\about.html:361 .\templates\index-3.html:188
+msgid ""
+"We are rethoric question ran over her cheek When she reached the first hills "
+"of the Italic Mountains, she had a last view back on the skyline of her "
+"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
+"her own road, the Line Lane."
+msgstr ""
+"U kursiv tog'larning birinchi tepaliklariga etib kelganida, u o'z shahrining "
+"Bookmarksgrove osmonini, Alphabet qishlog'ining sarlavhasini va o'z "
+"yo'lining pastki chizig'i - Chiziq chizig'ini oxirgi marta ko'rdi."
+
+#: .\templates\about.html:363 .\templates\index-3.html:190
+#, fuzzy
+#| msgid "About"
+msgid "About More"
+msgstr "Biz haqimizda"
 
 #: .\templates\base.html:7
 #, fuzzy
@@ -142,33 +258,34 @@ msgstr "Har qanday savol uchun bizga qo'ng'iroq qiling"
 msgid "Home"
 msgstr "Bosh sahifa"
 
-#: .\templates\base.html:147 .\templates\base.html:237
-#: .\templates\base.html:368 .\templates\index-3.html:186
-msgid "About"
-msgstr "Biz haqimizda"
-
 #: .\templates\base.html:148 .\templates\base.html:150
 #: .\templates\base.html:238 .\templates\base.html:240
+#: .\templates\service-detail.html:134
 msgid "Services"
 msgstr "Xizmatlar"
 
 #: .\templates\base.html:151 .\templates\base.html:241
+#: .\templates\service-detail.html:135
 msgid "Financial Planning"
 msgstr "Moliyaviy rejalashtirish"
 
 #: .\templates\base.html:152 .\templates\base.html:242
+#: .\templates\service-detail.html:136
 msgid "Trade & Stock"
 msgstr "Savdo & birja"
 
 #: .\templates\base.html:153 .\templates\base.html:243
+#: .\templates\service-detail.html:137
 msgid "Audit & Assurance"
 msgstr "Audit & Ishonchnoma"
 
 #: .\templates\base.html:154 .\templates\base.html:244
+#: .\templates\service-detail.html:138
 msgid "Saving Strategy"
 msgstr "Saqlash strategiyasi"
 
 #: .\templates\base.html:155 .\templates\base.html:245
+#: .\templates\service-detail.html:139
 msgid "Strategic Planning"
 msgstr "Strategik rejalashtirish"
 
@@ -309,67 +426,13 @@ msgstr "Biz Yechimni Ta'minlaymiz"
 msgid "Grow Your Business"
 msgstr "Biznesingizni rivojlantiring"
 
-#: .\templates\index-3.html:187
-msgid "We Aim to Provide Expert Advice and Quality Service."
-msgstr "Biz ekspert maslahati va sifatli xizmat ko'rsatishni maqsad qilganmiz."
-
-#: .\templates\index-3.html:188
-msgid ""
-"We are rethoric question ran over her cheek When she reached the first hills "
-"of the Italic Mountains, she had a last view back on the skyline of her "
-"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
-"her own road, the Line Lane."
-msgstr ""
-"U kursiv tog'larning birinchi tepaliklariga etib kelganida, u o'z shahrining "
-"Bookmarksgrove osmonini, Alphabet qishlog'ining sarlavhasini va o'z "
-"yo'lining pastki chizig'i - Chiziq chizig'ini oxirgi marta ko'rdi."
-
-#: .\templates\index-3.html:190
-#, fuzzy
-#| msgid "About"
-msgid "About More"
-msgstr "Biz haqimizda"
-
-#: .\templates\index-3.html:212
-msgid "How We Work"
-msgstr "Biz qanday ishlaymiz"
-
-#: .\templates\index-3.html:213
-msgid "We Make Successful Business in"
-msgstr "Biz muvaffaqiyatli biznes qilamiz"
-
-#: .\templates\index-3.html:213
-msgid "Steps"
-msgstr "ta Qadam"
-
-#: .\templates\index-3.html:237
-msgid "Integrity"
-msgstr "Butunlik"
-
-#: .\templates\index-3.html:238
-msgid "Thinking of Building"
-msgstr "Bino haqida o'ylash"
-
-#: .\templates\index-3.html:239
-msgid ""
-"We help global leaders with their organization’s most critical issues and "
-"opportunities. Together, we create enduring change and results"
-msgstr ""
-"Biz global yetakchilarga tashkilotning eng muhim masalalari va imkoniyatlari "
-"bilan yordam beramiz. Birgalikda biz doimiy o'zgarishlar va natijalarni "
-"yaratamiz"
-
-#: .\templates\index-3.html:242
-msgid "Explore All Cases"
-msgstr "Barcha holatlarni o'rganing"
-
-#: .\templates\index-3.html:259
+#: .\templates\index-3.html:259 .\templates\services.html:104
 #, fuzzy
 #| msgid "Our Service"
 msgid "Our Services"
 msgstr "Bizning xizmatlarimiz"
 
-#: .\templates\index-3.html:260
+#: .\templates\index-3.html:260 .\templates\services.html:105
 msgid "What We Provide"
 msgstr "Biz nima taqdim etamiz"
 
@@ -386,34 +449,6 @@ msgstr "Biz muvaffaqiyatli biznes qilamiz"
 #: .\templates\index-3.html:307
 msgid "View All"
 msgstr "Hammasini ko'rish"
-
-#: .\templates\index-3.html:320
-msgid "You are"
-msgstr "Siz"
-
-#: .\templates\index-3.html:320
-msgid "10 minitues away from the Help you need"
-msgstr "Sizga kerak bo'lgan yordamdan 10 daqiqa uzoqlikda"
-
-#: .\templates\index-3.html:321
-msgid ""
-"Capitalize on low hanging fruit to identify a ballpark value added activity "
-"to beta test."
-msgstr "Beta-testga qo'shilgan qiymatli faollikni aniqlash uchun past osilgan mevalarni kapitallashtiring."
-
-#: .\templates\index-3.html:330
-msgid "We are always ready"
-msgstr "Biz har doim tayyormiz"
-
-#: .\templates\index-3.html:331
-msgid "Request a call back"
-msgstr "Qayta qo'ng'iroq qilishimiz uchun"
-
-#: .\templates\index-3.html:352
-#, fuzzy
-#| msgid "Pages"
-msgid "Send Massage"
-msgstr "Sahifalar"
 
 #: .\templates\index-3.html:368
 #, fuzzy

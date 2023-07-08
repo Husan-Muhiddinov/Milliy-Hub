@@ -87,3 +87,14 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.comment
+    
+
+class Services(models.Model):
+    icon = models.CharField(max_length=50, null=True, verbose_name=_('icon'))
+    title=models.CharField(max_length=250, null=True, verbose_name=_('title'))
+    summary=models.TextField(null=True, verbose_name=_('summary'))
+    body=models.CharField(max_length=900, null=True, verbose_name=_('body'))
+    photo=models.ImageField(upload_to='images',blank=True, null=True, verbose_name=_('photo'))
+
+    def __str__(self):
+        return self.title

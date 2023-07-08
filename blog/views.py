@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django.contrib import messages
-from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services
 # Create your views here.
 
 def for_all_pages(request):
@@ -33,11 +33,30 @@ def index(request):
 
 
 def about(request):
-    return render(request, 'about.html')
+    step = Steps.objects.all()
+    if request.method == 'POST':
+        call = CallBack(
+            name=request.POST['username'],
+            email=request.POST['email'],
+            subject=request.POST['subject'],
+            message=request.POST['message'],
+        )
+        call.save()
+        messages.success(request, "Succesfully Created")
+    context = {
+        'step': step,
+        }
+    return render(request, 'about.html', context=context)
 
 
 def services(request):
-    return render(request, 'services.html')
+    servic = Services.objects.all()
+    card = Card.objects.all()
+    context = {
+        'servic': servic,
+        'card': card,
+    }
+    return render(request, 'services.html', context=context)
 
 
 def financial(request):
@@ -60,8 +79,12 @@ def strategic_planning(request):
     return render(request, 'Strategic-planning.html')
 
 
-def service_detail(request):
-    return render(request, 'service-detail.html')
+def service_detail(request, servic_id):
+    servic = Services.objects.get(pk=servic_id)
+    context = {
+        'servic': servic,
+    }
+    return render(request, 'service-detail.html', context=context)
 
 
 def cases(request):
@@ -88,8 +111,12 @@ def blog(request):
     return render(request, 'blog.html', context=context)
 
 
-def blog_detail(request):
-    return render(request, 'blog-detail.html')
+def blog_detail(request, blog_id):
+    blog = Blog.objects.get(pk=blog_id)
+    context = {
+        'blog': blog,
+    }
+    return render(request, 'blog-detail.html', context=context)
 
 
 def contact(request):

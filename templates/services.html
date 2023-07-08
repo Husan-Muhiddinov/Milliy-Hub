@@ -1,13 +1,14 @@
 
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
             <h1>Services</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home </a></li>
+                <li><a href="{% url 'index' %}">Home </a></li>
                 <li>Services</li>
             </ul>
         </div>
@@ -20,19 +21,21 @@
 
             <div class="row clearfix">
                 <!-- Service Block -->
+                {% for i in servic %}
                 <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box" style="background-image: url(/static/images/resource/service-1.jpg);">
+                    <div class="inner-box" style="background-image: url({{i.photo.url}});">
                         <div class="content-box">
-                            <span class="icon flaticon-pie-chart-1"></span>
-                            <h3><a href="service-detail.html">Financial Planning</a></h3>
-                            <div class="text">We possess within us two minds. So far I have written only of the conscious mind. I would now like to..</div>
-                            <div class="link-box"><a href="service-detail.html">Read More <i class="la la-angle-double-right"></i></a></div>
+                            <span class="icon flaticon-{{ i.icon }}"></span>
+                            <h3><a href="service-detail.html">{{ i.title }}</a></h3>
+                            <div class="text">{{ i.summary }}</div>
+                            <div class="link-box"><a href="{% url 'service_detail' servic_id=i.id %}">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                <!-- <div class="service-block col-lg-4 col-md-6 col-sm-12">   pie-chart-1
                     <div class="inner-box" style="background-image: url(/static/images/resource/service-2.jpg);">
                         <div class="content-box">
                             <span class="icon flaticon-piggy-bank"></span>
@@ -41,10 +44,10 @@
                             <div class="link-box"><a href="service-detail.html">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                <!-- <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box" style="background-image: url(/static/images/resource/service-3.jpg);">
                         <div class="content-box">
                             <span class="icon flaticon-stock"></span>
@@ -53,10 +56,10 @@
                             <div class="link-box"><a href="service-detail.html">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                <!-- <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box" style="background-image: url(/static/images/resource/service-4.jpg);">
                         <div class="content-box">
                             <span class="icon flaticon-manager-1"></span>
@@ -65,10 +68,10 @@
                             <div class="link-box"><a href="service-detail.html">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                <!-- <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box" style="background-image: url(/static/images/resource/service-5.jpg);">
                         <div class="content-box">
                             <span class="icon flaticon-tools"></span>
@@ -77,10 +80,10 @@
                             <div class="link-box"><a href="service-detail.html">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
+                <!-- <div class="service-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box" style="background-image: url(/static/images/resource/service-6.jpg);">
                         <div class="content-box">
                             <span class="icon flaticon-partnership"></span>
@@ -89,7 +92,7 @@
                             <div class="link-box"><a href="service-detail.html">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -99,64 +102,21 @@
     <section class="services-section-two" style="background-image: url(/static/images/background/5.jpg);">
         <div class="auto-container">
             <div class="sec-title light text-center">
-                <span class="title">Our Services</span>
-                <h2>What We Provide</h2>
+                <span class="title">{% trans 'Our Services' %}</span>
+                <h2>{% trans 'What We Provide' %}</h2>
             </div>
 
             <div class="row clearfix">
                 <!-- Service BLock Two -->
+                {% for i in card %}
                 <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-pie-chart-1"></span></div>
-                        <h3><a href="services.html">Financial Planning</a></h3>
-                        <div class="text">Bonds and commodities are much more stable than stocks sound bonds</div>
+                        <div class="icon-box"><span class="flaticon-{{ i.icon }}"></span></div>
+                        <h3><a href="{% url 'services' %}">{{ i.title }}</a></h3>
+                        <div class="text">{{ i.body }}</div>
                     </div>
                 </div>
-
-                <!-- Service BLock Two -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-tools"></span></div>
-                        <h3><a href="services.html">Financial Planning</a></h3>
-                        <div class="text">Bonds and commodities are much more stable than stocks sound bonds</div>
-                    </div>
-                </div>
-
-                <!-- Service BLock Two -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-stock"></span></div>
-                        <h3><a href="services.html">Financial Planning</a></h3>
-                        <div class="text">Bonds and commodities are much more stable than stocks sound bonds</div>
-                    </div>
-                </div>
-
-                <!-- Service BLock Two -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-manager-1"></span></div>
-                        <h3><a href="services.html">Financial Planning</a></h3>
-                        <div class="text">Bonds and commodities are much more stable than stocks sound bonds</div>
-                    </div>
-                </div>
-
-                <!-- Service BLock Two -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-piggy-bank-1"></span></div>
-                        <h3><a href="services.html">Financial Planning</a></h3>
-                        <div class="text">Bonds and commodities are much more stable than stocks sound bonds</div>
-                    </div>
-                </div>
-
-                <!-- Service BLock Two -->
-                <div class="service-block-two col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box"><span class="flaticon-partnership"></span></div>
-                        <h3><a href="services.html">Financial Planning</a></h3>
-                        <div class="text">Bonds and commodities are much more stable than stocks sound bonds</div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </section>

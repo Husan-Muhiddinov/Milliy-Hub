@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 from django.contrib import admin
-from .models import Contact, Steps, Card, Team, CallBack, Blog
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Services
 
 
 @register(Contact)
@@ -28,4 +28,9 @@ class CardTranslationOptions(TranslationOptions):
 @register(Blog)
 class BlogTranslationOptions(TranslationOptions):
     fields = ('title', 'summary', 'body', 'day')
+
+
+@register(Services)
+class ServicesTranslationOptions(TranslationOptions):
+    fields = ('title', 'summary', 'body')
 

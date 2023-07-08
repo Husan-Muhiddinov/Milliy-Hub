@@ -51,3 +51,8 @@ class CommentkModelAdmin(admin.ModelAdmin):
 @admin.register(Blog)
 class BlogModelAdmin(MyTranslationAdmin):
     list_display = ['title', 'summary', 'body', 'author', 'photo', 'day']
+
+
+@admin.register(Services)
+class ServicesModelAdmin(MyTranslationAdmin):
+    list_display = ['icon','title', 'summary', 'body', 'photo']

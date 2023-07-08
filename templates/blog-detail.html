@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
@@ -22,11 +23,11 @@
                     <div class="blog-detail">
                         <div class="inner-box">
                             <div class="image-box">
-                                <div class="image"><img src="{% static 'images/resource/blog-single.jpg' %}" alt=""></div>
-                                <h3>Asia Shares Fail To Bounce With Wall Street</h3>
+                                <div class="image"><img src="{{ blog.photo.url }}" alt=""></div>
+                                <h3>{{ blog.title }}</h3>
                                 <ul class="info">
-                                    <li>Jan.20, 2016</li>
-                                    <li><a href="blog-detail.html#">by Adam Smith</a></li>
+                                    <li>{{ blog.day }}</li>
+                                    <li><a href="blog-detail.html#">by {{ blog.author }}</a></li>
                                 </ul>
                             </div>
                             <div class="content-box sticky-container">
@@ -41,7 +42,7 @@
                                         <h4>Share:</h4>
                                     </div>
                                 </div>
-                                <p>In this, Kidnapping the unlawful taking away or transportation of person against that person’s will, usually to hold the person unlawfully. Strategy change-makers empower communities collective impact game- changer energize or best practices. Equal opportunity; mobilize the, empathetic, empower, justice initiative the. Inclusive design thinking system thinking social enterprise; living a fully ethical life citizen centered co-create disrupt grit optimism circular shared vocabulary think tank. Transparent citizen centered, milestones program areas communities circular justice academic. Cultivate, circular commitment collaborative consumption think tank equal opportunity..</p>
+                                <p>{{ blog.body }}</p>
                                 <div class="two-column">
                                     <div class="row clearfix">
                                         <div class="image-column col-lg-6 col-md-12 col-sm-12">

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 17:58+0500\n"
+"POT-Creation-Date: 2023-07-08 21:25+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,14 +65,16 @@ msgid "instagram_link"
 msgstr "ссылка на инстаграм"
 
 #: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
+#: .\blog\models.py:64 .\blog\models.py:94
 msgid "title"
 msgstr "заголовок"
 
-#: .\blog\models.py:27 .\blog\models.py:36
+#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:66
+#: .\blog\models.py:96
 msgid "body"
 msgstr "тело"
 
-#: .\blog\models.py:34
+#: .\blog\models.py:34 .\blog\models.py:93
 msgid "icon"
 msgstr "икона"
 
@@ -102,6 +104,30 @@ msgstr "предмет"
 msgid "messages"
 msgstr "Страницы"
 
+#: .\blog\models.py:65 .\blog\models.py:95
+msgid "summary"
+msgstr "заголовок"
+
+#: .\blog\models.py:67
+msgid "author"
+msgstr "автор"
+
+#: .\blog\models.py:68 .\blog\models.py:97
+msgid "photo"
+msgstr "Фото"
+
+#: .\blog\models.py:69
+msgid "day"
+msgstr "день"
+
+#: .\blog\models.py:81
+msgid "blog"
+msgstr "блог"
+
+#: .\blog\models.py:82
+msgid "comment"
+msgstr "комментарий"
+
 #: .\main\settings.py:118
 msgid "English"
 msgstr "Английский"
@@ -113,6 +139,98 @@ msgstr "Русский"
 #: .\main\settings.py:120
 msgid "Uzbek"
 msgstr "узбекский"
+
+#: .\templates\about.html:102 .\templates\index-3.html:320
+msgid "You are"
+msgstr "Ты"
+
+#: .\templates\about.html:102 .\templates\index-3.html:320
+msgid "10 minitues away from the Help you need"
+msgstr "10 минут до нужной вам помощи"
+
+#: .\templates\about.html:103 .\templates\index-3.html:321
+msgid ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+msgstr ""
+"Извлеките выгоду из низко висящих фруктов, чтобы определить примерную "
+"деятельность с добавленной стоимостью для бета-тестирования."
+
+#: .\templates\about.html:112 .\templates\index-3.html:330
+msgid "We are always ready"
+msgstr "Мы всегда готовы"
+
+#: .\templates\about.html:113 .\templates\index-3.html:331
+msgid "Request a call back"
+msgstr "Чтобы мы перезвонили"
+
+#: .\templates\about.html:134 .\templates\index-3.html:352
+#, fuzzy
+#| msgid "Pages"
+msgid "Send Massage"
+msgstr "Страницы"
+
+#: .\templates\about.html:153 .\templates\index-3.html:237
+msgid "Integrity"
+msgstr "Честность"
+
+#: .\templates\about.html:154 .\templates\index-3.html:238
+msgid "Thinking of Building"
+msgstr "Думая о строительстве"
+
+#: .\templates\about.html:155 .\templates\index-3.html:239
+msgid ""
+"We help global leaders with their organization’s most critical issues and "
+"opportunities. Together, we create enduring change and results"
+msgstr ""
+"Мы помогаем мировым лидерам с наиболее важными проблемами и возможностями их "
+"организаций. Вместе мы создаем устойчивые изменения и результаты"
+
+#: .\templates\about.html:158 .\templates\index-3.html:242
+msgid "Explore All Cases"
+msgstr "Исследуйте все дела"
+
+#: .\templates\about.html:311 .\templates\index-3.html:212
+msgid "How We Work"
+msgstr "Как мы работаем"
+
+#: .\templates\about.html:312 .\templates\index-3.html:213
+msgid "We Make Successful Business in"
+msgstr "Мы делаем успешный бизнес в"
+
+#: .\templates\about.html:312 .\templates\index-3.html:213
+msgid "Steps"
+msgstr "Шаги"
+
+#: .\templates\about.html:359 .\templates\base.html:147
+#: .\templates\base.html:237 .\templates\base.html:368
+#: .\templates\index-3.html:186
+msgid "About"
+msgstr "насчет нас"
+
+#: .\templates\about.html:360 .\templates\index-3.html:187
+msgid "We Aim to Provide Expert Advice and Quality Service."
+msgstr ""
+"Мы стремимся предоставлять экспертные консультации и качественное "
+"обслуживание."
+
+#: .\templates\about.html:361 .\templates\index-3.html:188
+msgid ""
+"We are rethoric question ran over her cheek When she reached the first hills "
+"of the Italic Mountains, she had a last view back on the skyline of her "
+"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
+"her own road, the Line Lane."
+msgstr ""
+"Мы риторический вопрос пробежал по ее щеке Когда она достигла первых холмов "
+"Италийских гор, она в последний раз увидела горизонт своего родного города "
+"Букмарксгроув, заголовок Деревни Алфавит и нижнюю линию ее собственной "
+"дороги, Лайн-лейн."
+
+#: .\templates\about.html:363 .\templates\index-3.html:190
+#, fuzzy
+#| msgid "About"
+msgid "About More"
+msgstr "насчет нас"
 
 #: .\templates\base.html:7
 #, fuzzy
@@ -144,33 +262,34 @@ msgstr "Позвоните нам по любым вопросам"
 msgid "Home"
 msgstr "Главная"
 
-#: .\templates\base.html:147 .\templates\base.html:237
-#: .\templates\base.html:368 .\templates\index-3.html:186
-msgid "About"
-msgstr "насчет нас"
-
 #: .\templates\base.html:148 .\templates\base.html:150
 #: .\templates\base.html:238 .\templates\base.html:240
+#: .\templates\service-detail.html:134
 msgid "Services"
 msgstr "Услуги"
 
 #: .\templates\base.html:151 .\templates\base.html:241
+#: .\templates\service-detail.html:135
 msgid "Financial Planning"
 msgstr "Финансовое планирование"
 
 #: .\templates\base.html:152 .\templates\base.html:242
+#: .\templates\service-detail.html:136
 msgid "Trade & Stock"
 msgstr "Торговля & акции"
 
 #: .\templates\base.html:153 .\templates\base.html:243
+#: .\templates\service-detail.html:137
 msgid "Audit & Assurance"
 msgstr "Торговля & акции"
 
 #: .\templates\base.html:154 .\templates\base.html:244
+#: .\templates\service-detail.html:138
 msgid "Saving Strategy"
 msgstr "Стратегия сохранения"
 
 #: .\templates\base.html:155 .\templates\base.html:245
+#: .\templates\service-detail.html:139
 msgid "Strategic Planning"
 msgstr "Стратегическое планирование"
 
@@ -311,69 +430,13 @@ msgstr "Мы предоставляем решение для"
 msgid "Grow Your Business"
 msgstr "Развивайте свой бизнес"
 
-#: .\templates\index-3.html:187
-msgid "We Aim to Provide Expert Advice and Quality Service."
-msgstr ""
-"Мы стремимся предоставлять экспертные консультации и качественное "
-"обслуживание."
-
-#: .\templates\index-3.html:188
-msgid ""
-"We are rethoric question ran over her cheek When she reached the first hills "
-"of the Italic Mountains, she had a last view back on the skyline of her "
-"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
-"her own road, the Line Lane."
-msgstr ""
-"Мы риторический вопрос пробежал по ее щеке Когда она достигла первых холмов "
-"Италийских гор, она в последний раз увидела горизонт своего родного города "
-"Букмарксгроув, заголовок Деревни Алфавит и нижнюю линию ее собственной "
-"дороги, Лайн-лейн."
-
-#: .\templates\index-3.html:190
-#, fuzzy
-#| msgid "About"
-msgid "About More"
-msgstr "насчет нас"
-
-#: .\templates\index-3.html:212
-msgid "How We Work"
-msgstr "Как мы работаем"
-
-#: .\templates\index-3.html:213
-msgid "We Make Successful Business in"
-msgstr "Мы делаем успешный бизнес в"
-
-#: .\templates\index-3.html:213
-msgid "Steps"
-msgstr "Шаги"
-
-#: .\templates\index-3.html:237
-msgid "Integrity"
-msgstr "Честность"
-
-#: .\templates\index-3.html:238
-msgid "Thinking of Building"
-msgstr "Думая о строительстве"
-
-#: .\templates\index-3.html:239
-msgid ""
-"We help global leaders with their organization’s most critical issues and "
-"opportunities. Together, we create enduring change and results"
-msgstr ""
-"Мы помогаем мировым лидерам с наиболее важными проблемами и возможностями их "
-"организаций. Вместе мы создаем устойчивые изменения и результаты"
-
-#: .\templates\index-3.html:242
-msgid "Explore All Cases"
-msgstr "Исследуйте все дела"
-
-#: .\templates\index-3.html:259
+#: .\templates\index-3.html:259 .\templates\services.html:104
 #, fuzzy
 #| msgid "Our Service"
 msgid "Our Services"
 msgstr "Наш сервис"
 
-#: .\templates\index-3.html:260
+#: .\templates\index-3.html:260 .\templates\services.html:105
 msgid "What We Provide"
 msgstr "Что мы предоставляем"
 
@@ -390,34 +453,6 @@ msgstr "Мы делаем успешный бизнес в"
 #: .\templates\index-3.html:307
 msgid "View All"
 msgstr "Посмотреть все"
-
-#: .\templates\index-3.html:320
-msgid "You are"
-msgstr "Ты"
-
-#: .\templates\index-3.html:320
-msgid "10 minitues away from the Help you need"
-msgstr "10 минут до нужной вам помощи"
-
-#: .\templates\index-3.html:321
-msgid ""
-"Capitalize on low hanging fruit to identify a ballpark value added activity "
-"to beta test."
-msgstr "Извлеките выгоду из низко висящих фруктов, чтобы определить примерную деятельность с добавленной стоимостью для бета-тестирования."
-
-#: .\templates\index-3.html:330
-msgid "We are always ready"
-msgstr "Мы всегда готовы"
-
-#: .\templates\index-3.html:331
-msgid "Request a call back"
-msgstr "Чтобы мы перезвонили"
-
-#: .\templates\index-3.html:352
-#, fuzzy
-#| msgid "Pages"
-msgid "Send Massage"
-msgstr "Страницы"
 
 #: .\templates\index-3.html:368
 #, fuzzy

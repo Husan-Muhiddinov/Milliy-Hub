@@ -1,13 +1,14 @@
 
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
             <h1>About Us</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home </a></li>
+                <li><a href="{% url 'index' %}">Home </a></li>
                 <li>About Us</li>
             </ul>
         </div>
@@ -94,13 +95,13 @@
 
     <!-- Call Back Section -->
     <section class="call-back-section" style="background-image: url(/static/images/background/2.jpg);">
-        <div class="outer-box">        
+        <div class="outer-box">
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="content-column col-lg-6 col-md-12 col-sm-12">
                         <div class="inner-column">
-                            <h3>You are <br> 10 minitues away from the Help you need</h3>
-                            <div class="text">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.</div>
+                            <h3>{% trans 'You are' %} <br> {% trans '10 minitues away from the Help you need' %}</h3>
+                            <div class="text">{% trans 'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.' %}</div>
                         </div>
                     </div>
 
@@ -109,10 +110,11 @@
                         <div class="inner-column">
                             <div class="appointment-form">
                                 <div class="title-box">
-                                    <span>We are always ready</span>
-                                    <h3>Request a call back</h3>
+                                    <span>{% trans 'We are always ready' %}</span>
+                                    <h3>{% trans 'Request a call back' %}</h3>
                                 </div>
-                                <form method="post" action="index.html">
+                                <form method="post" action="{% url 'index' %}">
+                                    {% csrf_token %}
                                     <div class="form-group">
                                         <input type="text" name="username" placeholder="Name" required="">
                                     </div>
@@ -130,7 +132,7 @@
                                     </div>
 
                                     <div class="form-group text-right">
-                                        <button class="theme-btn btn-style-two" type="submit" name="submit-form">Send Massage</button>
+                                        <button class="theme-btn btn-style-two" type="submit" name="submit-form">{% trans 'Send Massage' %}</button>
                                     </div>
                                 </form>
                             </div>
@@ -143,28 +145,28 @@
     <!--End Call Back Section -->
 
          <!-- Integrity Section -->
-    <section class="integrity-section">
-        <div class="outer-container clearfix">
-            <!--Content Column-->
-            <div class="content-column">
-                <div class="inner-column">
-                    <div class="sec-title">
-                        <span class="title">Integrity</span>
-                        <h2>Thinking of Building</h2>
-                        <div class="text">We help global leaders with their organization’s most critical issues and opportunities. Together, we create enduring change and results.</div>
+         <section class="integrity-section">
+            <div class="outer-container clearfix">
+                <!--Content Column-->
+                <div class="content-column">
+                    <div class="inner-column">
+                        <div class="sec-title">
+                            <span class="title">{% trans 'Integrity' %}</span>
+                            <h2>{% trans 'Thinking of Building' %}</h2>
+                            <div class="text">{% trans 'We help global leaders with their organization’s most critical issues and opportunities. Together, we create enduring change and results' %}.</div>
+                        </div>
+                        <div class="graph-image"><img src="{% static 'images/resource/graph.png' %}" alt=""></div>
+                        <div class="link-box"><a href="{% url 'services' %}" class="theme-btn">{% trans 'Explore All Cases' %}</a></div>
                     </div>
-                    <div class="graph-image"><img src="{% static 'images/resource/graph.png' %}" alt=""></div>
-                    <div class="link-box"><a href="services.html" class="theme-btn">Explore All Cases</a></div>
+                </div>
+    
+                <div class="image-column" style="background-image: url(/static/images/resource/image-3.png);">
+                    <div class="inner-column">
+                        <div class="image-box"><img src="{% static 'images/resource/image-3.png' %}" alt=""></div>
+                    </div>
                 </div>
             </div>
-
-            <div class="image-column" style="background-image: url(/static/images/resource/image-3.png);">
-                <div class="inner-column">
-                    <div class="image-box"><img src="{% static 'images/resource/image-3.png' %}" alt=""></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
     <!-- End Integrity Section -->
 
 
@@ -307,41 +309,42 @@
     <section class="work-section style-two">
         <div class="auto-container">
             <div class="sec-title">
-                <span class="title">How We Work</span>
-                <h2>We Make Successful Business in 4 Steps</h2>
+                <span class="title">{% trans 'How We Work' %}</span>
+                <h2>{% trans 'We Make Successful Business in' %} {{step|length}} {% trans 'Steps' %}</h2>
             </div>
             <div class="row clearfix">
                 <!-- Work Step -->
+                {% for i in step %}
                 <div class="work-step col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <h3><span class="count">1</span> <a href="service-detail.html">Analize</a></h3>
-                        <div class="text">We deliver business results via hands-on execution and leading teams through complex change.</div>
+                        <h3><span class="count">{{ forloop.counter }}</span>{{ i.title }}</h3>
+                        <div class="text">{{ i.body }}</div>
                     </div>
                 </div>
 
                 <!-- Work Step -->
-                <div class="work-step col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="work-step col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <h3><span class="count">2</span> <a href="service-detail.html">Advise</a></h3>
                         <div class="text">We deliver business results via hands-on execution and leading teams through complex change.</div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Work Step -->
-                <div class="work-step col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="work-step col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <h3><span class="count">3</span> <a href="service-detail.html">Strategy</a></h3>
                         <div class="text">We deliver business results via hands-on execution and leading teams through complex change.</div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Work Step -->
-                <div class="work-step col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="work-step col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <h3><span class="count">4</span> <a href="service-detail.html">Result</a></h3>
                         <div class="text">We deliver business results via hands-on execution and leading teams through complex change.</div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -354,12 +357,12 @@
                 <!-- Content Column -->
                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
-                        <span class="title">About Mushawart</span>
-                        <h2>We Aim to Provide Expert Advice and Quality Service.</h2>
-                        <div class="text">We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</div>
+                        <span class="title">{% trans 'About' %} Milliy Hub</span>
+                        <h2>{% trans 'We Aim to Provide Expert Advice and Quality Service.' %}</h2>
+                        <div class="text">{% trans 'We are rethoric question ran over her cheek When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.' %}</div>
                         <div class="link-box">
-                            <a href="about.html" class="theme-btn btn-style-three">About More</a>
-                            <a href="about.html#" class="theme-btn call-btn"><i class="icon la la-phone"></i> +880 258  58215</a>
+                            <a href="{% url 'about' %}" class="theme-btn btn-style-three">{% trans 'About More' %}</a>
+                            <a href="tel:{{contac.phone_number}}" class="theme-btn call-btn"><i class="icon la la-phone"></i> {{contac.phone_number}}</a>
                         </div>
                     </div>
                 </div>

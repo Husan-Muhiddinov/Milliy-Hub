@@ -1,6 +1,7 @@
 
 {% extends "base.html" %}
 {% load static %}
+{% load i18n %}
 {% block content %}
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
@@ -23,13 +24,13 @@
                 <div class="news-block col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="image"><a href="blog-detail.html"><img src="{{ i.photo.url }}" alt=""></a></div>
+                            <div class="image"><a href="{% url 'blog_detail' blog_id=i.id %}"><img src="{{ i.photo.url }}" alt=""></a></div>
                         </div>
                         <div class="lower-content">
-                            <h3><a href="blog-detail.html">{{ i.title }}</a></h3>
+                            <h3><a href="{% url 'blog_detail' blog_id=i.id %}">{{ i.title }}</a></h3>
                             <span class="date">Post: {{ i.day }}</span>
                             <div class="text">{{ i.summary }}</div>
-                            <div class="link-box"><a href="blog-detail.html">Read More</a></div>
+                            <div class="link-box"><a href="{% url 'blog_detail' blog_id=i.id %}">Read More</a></div>
                         </div>
                     </div>
                 </div>

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-07 17:57+0500\n"
+"POT-Creation-Date: 2023-07-08 21:25+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,14 +63,16 @@ msgid "instagram_link"
 msgstr "instagram_link"
 
 #: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
+#: .\blog\models.py:64 .\blog\models.py:94
 msgid "title"
 msgstr "title"
 
-#: .\blog\models.py:27 .\blog\models.py:36
+#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:66
+#: .\blog\models.py:96
 msgid "body"
 msgstr "body"
 
-#: .\blog\models.py:34
+#: .\blog\models.py:34 .\blog\models.py:93
 msgid "icon"
 msgstr "icon"
 
@@ -100,6 +102,30 @@ msgstr "subject"
 msgid "messages"
 msgstr "Pages"
 
+#: .\blog\models.py:65 .\blog\models.py:95
+msgid "summary"
+msgstr "summary"
+
+#: .\blog\models.py:67
+msgid "author"
+msgstr "author"
+
+#: .\blog\models.py:68 .\blog\models.py:97
+msgid "photo"
+msgstr "photo"
+
+#: .\blog\models.py:69
+msgid "day"
+msgstr "day"
+
+#: .\blog\models.py:81
+msgid "blog"
+msgstr "blog"
+
+#: .\blog\models.py:82
+msgid "comment"
+msgstr "comment"
+
 #: .\main\settings.py:118
 msgid "English"
 msgstr ""
@@ -111,6 +137,96 @@ msgstr ""
 #: .\main\settings.py:120
 msgid "Uzbek"
 msgstr ""
+
+#: .\templates\about.html:102 .\templates\index-3.html:320
+msgid "You are"
+msgstr "You are"
+
+#: .\templates\about.html:102 .\templates\index-3.html:320
+msgid "10 minitues away from the Help you need"
+msgstr "10 minitues away from the Help you need"
+
+#: .\templates\about.html:103 .\templates\index-3.html:321
+msgid ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+msgstr ""
+"Capitalize on low hanging fruit to identify a ballpark value added activity "
+"to beta test."
+
+#: .\templates\about.html:112 .\templates\index-3.html:330
+msgid "We are always ready"
+msgstr "We are always ready"
+
+#: .\templates\about.html:113 .\templates\index-3.html:331
+msgid "Request a call back"
+msgstr "Request a call back"
+
+#: .\templates\about.html:134 .\templates\index-3.html:352
+#, fuzzy
+#| msgid "Pages"
+msgid "Send Massage"
+msgstr "Pages"
+
+#: .\templates\about.html:153 .\templates\index-3.html:237
+msgid "Integrity"
+msgstr "Integrity"
+
+#: .\templates\about.html:154 .\templates\index-3.html:238
+msgid "Thinking of Building"
+msgstr "Thinking of Building"
+
+#: .\templates\about.html:155 .\templates\index-3.html:239
+msgid ""
+"We help global leaders with their organization’s most critical issues and "
+"opportunities. Together, we create enduring change and results"
+msgstr ""
+"We help global leaders with their organization’s most critical issues "
+"andopportunities. Together, we create enduring change and results"
+
+#: .\templates\about.html:158 .\templates\index-3.html:242
+msgid "Explore All Cases"
+msgstr "Explore All Cases"
+
+#: .\templates\about.html:311 .\templates\index-3.html:212
+msgid "How We Work"
+msgstr "How We Work"
+
+#: .\templates\about.html:312 .\templates\index-3.html:213
+msgid "We Make Successful Business in"
+msgstr "We Make Successful Business in"
+
+#: .\templates\about.html:312 .\templates\index-3.html:213
+msgid "Steps"
+msgstr "Steps"
+
+#: .\templates\about.html:359 .\templates\base.html:147
+#: .\templates\base.html:237 .\templates\base.html:368
+#: .\templates\index-3.html:186
+msgid "About"
+msgstr "About"
+
+#: .\templates\about.html:360 .\templates\index-3.html:187
+msgid "We Aim to Provide Expert Advice and Quality Service."
+msgstr "We Aim to Provide Expert Advice and Quality Service"
+
+#: .\templates\about.html:361 .\templates\index-3.html:188
+msgid ""
+"We are rethoric question ran over her cheek When she reached the first hills "
+"of the Italic Mountains, she had a last view back on the skyline of her "
+"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
+"her own road, the Line Lane."
+msgstr ""
+"We are rethoric question ran over her cheek When she reached the first hills "
+"of the Italic Mountains, she had a last view back on the skyline of her "
+"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
+"her own road, the Line Lane."
+
+#: .\templates\about.html:363 .\templates\index-3.html:190
+#, fuzzy
+#| msgid "About"
+msgid "About More"
+msgstr "About"
 
 #: .\templates\base.html:7
 #, fuzzy
@@ -142,33 +258,34 @@ msgstr "Call Us for Any Questions"
 msgid "Home"
 msgstr "Home"
 
-#: .\templates\base.html:147 .\templates\base.html:237
-#: .\templates\base.html:368 .\templates\index-3.html:186
-msgid "About"
-msgstr "About"
-
 #: .\templates\base.html:148 .\templates\base.html:150
 #: .\templates\base.html:238 .\templates\base.html:240
+#: .\templates\service-detail.html:134
 msgid "Services"
 msgstr "Services"
 
 #: .\templates\base.html:151 .\templates\base.html:241
+#: .\templates\service-detail.html:135
 msgid "Financial Planning"
 msgstr "Financial Planning"
 
 #: .\templates\base.html:152 .\templates\base.html:242
+#: .\templates\service-detail.html:136
 msgid "Trade & Stock"
 msgstr "Trade & Stock"
 
 #: .\templates\base.html:153 .\templates\base.html:243
+#: .\templates\service-detail.html:137
 msgid "Audit & Assurance"
 msgstr "Audit & Assurance"
 
 #: .\templates\base.html:154 .\templates\base.html:244
+#: .\templates\service-detail.html:138
 msgid "Saving Strategy"
 msgstr "Saving Strategy"
 
 #: .\templates\base.html:155 .\templates\base.html:245
+#: .\templates\service-detail.html:139
 msgid "Strategic Planning"
 msgstr "Strategic Planning"
 
@@ -307,67 +424,13 @@ msgstr "We Provide Solution to"
 msgid "Grow Your Business"
 msgstr "Grow Your Business"
 
-#: .\templates\index-3.html:187
-msgid "We Aim to Provide Expert Advice and Quality Service."
-msgstr "We Aim to Provide Expert Advice and Quality Service"
-
-#: .\templates\index-3.html:188
-msgid ""
-"We are rethoric question ran over her cheek When she reached the first hills "
-"of the Italic Mountains, she had a last view back on the skyline of her "
-"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
-"her own road, the Line Lane."
-msgstr ""
-"We are rethoric question ran over her cheek When she reached the first hills "
-"of the Italic Mountains, she had a last view back on the skyline of her "
-"hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
-"her own road, the Line Lane."
-
-#: .\templates\index-3.html:190
-#, fuzzy
-#| msgid "About"
-msgid "About More"
-msgstr "About"
-
-#: .\templates\index-3.html:212
-msgid "How We Work"
-msgstr "How We Work"
-
-#: .\templates\index-3.html:213
-msgid "We Make Successful Business in"
-msgstr "We Make Successful Business in"
-
-#: .\templates\index-3.html:213
-msgid "Steps"
-msgstr "Steps"
-
-#: .\templates\index-3.html:237
-msgid "Integrity"
-msgstr "Integrity"
-
-#: .\templates\index-3.html:238
-msgid "Thinking of Building"
-msgstr "Thinking of Building"
-
-#: .\templates\index-3.html:239
-msgid ""
-"We help global leaders with their organization’s most critical issues and "
-"opportunities. Together, we create enduring change and results"
-msgstr ""
-"We help global leaders with their organization’s most critical issues "
-"andopportunities. Together, we create enduring change and results"
-
-#: .\templates\index-3.html:242
-msgid "Explore All Cases"
-msgstr "Explore All Cases"
-
-#: .\templates\index-3.html:259
+#: .\templates\index-3.html:259 .\templates\services.html:104
 #, fuzzy
 #| msgid "Our Service"
 msgid "Our Services"
 msgstr "Our Service"
 
-#: .\templates\index-3.html:260
+#: .\templates\index-3.html:260 .\templates\services.html:105
 msgid "What We Provide"
 msgstr "What We Provide"
 
@@ -384,34 +447,6 @@ msgstr "We Make Successful Business in"
 #: .\templates\index-3.html:307
 msgid "View All"
 msgstr "View All"
-
-#: .\templates\index-3.html:320
-msgid "You are"
-msgstr "You are"
-
-#: .\templates\index-3.html:320
-msgid "10 minitues away from the Help you need"
-msgstr "10 minitues away from the Help you need"
-
-#: .\templates\index-3.html:321
-msgid ""
-"Capitalize on low hanging fruit to identify a ballpark value added activity "
-"to beta test."
-msgstr "Capitalize on low hanging fruit to identify a ballpark value added activity to beta test."
-
-#: .\templates\index-3.html:330
-msgid "We are always ready"
-msgstr "We are always ready"
-
-#: .\templates\index-3.html:331
-msgid "Request a call back"
-msgstr "Request a call back"
-
-#: .\templates\index-3.html:352
-#, fuzzy
-#| msgid "Pages"
-msgid "Send Massage"
-msgstr "Pages"
 
 #: .\templates\index-3.html:368
 #, fuzzy
