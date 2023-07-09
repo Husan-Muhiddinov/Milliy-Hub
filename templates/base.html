@@ -307,26 +307,28 @@
 
                     
                     <!--Footer Column-->
+                    
                     <div class="footer-column col-lg-4 col-md-6 col-sm-12">
                         <!--Footer Column-->
                         <div class="footer-widget recent-posts">
                             <h2 class="widget-title">{% trans 'Latest News' %}</h2>
-                             <!--Footer Column-->
+                            <!--Footer Column-->
                             <div class="widget-content">
                                 <div class="post">
-                                    <div class="thumb"><a href="blog-detail.html"><img src="{% static 'images/resource/post-thumb-1.jpg' %}" alt=""></a></div>
-                                    <h4><a href="blog-detail.html">Planning Process Needs to improve your Business.</a></h4>
-                                    <span class="date">28 Dec, 2017</span>
+                                    <div class="thumb"><a href="{% url 'blog_detail' blog_id=a.id %}"><img src="{{ a.photo.url }}" alt=""></a></div>
+                                    <h4><a href="{% url 'blog_detail' blog_id=a.id %}">{{ a.title }}</a></h4>
+                                    <span class="date">{{ a.day }}</span>
                                 </div>
 
                                 <div class="post">
-                                    <div class="thumb"><a href="blog-detail.html"><img src="{% static 'images/resource/post-thumb-2.jpg' %}" alt=""></a></div>
-                                    <h4><a href="blog-detail.html">7 Tips To Move Your Project Move Forward.</a></h4>
-                                    <span class="date">13 Oct, 2017</span>
+                                    <div class="thumb"><a href="{% url 'blog_detail' blog_id=b.id %}"><img src="{{ b.photo.url }}" alt=""></a></div>
+                                    <h4><a href="{% url 'blog_detail' blog_id=b.id %}">{{ b.title }}</a></h4>
+                                    <span class="date">{{ b.day }}</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
 
 
                     <!--Footer Column-->

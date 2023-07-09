@@ -56,3 +56,8 @@ class BlogModelAdmin(MyTranslationAdmin):
 @admin.register(Services)
 class ServicesModelAdmin(MyTranslationAdmin):
     list_display = ['icon','title', 'summary', 'body', 'photo']
+
+
+@admin.register(OurTeam)
+class OurTeamModelAdmin(MyTranslationAdmin):
+    list_display = ['image','name', 'job', 'facebook_link', 'instagram_link', 'email']

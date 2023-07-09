@@ -98,3 +98,15 @@ class Services(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+class OurTeam(models.Model):
+    image = models.ImageField(upload_to="team_images", null=True, verbose_name=_('image'))
+    name = models.CharField(max_length=30, null=True, verbose_name=_('name'))
+    job = models.CharField(max_length=50, null=True, verbose_name=_('job'))
+    facebook_link = models.CharField(max_length=30, null=True, verbose_name=_('facebook_link'))
+    instagram_link = models.CharField(max_length=30, null=True, verbose_name=_('instagram_link'))
+    email = models.EmailField(null=True, verbose_name=_('email'))
+
+    def __str__(self):
+        return self.name

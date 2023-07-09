@@ -26,7 +26,7 @@
                     <div class="inner-box" style="background-image: url({{i.photo.url}});">
                         <div class="content-box">
                             <span class="icon flaticon-{{ i.icon }}"></span>
-                            <h3><a href="service-detail.html">{{ i.title }}</a></h3>
+                            <h3><a href="{% url 'service_detail' servic_id=i.id %}">{{ i.title }}</a></h3>
                             <div class="text">{{ i.summary }}</div>
                             <div class="link-box"><a href="{% url 'service_detail' servic_id=i.id %}">Read More <i class="la la-angle-double-right"></i></a></div>
                         </div>

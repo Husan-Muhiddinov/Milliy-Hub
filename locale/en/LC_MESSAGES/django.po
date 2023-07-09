@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-08 21:25+0500\n"
+"POT-Creation-Date: 2023-07-09 16:56+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\blog\models.py:9 .\blog\models.py:54
+#: .\blog\models.py:9 .\blog\models.py:54 .\blog\models.py:109
 msgid "email"
 msgstr "email"
 
@@ -46,7 +46,7 @@ msgstr "work_updated_at"
 msgid "phone_number"
 msgstr "phone_number"
 
-#: .\blog\models.py:16
+#: .\blog\models.py:16 .\blog\models.py:107
 msgid "facebook_link"
 msgstr "facebook_link"
 
@@ -58,7 +58,7 @@ msgstr "linkedin_link"
 msgid "youtube_link"
 msgstr "youtube_link"
 
-#: .\blog\models.py:19
+#: .\blog\models.py:19 .\blog\models.py:108
 msgid "instagram_link"
 msgstr "instagram_link"
 
@@ -76,7 +76,7 @@ msgstr "body"
 msgid "icon"
 msgstr "icon"
 
-#: .\blog\models.py:43
+#: .\blog\models.py:43 .\blog\models.py:104
 msgid "image"
 msgstr "image"
 
@@ -88,7 +88,7 @@ msgstr "work"
 msgid "position"
 msgstr "position"
 
-#: .\blog\models.py:53
+#: .\blog\models.py:53 .\blog\models.py:105
 msgid "name"
 msgstr "name"
 
@@ -126,6 +126,10 @@ msgstr "blog"
 msgid "comment"
 msgstr "comment"
 
+#: .\blog\models.py:106
+msgid "job"
+msgstr ""
+
 #: .\main\settings.py:118
 msgid "English"
 msgstr ""
@@ -138,15 +142,15 @@ msgstr ""
 msgid "Uzbek"
 msgstr ""
 
-#: .\templates\about.html:102 .\templates\index-3.html:320
+#: .\templates\about.html:103 .\templates\index-3.html:320
 msgid "You are"
 msgstr "You are"
 
-#: .\templates\about.html:102 .\templates\index-3.html:320
+#: .\templates\about.html:103 .\templates\index-3.html:320
 msgid "10 minitues away from the Help you need"
 msgstr "10 minitues away from the Help you need"
 
-#: .\templates\about.html:103 .\templates\index-3.html:321
+#: .\templates\about.html:104 .\templates\index-3.html:321
 msgid ""
 "Capitalize on low hanging fruit to identify a ballpark value added activity "
 "to beta test."
@@ -154,29 +158,29 @@ msgstr ""
 "Capitalize on low hanging fruit to identify a ballpark value added activity "
 "to beta test."
 
-#: .\templates\about.html:112 .\templates\index-3.html:330
+#: .\templates\about.html:113 .\templates\index-3.html:330
 msgid "We are always ready"
 msgstr "We are always ready"
 
-#: .\templates\about.html:113 .\templates\index-3.html:331
+#: .\templates\about.html:114 .\templates\index-3.html:331
 msgid "Request a call back"
 msgstr "Request a call back"
 
-#: .\templates\about.html:134 .\templates\index-3.html:352
+#: .\templates\about.html:135 .\templates\index-3.html:352
 #, fuzzy
 #| msgid "Pages"
 msgid "Send Massage"
 msgstr "Pages"
 
-#: .\templates\about.html:153 .\templates\index-3.html:237
+#: .\templates\about.html:154 .\templates\index-3.html:237
 msgid "Integrity"
 msgstr "Integrity"
 
-#: .\templates\about.html:154 .\templates\index-3.html:238
+#: .\templates\about.html:155 .\templates\index-3.html:238
 msgid "Thinking of Building"
 msgstr "Thinking of Building"
 
-#: .\templates\about.html:155 .\templates\index-3.html:239
+#: .\templates\about.html:156 .\templates\index-3.html:239
 msgid ""
 "We help global leaders with their organization’s most critical issues and "
 "opportunities. Together, we create enduring change and results"
@@ -184,33 +188,33 @@ msgstr ""
 "We help global leaders with their organization’s most critical issues "
 "andopportunities. Together, we create enduring change and results"
 
-#: .\templates\about.html:158 .\templates\index-3.html:242
+#: .\templates\about.html:159 .\templates\index-3.html:242
 msgid "Explore All Cases"
 msgstr "Explore All Cases"
 
-#: .\templates\about.html:311 .\templates\index-3.html:212
+#: .\templates\about.html:312 .\templates\index-3.html:212
 msgid "How We Work"
 msgstr "How We Work"
 
-#: .\templates\about.html:312 .\templates\index-3.html:213
+#: .\templates\about.html:313 .\templates\index-3.html:213
 msgid "We Make Successful Business in"
 msgstr "We Make Successful Business in"
 
-#: .\templates\about.html:312 .\templates\index-3.html:213
+#: .\templates\about.html:313 .\templates\index-3.html:213
 msgid "Steps"
 msgstr "Steps"
 
-#: .\templates\about.html:359 .\templates\base.html:147
-#: .\templates\base.html:237 .\templates\base.html:368
-#: .\templates\index-3.html:186
+#: .\templates\about.html:361 .\templates\base.html:147
+#: .\templates\base.html:237 .\templates\base.html:370
+#: .\templates\index-3.html:186 .\templates\index-3.html:190
 msgid "About"
 msgstr "About"
 
-#: .\templates\about.html:360 .\templates\index-3.html:187
+#: .\templates\about.html:362 .\templates\index-3.html:187
 msgid "We Aim to Provide Expert Advice and Quality Service."
 msgstr "We Aim to Provide Expert Advice and Quality Service"
 
-#: .\templates\about.html:361 .\templates\index-3.html:188
+#: .\templates\about.html:363 .\templates\index-3.html:188
 msgid ""
 "We are rethoric question ran over her cheek When she reached the first hills "
 "of the Italic Mountains, she had a last view back on the skyline of her "
@@ -222,7 +226,7 @@ msgstr ""
 "hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
 "her own road, the Line Lane."
 
-#: .\templates\about.html:363 .\templates\index-3.html:190
+#: .\templates\about.html:365
 #, fuzzy
 #| msgid "About"
 msgid "About More"
@@ -260,32 +264,33 @@ msgstr "Home"
 
 #: .\templates\base.html:148 .\templates\base.html:150
 #: .\templates\base.html:238 .\templates\base.html:240
-#: .\templates\service-detail.html:134
+#: .\templates\index-3.html:89 .\templates\index-3.html:259
+#: .\templates\service-detail.html:135
 msgid "Services"
 msgstr "Services"
 
 #: .\templates\base.html:151 .\templates\base.html:241
-#: .\templates\service-detail.html:135
+#: .\templates\service-detail.html:136
 msgid "Financial Planning"
 msgstr "Financial Planning"
 
 #: .\templates\base.html:152 .\templates\base.html:242
-#: .\templates\service-detail.html:136
+#: .\templates\service-detail.html:137
 msgid "Trade & Stock"
 msgstr "Trade & Stock"
 
 #: .\templates\base.html:153 .\templates\base.html:243
-#: .\templates\service-detail.html:137
+#: .\templates\service-detail.html:138
 msgid "Audit & Assurance"
 msgstr "Audit & Assurance"
 
 #: .\templates\base.html:154 .\templates\base.html:244
-#: .\templates\service-detail.html:138
+#: .\templates\service-detail.html:139
 msgid "Saving Strategy"
 msgstr "Saving Strategy"
 
 #: .\templates\base.html:155 .\templates\base.html:245
-#: .\templates\service-detail.html:139
+#: .\templates\service-detail.html:140
 msgid "Strategic Planning"
 msgstr "Strategic Planning"
 
@@ -295,6 +300,7 @@ msgstr "Service Detail"
 
 #: .\templates\base.html:159 .\templates\base.html:161
 #: .\templates\base.html:249 .\templates\base.html:251
+#: .\templates\index-3.html:284
 msgid "Cases"
 msgstr "Cases"
 
@@ -324,7 +330,7 @@ msgid "Blog Detail"
 msgstr "Blog Detail"
 
 #: .\templates\base.html:177 .\templates\base.html:267
-#: .\templates\base.html:372
+#: .\templates\base.html:374
 msgid "Contact"
 msgstr "Contact"
 
@@ -338,51 +344,51 @@ msgstr ""
 "years of experience, we always ensure that you get the best guidance from "
 "the best people in the entire industry."
 
-#: .\templates\base.html:313 .\templates\index-3.html:369
+#: .\templates\base.html:314 .\templates\index-3.html:369
 msgid "Latest News"
 msgstr "Latest News"
 
-#: .\templates\base.html:335
+#: .\templates\base.html:337
 msgid "Newsletter"
 msgstr "News letter"
 
-#: .\templates\base.html:337
+#: .\templates\base.html:339
 msgid "Sign up for our mailing list to Get Latest updates And offers."
 msgstr "Sign up for our mailing list to Get Latest updates And offers."
 
-#: .\templates\base.html:347
+#: .\templates\base.html:349
 msgid "Follow Us"
 msgstr "Follow Us"
 
-#: .\templates\base.html:369
+#: .\templates\base.html:371
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: .\templates\base.html:370
+#: .\templates\base.html:372
 msgid "Investors"
 msgstr "Investors"
 
-#: .\templates\base.html:371
+#: .\templates\base.html:373
 msgid "Legals"
 msgstr "Legals"
 
-#: .\templates\base.html:376
+#: .\templates\base.html:378
 msgid "Designed By"
 msgstr "Designed By"
 
-#: .\templates\base.html:376
+#: .\templates\base.html:378
 msgid "ARY Themes"
 msgstr "Sanjarbek Usmonov"
 
-#: .\templates\base.html:397
+#: .\templates\base.html:399
 msgid "Choose Your Color"
 msgstr "Choose Your Color"
 
-#: .\templates\base.html:413
+#: .\templates\base.html:415
 msgid "Purchase now"
 msgstr "Purchase now"
 
-#: .\templates\base.html:416
+#: .\templates\base.html:418
 msgid ""
 "You will find much more options for colors and styling in admin panel. This "
 "color picker is used only for demonstation purposes."
@@ -410,11 +416,10 @@ msgstr ""
 msgid "Know MORE"
 msgstr "Know MORE"
 
-#: .\templates\index-3.html:89 .\templates\index-3.html:170
-#, fuzzy
-#| msgid "Our Service"
-msgid "Our Service"
-msgstr "Our Service"
+#: .\templates\index-3.html:89 .\templates\index-3.html:259
+#: .\templates\index-3.html:284 .\templates\index-3.html:368
+msgid "Our"
+msgstr ""
 
 #: .\templates\index-3.html:114
 msgid "We Provide Solution to"
@@ -424,13 +429,17 @@ msgstr "We Provide Solution to"
 msgid "Grow Your Business"
 msgstr "Grow Your Business"
 
-#: .\templates\index-3.html:259 .\templates\services.html:104
+#: .\templates\index-3.html:170
 #, fuzzy
 #| msgid "Our Service"
-msgid "Our Services"
+msgid "Our Service"
 msgstr "Our Service"
 
-#: .\templates\index-3.html:260 .\templates\services.html:105
+#: .\templates\index-3.html:190
+msgid "More"
+msgstr "More"
+
+#: .\templates\index-3.html:260 .\templates\services.html:106
 msgid "What We Provide"
 msgstr "What We Provide"
 
@@ -441,7 +450,7 @@ msgstr "Our Best Work"
 #: .\templates\index-3.html:284
 #, fuzzy
 #| msgid "We Make Successful Business in"
-msgid "Our Successful Cases"
+msgid "Successful"
 msgstr "We Make Successful Business in"
 
 #: .\templates\index-3.html:307
@@ -451,5 +460,21 @@ msgstr "View All"
 #: .\templates\index-3.html:368
 #, fuzzy
 #| msgid "Blog"
-msgid "Our Blogs"
+msgid "Blogs"
 msgstr "Blog"
+
+#: .\templates\services.html:105
+#, fuzzy
+#| msgid "Our Service"
+msgid "Our Services"
+msgstr "Our Service"
+
+#, fuzzy
+#~| msgid "Blog"
+#~ msgid "Our Blogs"
+#~ msgstr "Blog"
+
+#, fuzzy
+#~| msgid "Services"
+#~ msgid "Service"
+#~ msgstr "Services"

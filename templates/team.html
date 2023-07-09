@@ -10,7 +10,7 @@
         <div class="auto-container">
             <h1>Our Team</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home </a></li>
+                <li><a href="{% url 'index' %}">Home </a></li>
                 <li>Team</li>
             </ul>
         </div>
@@ -27,27 +27,27 @@
 
             <div class="row clearfix">
                 <!-- Team Block -->
+                {% for i in ourteam %}
                 <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="image"><a href="{% static 'images/resource/team-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-1.jpg' %}" alt=""></a></div>
+                            <div class="image"><a href="{% static 'images/resource/team-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{{ i.image.url }}" alt=""></a></div>
                             <ul class="social-links">
-                                <li><a href="team.html#"><i class="la la-facebook-official"></i></a></li>
-                                <li><a href="team.html#"><i class="la la-twitter"></i></a></li>
-                                <li><a href="team.html#"><i class="la la-google-plus"></i></a></li>
-                                <li><a href="team.html#"><i class="la la-dribbble"></i></a></li>
-                                <li><a href="team.html#"><i class="la la-pinterest"></i></a></li>
+                                <li><a href="https://t.me/{{i.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
+                                <li><a href="https://t.me/{{i.instagram_link}}"><i class="la la-instagram"></i></a></li>
+                                <li><a href="mailto:{{i.email}}"><i class="la la-google-plus"></i></a></li>
                             </ul>
                         </div>
                         <div class="info-box">
-                            <h4 class="name"><a href="team.html">Felicia Eberly</a></h4>
-                            <span class="designation">Creative Director</span>
+                            <h4 class="name"><a href="team.html">{{ i.name }}</a></h4>
+                            <span class="designation">{{ i.job }}</span>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-2.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-2.jpg' %}" alt=""></a></div>
@@ -64,10 +64,10 @@
                             <span class="designation">Finance Manager</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-3.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-3.jpg' %}" alt=""></a></div>
@@ -84,10 +84,10 @@
                             <span class="designation">Marketing Manager</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-4.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-4.jpg' %}" alt=""></a></div>
@@ -104,10 +104,10 @@
                             <span class="designation">CEO Management</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-5.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-5.jpg' %}" alt=""></a></div>
@@ -124,10 +124,10 @@
                             <span class="designation">Creative Director</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-6.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-6.jpg' %}" alt=""></a></div>
@@ -144,10 +144,10 @@
                             <span class="designation">Finance Manager</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-7.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-7.jpg' %}" alt=""></a></div>
@@ -164,10 +164,10 @@
                             <span class="designation">Marketing Manager</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Team Block -->
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+                <!-- <div class="team-block col-lg-3 col-md-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-8.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/resource/team-8.jpg' %}" alt=""></a></div>
@@ -184,7 +184,7 @@
                             <span class="designation">CEO Management</span>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

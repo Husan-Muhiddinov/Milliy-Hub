@@ -1,19 +1,25 @@
 from django.shortcuts import render
 from django.views import View
 from django.contrib import messages
-from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services, OurTeam
 # Create your views here.
 
 def for_all_pages(request):
+    blog = Blog.objects.all()
+    a=Blog.objects.order_by('id')[Blog.objects.count()-1]
+    b=Blog.objects.order_by('id')[Blog.objects.count()-2]
     contac= Contact.objects.all().last()
-    return {"contac": contac}
+    return {'contac': contac, 'a': a, 'b': b, 'blog': blog}
 
 
 def index(request):
     contac= Contact.objects.all().last()
     step = Steps.objects.all()
     card = Card.objects.all()
+    blog = Blog.objects.all()
     team = Team.objects.all()
+    a=Blog.objects.order_by('id')[Blog.objects.count()-1]
+    b=Blog.objects.order_by('id')[Blog.objects.count()-2]
     if request.method == 'POST':
         call = CallBack(
             name=request.POST['username'],
@@ -27,7 +33,10 @@ def index(request):
         'contac': contac, 
         'step': step, 
         'card': card, 
-        'team': team, 
+        'team': team,
+        'blog': blog,
+        'a': a,
+        'b': b,
         }
     return render(request, "index-3.html", context=context)
 
@@ -100,7 +109,11 @@ def pricing(request):
 
 
 def team(request):
-    return render(request, 'team.html')
+    ourteam = OurTeam.objects.all()
+    context = {
+        'ourteam': ourteam,
+    }
+    return render(request, 'team.html', context=context)
 
 
 def blog(request):
