@@ -49,10 +49,10 @@
                     </div>
                     <div class="top-right clearfix">
                         <ul class="social-icon-one">
-                            <li><a href="https://t.me/{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
-                            <li><a href="https://t.me/{{contac.instagram_link}}"><i class="la la-instagram"></i></a></li>
-                            <li><a href="https://t.me/{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a></li>
-                            <li><a href="https://t.me/{{contac.youtube_link}}"><i class="la la-youtube"></i></a></li>
+                            <li><a href="https://{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
+                            <li><a href="https://{{contac.instagram_link}}"><i class="la la-instagram"></i></a></li>
+                            <li><a href="https://{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a></li>
+                            <li><a href="https://{{contac.youtube_link}}"><i class="la la-youtube"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
             <div class="auto-container">
                 <div class="clearfix">
                     <div class="logo-outer">
-                        <div class="logo"><a href="index.html"><img src="{% static 'images/logo-2.png' %}" alt="" title=""></a></div>
+                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-2.png' %}" alt="" title=""></a></div>
                     </div>
 
                     <div class="pull-left upper-left clearfix">
@@ -153,14 +153,14 @@
                                             <li><a href="{% url 'audit_assurance' %}">{% trans 'Audit & Assurance' %}</a></li>
                                             <li><a href="{% url 'saving_strategy' %}">{% trans 'Saving Strategy' %}</a></li>
                                             <li><a href="{% url 'strategic_planning' %}">{% trans 'Strategic Planning' %}</a></li>
-                                            <li><a href="services_detail.html">{% trans 'Service Detail' %}</a></li>
+                                            <!-- <li><a href="services_detail.html">{% trans 'Service Detail' %}</a></li> -->
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="index-3.html#">{% trans 'Cases' %}</a>
-                                        <ul>
+                                    <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a>
+                                        <!-- <ul>
                                             <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a></li>
                                             <li><a href="{% url 'case_detail' %}">{% trans 'Case Detail' %}</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li class="dropdown"><a href="index-3.html#">{% trans 'Pages' %}</a>
                                         <ul>
@@ -168,11 +168,11 @@
                                             <li><a href="{% url 'team' %}">{% trans 'Our Team' %}</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="index-3.html#">{% trans 'Blog' %}</a>
-                                        <ul>
+                                    <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a>
+                                        <!-- <ul>
                                             <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a></li>
                                             <li><a href="blog-detail.html">{% trans 'Blog Detail' %}</a></li>
-                                        </ul>
+                                        </ul> -->
                                     </li>
                                     <li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
                                 </ul>
@@ -211,7 +211,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="{% static 'images/logo-small.png' %}" alt="" title=""></a>
+                    <a href="{% url 'index' %}}" title=""><img src="{% static 'images/logo-small.png' %}" alt="" title=""></a>
                 </div>
 
                 <!--Right Col-->
@@ -243,14 +243,14 @@
                                         <li><a href="{% url 'audit_assurance' %}">{% trans 'Audit & Assurance' %}</a></li>
                                         <li><a href="{% url 'saving_strategy' %}">{% trans 'Saving Strategy' %}</a></li>
                                         <li><a href="{% url 'strategic_planning' %}">{% trans 'Strategic Planning' %}</a></li>
-                                        <li><a href="services_detail.html">{% trans 'Service Detail' %}</a></li>
+                                        <!-- <li><a href="services_detail.html">{% trans 'Service Detail' %}</a></li> -->
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="index-3.html#">{% trans 'Cases' %}</a>
-                                    <ul>
+                                <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a>
+                                    <!-- <ul>
                                         <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a></li>
                                         <li><a href="{% url 'case_detail' %}">{% trans 'Case Detail' %}</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li class="dropdown"><a href="index-3.html#">{% trans 'Pages' %}</a>
                                     <ul>
@@ -258,11 +258,11 @@
                                         <li><a href="{% url 'team' %}">{% trans 'Our Team' %}</a></li>
                                     </ul>
                                 </li>
-                                <li class="dropdown"><a href="index-3.html#">{% trans 'Blog' %}</a>
-                                    <ul>
+                                <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a>
+                                    <!-- <ul>
                                         <li><a href="{% url 'blog' %}">{% trans 'Blog' %}</a></li>
                                         <li><a href="blog-detail.html">{% trans 'Blog Detail' %}</a></li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li><a href="{% url 'contact' %}">{% trans 'Contact' %}</a></li>
                             </ul>
@@ -348,10 +348,10 @@
                                 <div class="social-links">
                                     <h4>{% trans 'Follow Us' %}</h4>
                                     <ul class="social-icon-two">
-                                        <li><a href="https://t.me/{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
-                                        <li><a href="https://t.me/{{contac.instagram_link}}"><i class="la la-instagram"></i></a></li>
-                                        <li><a href="https://t.me/{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a></li>
-                                        <li><a href="https://t.me/{{contac.youtube_link}}"><i class="la la-youtube"></i></a></li>
+                                        <li><a href="https://{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
+                                        <li><a href="https://{{contac.instagram_link}}"><i class="la la-instagram"></i></a></li>
+                                        <li><a href="https://{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a></li>
+                                        <li><a href="https://{{contac.youtube_link}}"><i class="la la-youtube"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -441,6 +441,8 @@
 <script src="{% static 'js/owl.js' %}"></script>
 <script src="{% static 'js/wow.js' %}"></script>
 <script src="{% static 'js/appear.js' %}"></script>
+<script src="{% static 'js/sticky.js' %}"></script>
+<script src="{% static 'js/mixitup.js' %}"></script>
 <script src="{% static 'js/validate.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
 <script src="{% static 'js/color-settings.js' %}"></script>

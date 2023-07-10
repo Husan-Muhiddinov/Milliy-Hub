@@ -34,11 +34,10 @@
                                 <!-- Post Share Option -->
                                 <div class="post-share-options">
                                     <div class="social-links sticky-box">
-                                        <a href="blog-detail.html#"><span class="la la-facebook"></span></a>
-                                        <a href="blog-detail.html#"><span class="la la-twitter"></span></a>
-                                        <a href="blog-detail.html#"><span class="la la-google-plus"></span></a>
-                                        <a href="blog-detail.html#"><span class="la la-dribbble"></span></a>
-                                        <a href="blog-detail.html#"><span class="la la-pinterest"></span></a>
+                                        <a href="https://{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a>
+                                        <a href="https://{{contac.instagram_link}}"><i class="la la-instagram"></i></a>
+                                        <a href="https://{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a>
+                                        <a href="https://{{contac.youtube_link}}"><i class="la la-youtube"></i></a>
                                         <h4>Share:</h4>
                                     </div>
                                 </div>
@@ -158,35 +157,35 @@
                     <aside class="sidebar default-sidebar">
                         
                         <!--search box-->
-                        <div class="sidebar-widget search-box">
+                        <!-- <div class="sidebar-widget search-box">
                             <form method="post" action="blog.html">
                                 <div class="form-group">
                                     <input type="search" name="search-field" value="" placeholder="Search....." required="">
                                     <button type="submit"><span class="icon la la-search"></span></button>
                                 </div>
                             </form>
-                        </div>
+                        </div> -->
 
                                                 <!-- Latest News -->
                         <div class="sidebar-widget latest-news">
-                            <div class="sidebar-title"><h2>Recent Posts</h2></div>
+                            <div class="sidebar-title"><h2>{% trans 'Recent Posts' %}</h2></div>
                             <div class="widget-content">
                                 <article class="post">
-                                    <div class="post-thumb"><a href="blog-detail.html"><img src="{% static 'images/resource/post-thumb-3.jpg' %}" alt=""></a></div>
-                                    <h3><a href="blog-detail.html">Our operations worldwide have been neutral.</a></h3>
-                                    <div class="post-info">Dec. 20, 2017</div>
+                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=a.id %}"><img src="{{ a.photo.url }}" alt=""></a></div>
+                                    <h3><a href="{% url 'blog_detail' blog_id=a.id %}">{{ a.title }}</a></h3>
+                                    <div class="post-info">{{ a.day }}</div>
                                 </article>
 
                                 <article class="post">
-                                    <div class="post-thumb"><a href="blog-detail.html"><img src="{% static 'images/resource/post-thumb-4.jpg' %}" alt=""></a></div>
-                                    <h3><a href="blog-detail.html">Our operations worldwide have been neutral.</a></h3>
-                                    <div class="post-info">Dec. 20, 2017</div>
+                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=b.id %}"><img src="{{ b.photo.url }}" alt=""></a></div>
+                                    <h3><a href="{% url 'blog_detail' blog_id=b.id %}">{{ b.title }}</a></h3>
+                                    <div class="post-info">{{ b.day }}</div>
                                 </article>
 
                                 <article class="post">
-                                    <div class="post-thumb"><a href="blog-detail.html"><img src="{% static 'images/resource/post-thumb-5.jpg' %}" alt=""></a></div>
-                                    <h3><a href="blog-detail.html">A digital prescription for the pharma industry.</a></h3>
-                                    <div class="post-info">Dec. 20, 2017</div>
+                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=c.id %}"><img src="{{ c.photo.url }}" alt=""></a></div>
+                                    <h3><a href="{% url 'blog_detail' blog_id=c.id %}">{{ c.title }}</a></h3>
+                                    <div class="post-info">{{ c.day }}</div>
                                 </article>
                             </div>
                         </div>
@@ -230,12 +229,12 @@
         <div class="auto-container">
             <div class="outer-box clearfix">
                 <div class="title-column">
-                    <h3>Provide Solutions For the Realiable Growth</h3>
+                    <h3>{% trans 'Provide Solutions For the Realiable Growth' %}</h3>
                 </div>
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">Get A Quotes</a>
+                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

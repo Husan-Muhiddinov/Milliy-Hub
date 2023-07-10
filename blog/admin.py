@@ -44,13 +44,13 @@ class CallBackModelAdmin(admin.ModelAdmin):
 
 
 @admin.register(Comment)
-class CommentkModelAdmin(admin.ModelAdmin):
+class CommentModelAdmin(admin.ModelAdmin):
     list_display = ['blog', 'comment']
 
 
 @admin.register(Blog)
 class BlogModelAdmin(MyTranslationAdmin):
-    list_display = ['title', 'summary', 'body', 'author', 'photo', 'day']
+    list_display = ['title', 'summary', 'body', 'author', 'photo']
 
 
 @admin.register(Services)
@@ -61,3 +61,30 @@ class ServicesModelAdmin(MyTranslationAdmin):
 @admin.register(OurTeam)
 class OurTeamModelAdmin(MyTranslationAdmin):
     list_display = ['image','name', 'job', 'facebook_link', 'instagram_link', 'email']
+
+
+@admin.register(About)
+class AboutModelAdmin(MyTranslationAdmin):
+    list_display = ['title', 'body', 'consultants', 'awards', 'cases', 'our_mission', 'our_vision']
+
+
+@admin.register(Faqs)
+class FaqsModelAdmin(MyTranslationAdmin):
+    list_display = ['question', 'answer']
+
+
+@admin.register(Our_keys_of_service)
+class Our_keys_of_serviceModelAdmin(MyTranslationAdmin):
+    list_display = ['title', 'body', 'benifits', 'mutual_funds', 'company_growth']
+
+
+
+@admin.register(Testimonial)
+class TestimonialModelAdmin(MyTranslationAdmin):
+    list_display = ['image', 'name', 'position', 'description']
+
+
+
+@admin.register(Addvertising)
+class AddvertisingModelAdmin(admin.ModelAdmin):
+    list_display = ['photo', 'link']

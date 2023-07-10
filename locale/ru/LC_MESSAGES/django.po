@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-09 16:56+0500\n"
+"POT-Creation-Date: 2023-07-10 15:33+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,129 +20,155 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\blog\models.py:9 .\blog\models.py:54 .\blog\models.py:109
+#: .\blog\models.py:10 .\blog\models.py:55 .\blog\models.py:112
 msgid "email"
 msgstr "электронная почта"
 
-#: .\blog\models.py:10
+#: .\blog\models.py:11
 msgid "address"
 msgstr "адрес"
 
-#: .\blog\models.py:11
+#: .\blog\models.py:12
 msgid "start_work"
 msgstr "Дата начала"
 
-#: .\blog\models.py:12
+#: .\blog\models.py:13
 msgid "finish_work"
 msgstr "Конец рабочего дня"
 
-#: .\blog\models.py:13
+#: .\blog\models.py:14
 msgid "work_created_at"
 msgstr "Время окончания"
 
-#: .\blog\models.py:14
+#: .\blog\models.py:15
 msgid "work_updated_at"
 msgstr "Время начать"
 
-#: .\blog\models.py:15
+#: .\blog\models.py:16
 msgid "phone_number"
 msgstr "номер телефона"
 
-#: .\blog\models.py:16 .\blog\models.py:107
+#: .\blog\models.py:17 .\blog\models.py:110
 msgid "facebook_link"
 msgstr "ссылка на фейсбук"
 
-#: .\blog\models.py:17
+#: .\blog\models.py:18
 msgid "linkedin_link"
 msgstr "Ссылка на linkedin"
 
-#: .\blog\models.py:18
+#: .\blog\models.py:19
 msgid "youtube_link"
 msgstr "ссылка на ютуб"
 
-#: .\blog\models.py:19 .\blog\models.py:108
+#: .\blog\models.py:20 .\blog\models.py:111
 msgid "instagram_link"
 msgstr "ссылка на инстаграм"
 
-#: .\blog\models.py:26 .\blog\models.py:35 .\blog\models.py:44
-#: .\blog\models.py:64 .\blog\models.py:94
+#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:45
+#: .\blog\models.py:65 .\blog\models.py:97
 msgid "title"
 msgstr "заголовок"
 
-#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:66
-#: .\blog\models.py:96
+#: .\blog\models.py:28 .\blog\models.py:37 .\blog\models.py:67
+#: .\blog\models.py:99
 msgid "body"
 msgstr "тело"
 
-#: .\blog\models.py:34 .\blog\models.py:93
+#: .\blog\models.py:35 .\blog\models.py:96
 msgid "icon"
 msgstr "икона"
 
-#: .\blog\models.py:43 .\blog\models.py:104
+#: .\blog\models.py:44 .\blog\models.py:107
 msgid "image"
 msgstr "изображение"
 
-#: .\blog\models.py:45
+#: .\blog\models.py:46
 msgid "work"
 msgstr "работа"
 
-#: .\blog\models.py:46
+#: .\blog\models.py:47
 msgid "position"
 msgstr "позиция"
 
-#: .\blog\models.py:53 .\blog\models.py:105
+#: .\blog\models.py:54 .\blog\models.py:108
 msgid "name"
 msgstr "имя"
 
-#: .\blog\models.py:55
+#: .\blog\models.py:56
 msgid "subject"
 msgstr "предмет"
 
-#: .\blog\models.py:56
+#: .\blog\models.py:57
 #, fuzzy
 #| msgid "Pages"
 msgid "messages"
 msgstr "Страницы"
 
-#: .\blog\models.py:65 .\blog\models.py:95
+#: .\blog\models.py:66 .\blog\models.py:98
 msgid "summary"
 msgstr "заголовок"
 
-#: .\blog\models.py:67
+#: .\blog\models.py:69
 msgid "author"
 msgstr "автор"
 
-#: .\blog\models.py:68 .\blog\models.py:97
+#: .\blog\models.py:70 .\blog\models.py:100
 msgid "photo"
 msgstr "Фото"
 
-#: .\blog\models.py:69
+#: .\blog\models.py:71
 msgid "day"
 msgstr "день"
 
-#: .\blog\models.py:81
+#: .\blog\models.py:72
+#, fuzzy
+#| msgid "work_updated_at"
+msgid "updated_at"
+msgstr "Время начать"
+
+#: .\blog\models.py:84
 msgid "blog"
 msgstr "блог"
 
-#: .\blog\models.py:82
+#: .\blog\models.py:85
 msgid "comment"
 msgstr "комментарий"
 
-#: .\blog\models.py:106
+#: .\blog\models.py:109
 msgid "job"
 msgstr ""
 
-#: .\main\settings.py:118
+#: .\main\settings.py:121
 msgid "English"
 msgstr "Английский"
 
-#: .\main\settings.py:119
+#: .\main\settings.py:122
 msgid "Russian"
 msgstr "Русский"
 
-#: .\main\settings.py:120
+#: .\main\settings.py:123
 msgid "Uzbek"
 msgstr "узбекский"
+
+#: .\templates\Strategic-planning.html:166
+#: .\templates\audit-and-assurance.html:166 .\templates\blog-detail.html:232
+#: .\templates\blog.html:87 .\templates\case-detail.html:103
+#: .\templates\contact.html:130 .\templates\financial-planning.html:166
+#: .\templates\pricing.html:93 .\templates\saving-strategy.html:166
+#: .\templates\service-detail.html:166 .\templates\team.html:198
+#: .\templates\trade-and-stock.html:166
+msgid "Provide Solutions For the Realiable Growth"
+msgstr "Предоставьте решения для реального роста"
+
+#: .\templates\Strategic-planning.html:171
+#: .\templates\audit-and-assurance.html:171 .\templates\blog-detail.html:237
+#: .\templates\blog.html:92 .\templates\case-detail.html:108
+#: .\templates\contact.html:135 .\templates\financial-planning.html:171
+#: .\templates\pricing.html:98 .\templates\saving-strategy.html:171
+#: .\templates\service-detail.html:171 .\templates\team.html:203
+#: .\templates\trade-and-stock.html:171
+msgid "Get A Quotes"
+msgstr "Получить котировки"
 
 #: .\templates\about.html:103 .\templates\index-3.html:320
 msgid "You are"
@@ -326,6 +352,7 @@ msgstr "Наша команда"
 
 #: .\templates\base.html:171 .\templates\base.html:173
 #: .\templates\base.html:261 .\templates\base.html:263
+#: .\templates\index-3.html:368
 msgid "Blog"
 msgstr "Блог"
 
@@ -402,6 +429,34 @@ msgstr ""
 "Вы найдете больше вариантов цветов и стилей в панели администратора. Эта "
 "палитра цветов предназначена только для демонстрационных целей."
 
+#: .\templates\blog-detail.html:171
+msgid "Recent Posts"
+msgstr "Недавние Посты"
+
+#: .\templates\cases.html:27
+msgid "All"
+msgstr "Все"
+
+#: .\templates\cases.html:28
+msgid "Fintech"
+msgstr "Финтех"
+
+#: .\templates\cases.html:29
+#, fuzzy
+#| msgid "Investors"
+msgid "Investing"
+msgstr "Инвесторы"
+
+#: .\templates\cases.html:30
+msgid "Marketing"
+msgstr "Маркетинг"
+
+#: .\templates\cases.html:31
+#, fuzzy
+#| msgid "Financial Planning"
+msgid "Planning"
+msgstr "Финансовое планирование"
+
 #: .\templates\index-3.html:32
 msgid "Hight Quality Market"
 msgstr "Рынок высокого качества"
@@ -463,17 +518,16 @@ msgstr "Мы делаем успешный бизнес в"
 msgid "View All"
 msgstr "Посмотреть все"
 
-#: .\templates\index-3.html:368
-#, fuzzy
-#| msgid "Blog"
-msgid "Blogs"
-msgstr "Блог"
-
 #: .\templates\services.html:105
 #, fuzzy
 #| msgid "Our Service"
 msgid "Our Services"
 msgstr "Наш сервис"
+
+#, fuzzy
+#~| msgid "Blog"
+#~ msgid "Blogs"
+#~ msgstr "Блог"
 
 #, fuzzy
 #~| msgid "Blog"

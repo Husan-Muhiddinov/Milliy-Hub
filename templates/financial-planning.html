@@ -49,34 +49,36 @@
                             <h3>Our Key Feature of Service</h3>
                             <ul class="accordion-box style-two">
                                 <!--Block-->
+                                {% for i in finan %}
                                 <li class="accordion block">
-                                    <div class="acc-btn">Client Prospecting <div class="icon la la-plus-circle"></div></div>
+                                    <div class="acc-btn">{{ i.title }} <div class="icon la la-plus-circle"></div></div>
                                     <div class="acc-content">
                                         <div class="content">
-                                            <div class="text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</div>
+                                            <div class="text">{{ i.body }}</div>
                                         </div>
                                     </div>
                                 </li>
+                                {% endfor %}
 
                                 <!--Block-->
-                                <li class="accordion block active-block">
+                                <!-- <li class="accordion block active-block">
                                     <div class="acc-btn active">Investment Goals <div class="icon la la-plus-circle"></div></div>
                                     <div class="acc-content current">
                                         <div class="content">
                                             <div class="text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</div>
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
                                 
                                 <!--Block-->
-                                <li class="accordion block">
+                                <!-- <li class="accordion block">
                                     <div class="acc-btn">Document Verification <div class="icon la la-plus-circle"></div></div>
                                     <div class="acc-content">
                                         <div class="content">
                                             <div class="text">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</div>
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
                             </ul>
 
                             <!--Product Info Tabs-->
@@ -99,7 +101,7 @@
                                         <div class="tab" id="info-1">
                                             <div class="content">
                                                 <figure class="thumb"><img src="{% static 'images/resource/thumb-2.jpg' %}" alt=""></figure>
-                                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. It erative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                                                <p>{{ finan.benifits }}</p>
                                             </div>
                                         </div>
                                         
@@ -107,7 +109,7 @@
                                         <div class="tab active-tab" id="info-2">
                                             <div class="content">
                                                 <figure class="thumb"><img src="{% static 'images/resource/thumb-2.jpg' %}" alt=""></figure>
-                                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. It erative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                                                <p>{{ finan.mutual_funds }}</p>
                                             </div>
                                         </div>
 
@@ -115,7 +117,7 @@
                                         <div class="tab" id="info-3">
                                             <div class="content">
                                                 <figure class="thumb"><img src="{% static 'images/resource/thumb-2.jpg' %}" alt=""></figure>
-                                                <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. It erative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. User generated content in real-time will have multiple touchpoints for offshoring.</p>
+                                                <p>{{ finan.company_growth }}</p>
                                             </div>
                                         </div>
                                     </div>
@@ -163,12 +165,12 @@
         <div class="auto-container">
             <div class="outer-box clearfix">
                 <div class="title-column">
-                    <h3>Provide Solutions For the Realiable Growth</h3>
+                    <h3>{% trans 'Provide Solutions For the Realiable Growth' %}</h3>
                 </div>
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">Get A Quotes</a>
+                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

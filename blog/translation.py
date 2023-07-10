@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 from django.contrib import admin
-from .models import Contact, Steps, Card, Team, CallBack, Blog, Services, OurTeam
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Services, OurTeam, About, Faqs, Our_keys_of_service, Testimonial
 
 
 @register(Contact)
@@ -38,4 +38,25 @@ class ServicesTranslationOptions(TranslationOptions):
 @register(OurTeam)
 class OurTeamTranslationOptions(TranslationOptions):
     fields = ('name', 'job')
+
+
+@register(About)
+class AboutTranslationOptions(TranslationOptions):
+    fields = ('title', 'body', 'our_mission', 'our_vision')
+
+
+@register(Faqs)
+class FaqsTranslationOptions(TranslationOptions):
+    fields = ('question', 'answer')
+
+
+@register(Our_keys_of_service)
+class Our_keys_of_serviceTranslationOptions(TranslationOptions):
+    fields = ('title', 'body', 'benifits', 'mutual_funds', 'company_growth')
+
+
+
+@register(Testimonial)
+class TestimonialTranslationOptions(TranslationOptions):
+    fields = ('name', 'position', 'description')
 

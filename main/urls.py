@@ -22,6 +22,7 @@ from django.conf.urls.static import static
 urlpatterns = []
 
 urlpatterns += i18n_patterns(
+    path('ckeditor/',include('ckeditor_uploader.urls')),
     path('admin/', admin.site.urls),
     path('i18n/', include('django.conf.urls.i18n')),
     path('', include('blog.urls')),

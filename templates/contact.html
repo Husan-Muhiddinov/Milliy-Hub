@@ -56,8 +56,8 @@
                     <div class="inner-box">
                         <div class="icon-box"><span class="flaticon-mail"></span></div>
                         <ul>
-                            <li><a href="contact.html#">info@domain.com</a></li>
-                            <li>+880 258 158 58215</li>
+                            <li><a href="mailto:{{contac.email}}">{{contac.email}}</a></li>
+                            <li>{{contac.phone_number}}</li>
                         </ul>
                     </div>
                 </div>
@@ -66,8 +66,8 @@
                     <div class="inner-box">
                         <div class="icon-box"><span class="flaticon-watch-2"></span></div>
                         <ul>
-                            <li>Mon - Sat 8.00 to 18.00</li>
-                            <li><strong>Sunday Closed</strong></li>
+                            <li>{{contac.start_work}} - {{contac.finish_work}} {{contac.work_created_at}} {% trans 'to' %} {{contac.work_updated_at}}</li>
+                            <li><strong>{% trans 'Sunday Closed' %}</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -76,8 +76,8 @@
                     <div class="inner-box">
                         <div class="icon-box"><span class="flaticon-pin-1"></span></div>
                         <ul>
-                            <li><strong>Address</strong></li>
-                            <li>2A0, Queenstown St, USA.</li>
+                            <li><strong>{% trans 'Address' %}</strong></li>
+                            <li>{{contac.address}}</li>
                         </ul>
                     </div>
                 </div>
@@ -87,11 +87,10 @@
                         <li><strong>Follow Us:</strong></li>
                         <li>
                             <ul class="social-icon-one">
-                                <li><a href="contact.html#"><i class="la la-facebook-official"></i></a></li>
-                                <li><a href="contact.html#"><i class="la la-twitter"></i></a></li>
-                                <li><a href="contact.html#"><i class="la la-google-plus"></i></a></li>
-                                <li><a href="contact.html#"><i class="la la-dribbble"></i></a></li>
-                                <li><a href="contact.html#"><i class="la la-pinterest"></i></a></li>
+                                <li><a href="https://{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
+                                <li><a href="https://{{contac.instagram_link}}"><i class="la la-instagram"></i></a></li>
+                                <li><a href="https://{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a></li>
+                                <li><a href="https://{{contac.youtube_link}}"><i class="la la-youtube"></i></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -127,12 +126,12 @@
         <div class="auto-container">
             <div class="outer-box clearfix">
                 <div class="title-column">
-                    <h3>Provide Solutions For the Realiable Growth</h3>
+                    <h3>{% trans 'Provide Solutions For the Realiable Growth' %}</h3>
                 </div>
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">Get A Quotes</a>
+                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

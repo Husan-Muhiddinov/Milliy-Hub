@@ -33,8 +33,8 @@
                         <div class="image-box">
                             <div class="image"><a href="{% static 'images/resource/team-1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{{ i.image.url }}" alt=""></a></div>
                             <ul class="social-links">
-                                <li><a href="https://t.me/{{i.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
-                                <li><a href="https://t.me/{{i.instagram_link}}"><i class="la la-instagram"></i></a></li>
+                                <li><a href="https://{{i.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
+                                <li><a href="https://{{i.instagram_link}}"><i class="la la-instagram"></i></a></li>
                                 <li><a href="mailto:{{i.email}}"><i class="la la-google-plus"></i></a></li>
                             </ul>
                         </div>
@@ -195,12 +195,12 @@
         <div class="auto-container">
             <div class="outer-box clearfix">
                 <div class="title-column">
-                    <h3>Provide Solutions For the Realiable Growth</h3>
+                    <h3>{% trans 'Provide Solutions For the Realiable Growth' %}</h3>
                 </div>
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">Get A Quotes</a>
+                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

@@ -23,15 +23,15 @@
                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <span class="title">We Are Expert</span>
-                        <h2>20 Years Experience in <br> Financial & Business</h2>
-                        <div class="text">Apparently we had reached a great height in the atmosphere, for the sky was a dead black and the stars had ceased to twinkle, By the same illusion which lifts the horizon of the sea to the level of the speactator on press for miles on a hillside. Each business niche may require a unique functionality of its own… </div>
+                        <h2>{{ abot.title }}</h2>
+                        <div class="text">{{ abot.body }}</div>
 
                         <div class="fact-counter">
                             <div class="row clearfix">
                                 <!--Column-->
                                 <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                     <div class="count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="350">0</span>
+                                        <span class="count-text" data-speed="3000" data-stop="{{ abot.consultants }}">0</span>
                                         <h4 class="counter-title">Consultatns</h4>
                                     </div>
                                 </div>
@@ -39,7 +39,7 @@
                                 <!--Column-->
                                 <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                     <div class="count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="25">0</span>
+                                        <span class="count-text" data-speed="3000" data-stop="{{ abot.awards }}">0</span>
                                         <h4 class="counter-title">Awards</h4>
                                     </div>
                                 </div>
@@ -47,7 +47,7 @@
                                 <!--Column-->
                                 <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                     <div class="count-box">
-                                        <span class="count-text" data-speed="3000" data-stop="954">0</span>
+                                        <span class="count-text" data-speed="3000" data-stop="{{ abot.cases }}">0</span>
                                         <h4 class="counter-title">Cases Completed</h4>
                                     </div>
                                 </div>
@@ -64,11 +64,11 @@
                             <div class="feature-block col-lg-6 col-md-6 col-sm-12">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <div class="image"><a href="about.html"><img src="{% static 'images/resource/feature-1.jpg' %}" alt=""></a></div>
+                                        <div class="image"><a href="about.html#"><img src="{% static 'images/resource/feature-1.jpg' %}" alt=""></a></div>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="about.html">Our Mission</a></h4>
-                                        <div class="text">Our Mission for the explorer of the truth, master who builder of human hapiness one but because those who do know.</div>
+                                        <h4><a href="about.html#">Our Mission</a></h4>
+                                        <div class="text">{{ abot.our_mission }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -77,11 +77,11 @@
                             <div class="feature-block col-lg-6 col-md-6 col-sm-12">
                                 <div class="inner-box">
                                     <div class="image-box">
-                                        <div class="image"><a href="about.html"><img src="{% static 'images/resource/feature-2.jpg' %}" alt=""></a></div>
+                                        <div class="image"><a href="about.html#"><img src="{% static 'images/resource/feature-2.jpg' %}" alt=""></a></div>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="about.html">Our Vision</a></h4>
-                                        <div class="text">Our Mission for the explorer of the truth, master who builder of human hapiness one but because those who do know.</div>
+                                        <h4><a href="about.html#">Our Vision</a></h4>
+                                        <div class="text">{{ abot.our_vision }}</div>
                                     </div>
                                 </div>
                             </div>
@@ -182,44 +182,46 @@
                     <!--Accordian Box-->
                     <ul class="accordion-box">
                         <!--Block-->
+                        {% for i in faq %}
                         <li class="accordion block">
-                            <div class="acc-btn"><div class="icon">+</div>How to remove a business risk ?</div>
+                            <div class="acc-btn"><div class="icon">+</div>{{ i.question }}</div>
                             <div class="acc-content">
                                 <div class="content">
-                                    <div class="text">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals.</div>
+                                    <div class="text">{{ i.answer }}</div>
                                 </div>
                             </div>
                         </li>
+                        {% endfor %}
 
                         <!--Block-->
-                        <li class="accordion block active-block">
+                        <!-- <li class="accordion block active-block">
                             <div class="acc-btn active"><div class="icon">+</div>Evidence shows advisers already working ?</div>
                             <div class="acc-content current">
                                 <div class="content">
                                     <div class="text">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals.</div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                         
                         <!--Block-->
-                        <li class="accordion block">
+                        <!-- <li class="accordion block">
                             <div class="acc-btn"><div class="icon">+</div>Conflicted advice can substantially compromise ? Expression</div>
                             <div class="acc-content">
                                 <div class="content">
                                     <div class="text">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals.</div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
 
                         <!--Block-->
-                        <li class="accordion block">
+                        <!-- <li class="accordion block">
                             <div class="acc-btn"><div class="icon">+</div>Our ethos reflects our vision ?</div>
                             <div class="acc-content">
                                 <div class="content">
                                     <div class="text">The perfect harmony between innovation and creativity, our bathroom tiles are produced in compliance with the international standards. High quality 20mm thick porcelain tiles that can be laid on pedestals.</div>
                                 </div>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
 
@@ -298,7 +300,7 @@
             </div>
 
             <!-- Image Column -->
-            <div class="image-column" style="background-image: url(/static/images/resource/);">
+            <div class="image-column" style="background-image: url(/static/images/resource/image-2.jpg);">
                 <figure class="image-box"><img src="{% static 'images/resource/image-2.jpg' %}" alt=""></figure>
             </div>
         </div>
@@ -385,19 +387,21 @@
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
                 <!-- Testimonial Block -->
+                {% for i in test %}
                 <div class="testimonial-block">
                     <div class="inner-box">
                         <div class="info-box">
-                            <div class="thumb"><img src="{% static 'images/resource/thumb.jpg' %}" alt=""></div>
-                            <h3 class="name">Sarah Arevik</h3>
-                            <span class="designation">Chief Executive</span>
+                            <div class="thumb"><img src="{{ i.image.url }}" alt=""></div>
+                            <h3 class="name">{{ i.name }}</h3>
+                            <span class="designation">{{ i.position }}</span>
                         </div>
-                        <div class="text">The Forexnic loan has been the most attractive loan products on the market, helping numerous businesses gain access to financing they would not be able to obtain conventionally and at extremely favorable rates and terms.</div>
+                        <div class="text">{{ i.description }}</div>
                     </div>
                 </div>
+                {% endfor %}
 
                 <!-- Testimonial Block -->
-                <div class="testimonial-block">
+                <!-- <div class="testimonial-block">
                     <div class="inner-box">
                         <div class="info-box">
                             <div class="thumb"><img src="{% static 'images/resource/thumb.jpg' %}" alt=""></div>
@@ -406,10 +410,10 @@
                         </div>
                         <div class="text">The Forexnic loan has been the most attractive loan products on the market, helping numerous businesses gain access to financing they would not be able to obtain conventionally and at extremely favorable rates and terms.</div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Testimonial Block -->
-                <div class="testimonial-block">
+                <!-- <div class="testimonial-block">
                     <div class="inner-box">
                         <div class="info-box">
                             <div class="thumb"><img src="{% static 'images/resource/thumb.jpg' %}" alt=""></div>
@@ -418,7 +422,7 @@
                         </div>
                         <div class="text">The Forexnic loan has been the most attractive loan products on the market, helping numerous businesses gain access to financing they would not be able to obtain conventionally and at extremely favorable rates and terms.</div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
