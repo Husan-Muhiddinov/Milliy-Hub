@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load mytags %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 <title>{% block title %} Milliy Hub - {% trans 'Business' %} & {% trans 'Finance' %}{% endblock title %}</title>
 <!-- Stylesheets -->
 <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
-<link rel="{% static 'stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/4.7.0/css/line-awesome.min.css' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/4.7.0/css/line-awesome.min.css">
 <link href="{% static 'css/flaticon.css' %}" rel="stylesheet" type="text/css">
 <link href="{% static 'css/line-awesome.css' %}" rel="stylesheet" type="text/css">
 <link href="{% static 'plugins/revolution/css/settings.css' %}" rel="stylesheet" type="text/css"><!-- REVOLUTION SETTINGS STYLES -->
@@ -108,11 +109,30 @@
                     <div class="nav-outer clearfix">
                         <div class="lang-box">
                             <ul class="clearfix">
-                                <li class="language dropdownn"><a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="index-3.html#"><span class="flag-icon"></span></a>
+                                <li class="language dropdownn"><a class="btn btn-default dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" href="index-3.html#"><span class="flaticon-earth-globe"></span></a>
+                                    {% get_current_language as lang %}
+                                    {% get_available_languages as langs %}
                                     <ul class="dropdown-menu style-one" aria-labelledby="dropdownMenu1">
-                                        <li><a href="index.html">English</a></li>
-                                        <li><a href="../mushawart-html-rtl/index.html">Русский</a></li>
-                                        <li><a href="index-3.html#">O'zbek</a></li>
+                                        {% for l in langs %}
+                                        {% if l.0 != lang %}
+                                        {% get_language_info for l.0 as ls %}
+                                        <li>
+                                            <a href="{% get_url_lang request l.0 %}">
+                                                {% if ls.name_local == 'English' %}
+                                                English
+                                                {% endif %}
+                                                {% if ls.name_local == "Русский" %} 
+                                                Русский
+                                                {% endif %}
+                                                {% if ls.name_local == "oʻzbek tili" %}
+                                                O'zbek
+                                                {% endif %}
+                                            </a>
+                                        </li>
+                                        {% endif %}
+                                        {% endfor %}
+                                        <!-- <li><a href="../mushawart-html-rtl/index.html"></a></li>
+                                        <li><a href="index-3.html#"></a></li> -->
                                     </ul>
                                 </li>
                             </ul>
@@ -159,7 +179,7 @@
                                     <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a>
                                         <!-- <ul>
                                             <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a></li>
-                                            <li><a href="{% url 'case_detail' %}">{% trans 'Case Detail' %}</a></li>
+                                            <li><a href="case_detail.html">{% trans 'Case Detail' %}</a></li>
                                         </ul> -->
                                     </li>
                                     <li class="dropdown"><a href="index-3.html#">{% trans 'Pages' %}</a>
@@ -249,7 +269,7 @@
                                 <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a>
                                     <!-- <ul>
                                         <li><a href="{% url 'cases' %}">{% trans 'Cases' %}</a></li>
-                                        <li><a href="{% url 'case_detail' %}">{% trans 'Case Detail' %}</a></li>
+                                        <li><a href="case_detail.html">{% trans 'Case Detail' %}</a></li>
                                     </ul> -->
                                 </li>
                                 <li class="dropdown"><a href="index-3.html#">{% trans 'Pages' %}</a>
@@ -314,17 +334,15 @@
                             <h2 class="widget-title">{% trans 'Latest News' %}</h2>
                             <!--Footer Column-->
                             <div class="widget-content">
+                                {% for i in b %}
                                 <div class="post">
-                                    <div class="thumb"><a href="{% url 'blog_detail' blog_id=a.id %}"><img src="{{ a.photo.url }}" alt=""></a></div>
-                                    <h4><a href="{% url 'blog_detail' blog_id=a.id %}">{{ a.title }}</a></h4>
-                                    <span class="date">{{ a.day }}</span>
+                                    <div class="thumb"><a href="{% url 'blog_detail' blog_id=i.id %}"><img src="{{ i.photo.url }}" alt=""></a></div>
+                                    <h4><a href="{% url 'blog_detail' blog_id=i.id %}">{{ i.title }}</a></h4>
+                                    <span class="date">{{ i.day }}</span>
                                 </div>
+                                {% endfor %}
 
-                                <div class="post">
-                                    <div class="thumb"><a href="{% url 'blog_detail' blog_id=b.id %}"><img src="{{ b.photo.url }}" alt=""></a></div>
-                                    <h4><a href="{% url 'blog_detail' blog_id=b.id %}">{{ b.title }}</a></h4>
-                                    <span class="date">{{ b.day }}</span>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -446,5 +464,7 @@
 <script src="{% static 'js/validate.js' %}"></script>
 <script src="{% static 'js/script.js' %}"></script>
 <script src="{% static 'js/color-settings.js' %}"></script>
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
+<script src="{% static 'js/map-script.js' %}"></script>
 </body>
 </html>

@@ -286,25 +286,28 @@
 
             <div class="row clearfix">
                 <!-- Cases Block -->
-                {% for i in team %}
+                {% for i in t %}
                 <div class="case-block col-lg-4 col-md-6 col-sm-12">
                     <div class="image-box">
                         <div class="image"><a href="{{ i.image.url }}" class="lightbox-image" data-fancybox="gallery"><img src="{{ i.image.url }}" alt=""></a></div>
                         <div class="caption-box">
-                            <h5><a href="{% url 'case_detail' %}">{{i.title}}</a></h5>
+                            <h5><a href="{% url 'case_detail' case_id=i.id %}">{{i.title}}</a></h5>
                             <ul class="info">
                                 <li>{{i.work}}</li>
                                 <li>{{i.position}}</li>
                             </ul>
-                            <div class="icon-box"><a href="{% url 'case_detail' %}"><i class="la la-angle-right"></i></a></div>
+                            <div class="icon-box"><a href="{% url 'case_detail' case_id=i.id %}"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
                 </div>
                 {% endfor %}
+
+                
+                
             </div>
 
             <div class="btn-box">
-                <a href="{% url 'services' %}" class="theme-btn btn-style-three">{% trans 'View All' %}</a>
+                <a href="{% url 'cases' %}" class="theme-btn btn-style-three">{% trans 'View All' %}</a>
             </div>
         </div>
     </section>
@@ -370,40 +373,26 @@
             </div>
             <div class="row clearfix">
                 <!-- News Block -->
+                {% for i in a %}
                 <div class="news-block-three col-lg-6 col-sm-6 col-sm-12">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="image"><a href="{% url 'blog_detail' blog_id=a.id %}"><img src="{{ a.photo.url }}" alt=""></a></div>
+                            <div class="image"><a href="{% url 'blog_detail' blog_id=i.id %}"><img src="{{ i.photo.url }}" alt=""></a></div>
                         </div>
                         <div class="content-box">
-                            <h3><a href="{% url 'blog_detail' blog_id=a.id %}">{{ a.title }}</a></h3>
-                            <div class="text">{{ a.summary }}</div>
+                            <h3><a href="{% url 'blog_detail' blog_id=i.id %}">{{ i.title }}</a></h3>
+                            <div class="text">{{ i.summary }}</div>
                             <ul class="info">
                                 <li><i class="la la-comments"></i> Comments</li>
-                                <li><i class="la la-user"></i> {{ a.author }}</li>
-                                <li><i class="la la-calendar-check-o"></i> {{ a.day }}</li>
+                                <li><i class="la la-user"></i> {{ i.author }}</li>
+                                <li><i class="la la-calendar-check-o"></i> {{ i.day }}</li>
                             </ul>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
-                <!-- News Block -->
-                <div class="news-block-three col-lg-6 col-sm-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image-box">
-                            <div class="image"><a href="{% url 'blog_detail' blog_id=b.id %}"><img src="{{ b.photo.url }}" alt=""></a></div>
-                        </div>
-                        <div class="content-box">
-                            <h3><a href="{% url 'blog_detail' blog_id=b.id %}">{{ b.title }}</a></h3>
-                            <div class="text">{{ b.summary }}</div>
-                            <ul class="info">
-                                <li><i class="la la-comments"></i> Comments</li>
-                                <li><i class="la la-user"></i> {{ b.author }}</li>
-                                <li><i class="la la-calendar-check-o"></i> {{ b.day }}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>

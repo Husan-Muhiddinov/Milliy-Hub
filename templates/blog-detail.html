@@ -56,20 +56,20 @@
                             </div>
                         </div>
 
-                        <div class="post-control">
+                        <!-- <div class="post-control">
                             <ul class="clearfix">
                                 <li class="prev pull-left"><a href="blog-detail.html#"><i class="la la-angle-double-left"></i> Prev</a></li>
                                 <li class="next pull-right"><a href="blog-detail.html#">Next <i class="la la-angle-double-right"></i></a></li>
                             </ul>
-                        </div>
+                        </div> -->
 
 
                         <!--Comments Area-->
                         <div class="comments-area">
-                            <div class="group-title"><h2>User Comments</h2></div>
+                            <!-- <div class="group-title"><h2>User Comments</h2></div> -->
                             
                             <!--Comment Box-->
-                            <div class="comment-box">
+                            <!-- <div class="comment-box">
                                 <div class="comment">
                                     <div class="author-thumb"><img src="{% static 'images/resource/thumb-3.jpg' %}" alt=""></div>
                                     <div class="comment-inner">
@@ -81,10 +81,10 @@
                                     </div>
                                     <a class="comment-reply" href="blog-detail.html#">Reply Now</a>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Comment Box-->
-                            <div class="comment-box reply-comment">
+                            <!-- <div class="comment-box reply-comment">
                                 <div class="comment">
                                     <div class="author-thumb"><img src="{% static 'images/resource/thumb-4.jpg' %}" alt=""></div>
                                     <div class="comment-inner">
@@ -96,10 +96,10 @@
                                     </div>
                                     <a class="comment-reply" href="blog-detail.html#">Reply Now</a>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <!--Comment Box-->
-                            <div class="comment-box">
+                            <!-- <div class="comment-box">
                                 <div class="comment">
                                     <div class="author-thumb"><img src="{% static 'images/resource/thumb-5.jpg' %}" alt=""></div>
                                     <div class="comment-inner">
@@ -111,19 +111,19 @@
                                     </div>
                                     <a class="comment-reply" href="blog-detail.html#">Reply Now</a>
                                 </div>
-                            </div>
+                            </div> -->
                             
                         </div>
                         <!--End Comments Area-->
                         
                         <!-- Comment Form -->
                         <div class="comment-form">
-                            <div class="group-title"><h2>Leave a Reply</h2></div>
+                            <!-- <div class="group-title"><h2>Leave a Reply</h2></div> -->
 
                             <!--Comment Form-->
                             <form method="post" action="blog.html">
                                 <div class="row clearfix">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 form-group">
+                                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <input type="text" name="username" placeholder="Name" required>
                                     </div>
                                     
@@ -141,7 +141,7 @@
                                     
                                     <div class="col-lg-12 col-md-12 col-sm-12 form-group">
                                         <button class="theme-btn btn-style-three" type="submit" name="submit-form">Post Comment</button>
-                                    </div>
+                                    </div> -->
                                     
                                 </div>
                             </form>
@@ -170,23 +170,14 @@
                         <div class="sidebar-widget latest-news">
                             <div class="sidebar-title"><h2>{% trans 'Recent Posts' %}</h2></div>
                             <div class="widget-content">
+                                {% for i in c %}
                                 <article class="post">
-                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=a.id %}"><img src="{{ a.photo.url }}" alt=""></a></div>
-                                    <h3><a href="{% url 'blog_detail' blog_id=a.id %}">{{ a.title }}</a></h3>
-                                    <div class="post-info">{{ a.day }}</div>
+                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=i.id %}"><img src="{{ i.photo.url }}" alt=""></a></div>
+                                    <h3><a href="{% url 'blog_detail' blog_id=i.id %}">{{ i.title }}</a></h3>
+                                    <div class="post-info">{{ i.day }}</div>
                                 </article>
+                                {% endfor %}
 
-                                <article class="post">
-                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=b.id %}"><img src="{{ b.photo.url }}" alt=""></a></div>
-                                    <h3><a href="{% url 'blog_detail' blog_id=b.id %}">{{ b.title }}</a></h3>
-                                    <div class="post-info">{{ b.day }}</div>
-                                </article>
-
-                                <article class="post">
-                                    <div class="post-thumb"><a href="{% url 'blog_detail' blog_id=c.id %}"><img src="{{ c.photo.url }}" alt=""></a></div>
-                                    <h3><a href="{% url 'blog_detail' blog_id=c.id %}">{{ c.title }}</a></h3>
-                                    <div class="post-info">{{ c.day }}</div>
-                                </article>
                             </div>
                         </div>
 

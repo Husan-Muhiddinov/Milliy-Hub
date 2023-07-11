@@ -2,15 +2,14 @@ from django.shortcuts import render
 from django.views import View
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services, OurTeam, About, Faqs, Our_keys_of_service, Testimonial, Addvertising
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services, OurTeam, About, Faqs, Our_keys_of_service, Testimonial, Addvertising, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic
 # Create your views here.
 
 def for_all_pages(request):
     blog = Blog.objects.all()
-    a=Blog.objects.order_by('id')[Blog.objects.count()-1]
-    b=Blog.objects.order_by('id')[Blog.objects.count()-2]
+    b=Blog.objects.all().order_by('-id')[:2]
     contac= Contact.objects.all().last()
-    return {'contac': contac, 'a': a, 'b': b, 'blog': blog}
+    return {'contac': contac, 'b': b, 'blog': blog}
 
 
 def index(request):
@@ -18,11 +17,10 @@ def index(request):
     step = Steps.objects.all()
     card = Card.objects.all()
     blog = Blog.objects.all()
-    team = Team.objects.all()
+    t = Team.objects.all().order_by('-id')[:3]
     advert = Addvertising.objects.all()
     test = Testimonial.objects.all()
-    a=Blog.objects.order_by('id')[Blog.objects.count()-1]
-    b=Blog.objects.order_by('id')[Blog.objects.count()-2]
+    a=Blog.objects.all().order_by('-id')[:2]
     if request.method == 'POST':
         call = CallBack(
             name=request.POST['username'],
@@ -36,12 +34,11 @@ def index(request):
         'contac': contac, 
         'step': step, 
         'card': card, 
-        'team': team,
         'blog': blog,
         'a': a,
-        'b': b,
         'test': test,
         'advert': advert,
+        't': t,
         }
     return render(request, "index-3.html", context=context)
 
@@ -83,8 +80,10 @@ def services(request):
 
 def financial(request):
     finan = Our_keys_of_service.objects.all()
+    fina = Our_keys_of_service.objects.all().last()
     context = {
         'finan': finan,
+        'fina': fina,
     }
     return render(request, 'financial-planning.html', context=context)
 
@@ -114,15 +113,21 @@ def service_detail(request, servic_id):
 
 
 def cases(request):
+    team = Team.objects.all()
     advert = Addvertising.objects.all()
     context = {
         'advert': advert,
+        'team': team,
     }
     return render(request, 'cases.html', context=context)
 
 
-def case_detail(request):
-    return render(request, 'case-detail.html')
+def case_detail(request, case_id):
+    team = Team.objects.get(pk=case_id)
+    context = {
+        'team': team,
+    }
+    return render(request, 'case-detail.html', context=context)
 
 
 def pricing(request):
@@ -158,14 +163,10 @@ def blog(request):
 
 def blog_detail(request, blog_id):
     blog = Blog.objects.get(pk=blog_id)
-    a=Blog.objects.order_by('id')[Blog.objects.count()-1]
-    b=Blog.objects.order_by('id')[Blog.objects.count()-2]
-    c=Blog.objects.order_by('id')[Blog.objects.count()-3]
+    c=Blog.objects.all().order_by('-id')[:3]
     contac= Contact.objects.all().last()
     context = {
         'blog': blog,
-        'a': a,
-        'b': b,
         'c': c,
         'contac': contac,
     }

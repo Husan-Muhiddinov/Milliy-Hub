@@ -40,11 +40,27 @@ class Card(models.Model):
         return self.title
     
 
+case = (
+    ('akseleratsiya', 'akseleratsiya'),
+    ('inkubatsiya', 'inkubatsiya'),
+)
+
+
 class Team(models.Model):
     image = models.ImageField(upload_to="team_images", null=True, verbose_name=_('image'))
     title = models.CharField(max_length=100, null=True, verbose_name=_('title'))
     work = models.CharField(max_length=70, null=True, verbose_name=_('work'))
     position = models.CharField(max_length=50, null=True, verbose_name=_('position'))
+    status = models.CharField(max_length=100, null=True, choices=case, verbose_name=_('status'))
+    detail_title=models.CharField(max_length=250, null=True, verbose_name=_('detail_title'))
+    summary=models.TextField(null=True, verbose_name=_('summary'))
+    body=RichTextField(null=True, verbose_name=_('body'))
+    client_name = models.CharField(max_length=70, null=True, verbose_name=_('client_name'))
+    location = models.CharField(max_length=70, null=True, verbose_name=_('location'))
+    project_value = models.DecimalField(decimal_places=2, max_digits=70, null=True, verbose_name=_('project_value'))
+    year_completed = models.IntegerField(null=True, verbose_name=_('year_completed'))
+    project_under = models.CharField(max_length=70, null=True, verbose_name=_('project_under'))
+    advisor = models.CharField(max_length=70, null=True, verbose_name=_('advisor'))
 
     def __str__(self):
         return self.title
@@ -65,7 +81,6 @@ class Blog(models.Model):
     title=models.CharField(max_length=250, null=True, verbose_name=_('title'))
     summary=models.CharField(max_length=500, null=True, verbose_name=_('summary'))
     body=RichTextField(verbose_name=_('body'))
-    # body=models.CharField(max_length=900, null=True, verbose_name=_('body'))
     author = models.CharField(max_length=70, null=True, verbose_name=_('author'))
     photo=models.ImageField(upload_to='images',blank=True, null=True, verbose_name=_('photo'))
     day=models.DateTimeField(auto_now_add=True, null=True, verbose_name=_('day'))
@@ -165,3 +180,24 @@ class Addvertising(models.Model):
 
     def __str__(self):
         return self.link
+    
+
+class Finansial(models.Model):
+    body=RichTextField(verbose_name=_('body'))
+
+
+
+class Trade_Stock(models.Model):
+    body=RichTextField(verbose_name=_('body'))
+
+
+class Audit_Assuranse(models.Model):
+    body=RichTextField(verbose_name=_('body'))
+
+
+class Saving(models.Model):
+    body=RichTextField(verbose_name=_('body'))
+
+
+class Strategic(models.Model):
+    body=RichTextField(verbose_name=_('body'))

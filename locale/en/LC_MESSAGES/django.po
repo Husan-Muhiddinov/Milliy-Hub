@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-10 15:33+0500\n"
+"POT-Creation-Date: 2023-07-11 17:03+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: .\blog\models.py:10 .\blog\models.py:55 .\blog\models.py:112
+#: .\blog\models.py:10 .\blog\models.py:71 .\blog\models.py:127
 msgid "email"
 msgstr "email"
 
@@ -46,7 +46,7 @@ msgstr "work_updated_at"
 msgid "phone_number"
 msgstr "phone_number"
 
-#: .\blog\models.py:17 .\blog\models.py:110
+#: .\blog\models.py:17 .\blog\models.py:125
 msgid "facebook_link"
 msgstr "facebook_link"
 
@@ -58,83 +58,173 @@ msgstr "linkedin_link"
 msgid "youtube_link"
 msgstr "youtube_link"
 
-#: .\blog\models.py:20 .\blog\models.py:111
+#: .\blog\models.py:20 .\blog\models.py:126
 msgid "instagram_link"
 msgstr "instagram_link"
 
-#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:45
-#: .\blog\models.py:65 .\blog\models.py:97
+#: .\blog\models.py:27 .\blog\models.py:36 .\blog\models.py:51
+#: .\blog\models.py:81 .\blog\models.py:112 .\blog\models.py:135
+#: .\blog\models.py:157
 msgid "title"
 msgstr "title"
 
-#: .\blog\models.py:28 .\blog\models.py:37 .\blog\models.py:67
-#: .\blog\models.py:99
+#: .\blog\models.py:28 .\blog\models.py:37 .\blog\models.py:57
+#: .\blog\models.py:83 .\blog\models.py:114 .\blog\models.py:136
+#: .\blog\models.py:158
 msgid "body"
 msgstr "body"
 
-#: .\blog\models.py:35 .\blog\models.py:96
+#: .\blog\models.py:35 .\blog\models.py:111
 msgid "icon"
 msgstr "icon"
 
-#: .\blog\models.py:44 .\blog\models.py:107
+#: .\blog\models.py:50 .\blog\models.py:122 .\blog\models.py:168
 msgid "image"
 msgstr "image"
 
-#: .\blog\models.py:46
+#: .\blog\models.py:52
 msgid "work"
 msgstr "work"
 
-#: .\blog\models.py:47
+#: .\blog\models.py:53 .\blog\models.py:170
 msgid "position"
 msgstr "position"
 
-#: .\blog\models.py:54 .\blog\models.py:108
+#: .\blog\models.py:54
+msgid "status"
+msgstr ""
+
+#: .\blog\models.py:55
+msgid "detail_title"
+msgstr ""
+
+#: .\blog\models.py:56 .\blog\models.py:82 .\blog\models.py:113
+msgid "summary"
+msgstr "summary"
+
+#: .\blog\models.py:58
+msgid "client_name"
+msgstr ""
+
+#: .\blog\models.py:59
+#, fuzzy
+#| msgid "position"
+msgid "location"
+msgstr "position"
+
+#: .\blog\models.py:60
+msgid "project_value"
+msgstr ""
+
+#: .\blog\models.py:61
+msgid "year_completed"
+msgstr ""
+
+#: .\blog\models.py:62
+msgid "project_under"
+msgstr ""
+
+#: .\blog\models.py:63
+msgid "advisor"
+msgstr ""
+
+#: .\blog\models.py:70 .\blog\models.py:123 .\blog\models.py:169
 msgid "name"
 msgstr "name"
 
-#: .\blog\models.py:56
+#: .\blog\models.py:72
 msgid "subject"
 msgstr "subject"
 
-#: .\blog\models.py:57
+#: .\blog\models.py:73
 #, fuzzy
 #| msgid "Pages"
 msgid "messages"
 msgstr "Pages"
 
-#: .\blog\models.py:66 .\blog\models.py:98
-msgid "summary"
-msgstr "summary"
-
-#: .\blog\models.py:69
+#: .\blog\models.py:84
 msgid "author"
 msgstr "author"
 
-#: .\blog\models.py:70 .\blog\models.py:100
+#: .\blog\models.py:85 .\blog\models.py:115 .\blog\models.py:178
 msgid "photo"
 msgstr "photo"
 
-#: .\blog\models.py:71
+#: .\blog\models.py:86
 msgid "day"
 msgstr "day"
 
-#: .\blog\models.py:72
+#: .\blog\models.py:87
 #, fuzzy
 #| msgid "work_updated_at"
 msgid "updated_at"
 msgstr "work_updated_at"
 
-#: .\blog\models.py:84
+#: .\blog\models.py:99
 msgid "blog"
 msgstr "blog"
 
-#: .\blog\models.py:85
+#: .\blog\models.py:100
 msgid "comment"
 msgstr "comment"
 
-#: .\blog\models.py:109
+#: .\blog\models.py:124
 msgid "job"
 msgstr "job"
+
+#: .\blog\models.py:137
+msgid "consultants"
+msgstr ""
+
+#: .\blog\models.py:138
+msgid "awards"
+msgstr ""
+
+#: .\blog\models.py:139
+#, fuzzy
+#| msgid "Cases"
+msgid "cases"
+msgstr "Cases"
+
+#: .\blog\models.py:140
+msgid "our_mission"
+msgstr ""
+
+#: .\blog\models.py:141
+msgid "our_vision"
+msgstr ""
+
+#: .\blog\models.py:149
+#, fuzzy
+#| msgid "position"
+msgid "question"
+msgstr "position"
+
+#: .\blog\models.py:150
+msgid "answer"
+msgstr ""
+
+#: .\blog\models.py:159
+msgid "benifits"
+msgstr ""
+
+#: .\blog\models.py:160
+msgid "mutual_funds"
+msgstr ""
+
+#: .\blog\models.py:161
+msgid "company_growth"
+msgstr ""
+
+#: .\blog\models.py:171
+#, fuzzy
+#| msgid "position"
+msgid "description"
+msgstr "position"
+
+#: .\blog\models.py:179
+msgid "link"
+msgstr ""
 
 #: .\main\settings.py:121
 msgid "English"
@@ -151,7 +241,7 @@ msgstr ""
 #: .\templates\Strategic-planning.html:166
 #: .\templates\audit-and-assurance.html:166 .\templates\blog-detail.html:232
 #: .\templates\blog.html:87 .\templates\case-detail.html:103
-#: .\templates\contact.html:130 .\templates\financial-planning.html:166
+#: .\templates\contact.html:129 .\templates\financial-planning.html:168
 #: .\templates\pricing.html:93 .\templates\saving-strategy.html:166
 #: .\templates\service-detail.html:166 .\templates\team.html:198
 #: .\templates\trade-and-stock.html:166
@@ -161,7 +251,7 @@ msgstr "Provide Solutions For the Realiable Growth"
 #: .\templates\Strategic-planning.html:171
 #: .\templates\audit-and-assurance.html:171 .\templates\blog-detail.html:237
 #: .\templates\blog.html:92 .\templates\case-detail.html:108
-#: .\templates\contact.html:135 .\templates\financial-planning.html:171
+#: .\templates\contact.html:134 .\templates\financial-planning.html:173
 #: .\templates\pricing.html:98 .\templates\saving-strategy.html:171
 #: .\templates\service-detail.html:171 .\templates\team.html:203
 #: .\templates\trade-and-stock.html:171
@@ -218,29 +308,29 @@ msgstr ""
 msgid "Explore All Cases"
 msgstr "Explore All Cases"
 
-#: .\templates\about.html:312 .\templates\index-3.html:212
+#: .\templates\about.html:314 .\templates\index-3.html:212
 msgid "How We Work"
 msgstr "How We Work"
 
-#: .\templates\about.html:313 .\templates\index-3.html:213
+#: .\templates\about.html:315 .\templates\index-3.html:213
 msgid "We Make Successful Business in"
 msgstr "We Make Successful Business in"
 
-#: .\templates\about.html:313 .\templates\index-3.html:213
+#: .\templates\about.html:315 .\templates\index-3.html:213
 msgid "Steps"
 msgstr "Steps"
 
-#: .\templates\about.html:361 .\templates\base.html:147
-#: .\templates\base.html:237 .\templates\base.html:370
+#: .\templates\about.html:363 .\templates\base.html:148
+#: .\templates\base.html:238 .\templates\base.html:371
 #: .\templates\index-3.html:186 .\templates\index-3.html:190
 msgid "About"
 msgstr "About"
 
-#: .\templates\about.html:362 .\templates\index-3.html:187
+#: .\templates\about.html:364 .\templates\index-3.html:187
 msgid "We Aim to Provide Expert Advice and Quality Service."
 msgstr "We Aim to Provide Expert Advice and Quality Service"
 
-#: .\templates\about.html:363 .\templates\index-3.html:188
+#: .\templates\about.html:365 .\templates\index-3.html:188
 msgid ""
 "We are rethoric question ran over her cheek When she reached the first hills "
 "of the Italic Mountains, she had a last view back on the skyline of her "
@@ -252,116 +342,117 @@ msgstr ""
 "hometown Bookmarksgrove, the headline of Alphabet Village and the subline of "
 "her own road, the Line Lane."
 
-#: .\templates\about.html:365
+#: .\templates\about.html:367
 #, fuzzy
 #| msgid "About"
 msgid "About More"
 msgstr "About"
 
-#: .\templates\base.html:7
+#: .\templates\base.html:8
 #, fuzzy
 #| msgid "Grow Your Business"
 msgid "Business"
 msgstr "Grow Your Business"
 
-#: .\templates\base.html:7
+#: .\templates\base.html:8
 msgid "Finance"
 msgstr "Finance"
 
-#: .\templates\base.html:76
+#: .\templates\base.html:77 .\templates\contact.html:79
 msgid "Address"
 msgstr "Address"
 
-#: .\templates\base.html:85 .\templates\base.html:302
+#: .\templates\base.html:86 .\templates\base.html:303
+#: .\templates\contact.html:69
 msgid "to"
 msgstr "to"
 
-#: .\templates\base.html:86
+#: .\templates\base.html:87 .\templates\contact.html:70
 msgid "Sunday Closed"
 msgstr "Sunday Closed"
 
-#: .\templates\base.html:95
+#: .\templates\base.html:96
 msgid "Call Us for Any Questions"
 msgstr "Call Us for Any Questions"
 
-#: .\templates\base.html:133 .\templates\base.html:223
+#: .\templates\base.html:134 .\templates\base.html:224
 msgid "Home"
 msgstr "Home"
 
-#: .\templates\base.html:148 .\templates\base.html:150
-#: .\templates\base.html:238 .\templates\base.html:240
+#: .\templates\base.html:149 .\templates\base.html:151
+#: .\templates\base.html:239 .\templates\base.html:241
 #: .\templates\index-3.html:89 .\templates\index-3.html:259
 #: .\templates\service-detail.html:135
 msgid "Services"
 msgstr "Services"
 
-#: .\templates\base.html:151 .\templates\base.html:241
+#: .\templates\base.html:152 .\templates\base.html:242
 #: .\templates\service-detail.html:136
 msgid "Financial Planning"
 msgstr "Financial Planning"
 
-#: .\templates\base.html:152 .\templates\base.html:242
+#: .\templates\base.html:153 .\templates\base.html:243
 #: .\templates\service-detail.html:137
 msgid "Trade & Stock"
 msgstr "Trade & Stock"
 
-#: .\templates\base.html:153 .\templates\base.html:243
+#: .\templates\base.html:154 .\templates\base.html:244
 #: .\templates\service-detail.html:138
 msgid "Audit & Assurance"
 msgstr "Audit & Assurance"
 
-#: .\templates\base.html:154 .\templates\base.html:244
+#: .\templates\base.html:155 .\templates\base.html:245
 #: .\templates\service-detail.html:139
 msgid "Saving Strategy"
 msgstr "Saving Strategy"
 
-#: .\templates\base.html:155 .\templates\base.html:245
+#: .\templates\base.html:156 .\templates\base.html:246
 #: .\templates\service-detail.html:140
 msgid "Strategic Planning"
 msgstr "Strategic Planning"
 
-#: .\templates\base.html:156 .\templates\base.html:246
+#: .\templates\base.html:157 .\templates\base.html:247
 msgid "Service Detail"
 msgstr "Service Detail"
 
-#: .\templates\base.html:159 .\templates\base.html:161
-#: .\templates\base.html:249 .\templates\base.html:251
+#: .\templates\base.html:160 .\templates\base.html:162
+#: .\templates\base.html:250 .\templates\base.html:252
 #: .\templates\index-3.html:284
 msgid "Cases"
 msgstr "Cases"
 
-#: .\templates\base.html:162 .\templates\base.html:252
+#: .\templates\base.html:163 .\templates\base.html:253
 msgid "Case Detail"
 msgstr "Case Detail"
 
-#: .\templates\base.html:165 .\templates\base.html:255
+#: .\templates\base.html:166 .\templates\base.html:256
 msgid "Pages"
 msgstr "Pages"
 
-#: .\templates\base.html:167 .\templates\base.html:257
+#: .\templates\base.html:168 .\templates\base.html:258
 msgid "Pricing"
 msgstr "Pricing"
 
-#: .\templates\base.html:168 .\templates\base.html:258
+#: .\templates\base.html:169 .\templates\base.html:259
 msgid "Our Team"
 msgstr "Our Team"
 
-#: .\templates\base.html:171 .\templates\base.html:173
-#: .\templates\base.html:261 .\templates\base.html:263
+#: .\templates\base.html:172 .\templates\base.html:174
+#: .\templates\base.html:262 .\templates\base.html:264
 #: .\templates\index-3.html:368
 msgid "Blog"
 msgstr "Blog"
 
-#: .\templates\base.html:174 .\templates\base.html:264
+#: .\templates\base.html:175 .\templates\base.html:265
 msgid "Blog Detail"
 msgstr "Blog Detail"
 
-#: .\templates\base.html:177 .\templates\base.html:267
-#: .\templates\base.html:374
+#: .\templates\base.html:178 .\templates\base.html:268
+#: .\templates\base.html:375
 msgid "Contact"
 msgstr "Contact"
 
-#: .\templates\base.html:300
+#: .\templates\base.html:301
 msgid ""
 "We provide expert Business Coaching to both individuals and businesses. With "
 "over 30 years of experience we’ll ensure that you’re always getting the best "
@@ -371,51 +462,51 @@ msgstr ""
 "years of experience, we always ensure that you get the best guidance from "
 "the best people in the entire industry."
 
-#: .\templates\base.html:314 .\templates\index-3.html:369
+#: .\templates\base.html:315 .\templates\index-3.html:369
 msgid "Latest News"
 msgstr "Latest News"
 
-#: .\templates\base.html:337
+#: .\templates\base.html:338
 msgid "Newsletter"
 msgstr "News letter"
 
-#: .\templates\base.html:339
+#: .\templates\base.html:340
 msgid "Sign up for our mailing list to Get Latest updates And offers."
 msgstr "Sign up for our mailing list to Get Latest updates And offers."
 
-#: .\templates\base.html:349
+#: .\templates\base.html:350
 msgid "Follow Us"
 msgstr "Follow Us"
 
-#: .\templates\base.html:371
+#: .\templates\base.html:372
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: .\templates\base.html:372
+#: .\templates\base.html:373
 msgid "Investors"
 msgstr "Investors"
 
-#: .\templates\base.html:373
+#: .\templates\base.html:374
 msgid "Legals"
 msgstr "Legals"
 
-#: .\templates\base.html:378
+#: .\templates\base.html:379
 msgid "Designed By"
 msgstr "Designed By"
 
-#: .\templates\base.html:378
+#: .\templates\base.html:379
 msgid "ARY Themes"
 msgstr "Sanjarbek Usmonov"
 
-#: .\templates\base.html:399
+#: .\templates\base.html:400
 msgid "Choose Your Color"
 msgstr "Choose Your Color"
 
-#: .\templates\base.html:415
+#: .\templates\base.html:416
 msgid "Purchase now"
 msgstr "Purchase now"
 
-#: .\templates\base.html:418
+#: .\templates\base.html:419
 msgid ""
 "You will find much more options for colors and styling in admin panel. This "
 "color picker is used only for demonstation purposes."
@@ -432,14 +523,16 @@ msgid "All"
 msgstr "All"
 
 #: .\templates\cases.html:28
-msgid "Fintech"
-msgstr "Fintech"
+msgid "Incubation"
+msgstr ""
+
+#: .\templates\cases.html:28 .\templates\cases.html:29
+msgid "programs"
+msgstr ""
 
 #: .\templates\cases.html:29
-#, fuzzy
-#| msgid "Investors"
-msgid "Investing"
-msgstr "Investors"
+msgid "Acceleration"
+msgstr ""
 
 #: .\templates\cases.html:30
 msgid "Marketing"
@@ -517,6 +610,14 @@ msgstr "View All"
 #| msgid "Our Service"
 msgid "Our Services"
 msgstr "Our Service"
+
+#~ msgid "Fintech"
+#~ msgstr "Fintech"
+
+#, fuzzy
+#~| msgid "Investors"
+#~ msgid "Investing"
+#~ msgstr "Investors"
 
 #, fuzzy
 #~| msgid "Blog"

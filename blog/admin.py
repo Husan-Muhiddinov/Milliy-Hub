@@ -35,7 +35,7 @@ class CardModelAdmin(admin.ModelAdmin):
 
 @admin.register(Team)
 class TeamModelAdmin(MyTranslationAdmin):
-    list_display = ['image','title', 'work', 'position']
+    list_display = ['image','title', 'work', 'position', 'detail_title', 'summary', 'body', 'client_name', 'location', 'project_value', 'year_completed', 'project_under', 'advisor']
 
 
 @admin.register(CallBack)
@@ -88,3 +88,33 @@ class TestimonialModelAdmin(MyTranslationAdmin):
 @admin.register(Addvertising)
 class AddvertisingModelAdmin(admin.ModelAdmin):
     list_display = ['photo', 'link']
+
+
+
+@admin.register(Finansial)
+class FinansialModelAdmin(MyTranslationAdmin):
+    list_display = ['body']
+
+
+@admin.register(Trade_Stock)
+class Trade_StockModelAdmin(MyTranslationAdmin):
+    list_display = ['body']
+
+
+
+@admin.register(Audit_Assuranse)
+class Audit_AssuranseModelAdmin(MyTranslationAdmin):
+    list_display = ['body']
+
+
+
+@admin.register(Saving)
+class SavingModelAdmin(MyTranslationAdmin):
+    list_display = ['body']
+
+
+
+
+@admin.register(Strategic)
+class StrategicModelAdmin(MyTranslationAdmin):
+    list_display = ['body']

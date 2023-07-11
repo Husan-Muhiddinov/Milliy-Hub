@@ -25,10 +25,10 @@
                     <div class="filters text-center clearfix">                     
                         <ul class="filter-tabs filter-btns clearfix">
                             <li class="filter active" data-role="button" data-filter="all">{% trans 'All' %}</li>
-                            <li class="filter" data-role="button" data-filter=".fintech">{% trans 'Fintech' %}</li>
-                            <li class="filter" data-role="button" data-filter=".investing">{% trans 'Investing' %}</li>
-                            <li class="filter" data-role="button" data-filter=".marketing">{% trans 'Marketing' %}</li>
-                            <li class="filter" data-role="button" data-filter=".planning">{% trans 'Planning' %}</li>
+                            <li class="filter" data-role="button" data-filter=".inkubatsiya">{% trans 'Incubation' %} {% trans 'programs' %}</li>
+                            <li class="filter" data-role="button" data-filter=".akseleratsiya">{% trans 'Acceleration' %} {% trans 'programs' %}</li>
+                            <!-- <li class="filter" data-role="button" data-filter=".marketing">{% trans 'Marketing' %}</li>
+                            <li class="filter" data-role="button" data-filter=".planning">{% trans 'Planning' %}</li> -->
                         </ul>
                     </div>
                 </div>
@@ -36,22 +36,24 @@
             
             <div class="filter-list row clearfix">
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing marketing">
+                {% for i in team %}
+                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 {{ i.status }}">
                     <div class="image-box">
-                        <div class="image"><a href="{% static 'images/gallery/1.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/1.jpg' %}" alt=""></a></div>
+                        <div class="image"><a href="{{ i.image.url }}" class="lightbox-image" data-fancybox="gallery"><img src="{{ i.image.url }}" alt=""></a></div>
                         <div class="caption-box">
-                            <h5><a href="case-detail.html">Check Finance & Risk</a></h5>
+                            <h5><a href="{% url 'case_detail' case_id=i.id %}">{{i.title}}</a></h5>
                             <ul class="info">
-                                <li>Business</li>
-                                <li>Corporate</li>
+                                <li>{{i.work}}</li>
+                                <li>{{i.position}}</li>
                             </ul>
-                            <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
+                            <div class="icon-box"><a href="{% url 'case_detail' case_id=i.id %}"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing planning fintech">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing planning fintech">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/2.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/2.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -63,10 +65,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 marketing investing planning">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 marketing investing planning">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/3.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/3.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -78,10 +80,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech marketing">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech marketing">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/4.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/4.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -93,10 +95,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech planning marketing">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech planning marketing">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/5.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/5.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -108,10 +110,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech investing marketing">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 fintech investing marketing">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/6.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/6.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -123,10 +125,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 planning fintech marketing">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 planning fintech marketing">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/7.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/7.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -138,10 +140,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing planning">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 investing planning">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/8.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/8.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -153,10 +155,10 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
                 <!-- Cases Block -->
-                <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 planning fintech">
+                <!-- <div class="case-block mix all col-lg-4 col-md-6 col-sm-12 planning fintech">
                     <div class="image-box">
                         <div class="image"><a href="{% static 'images/gallery/9.jpg' %}" class="lightbox-image" data-fancybox="gallery"><img src="{% static 'images/gallery/9.jpg' %}" alt=""></a></div>
                         <div class="caption-box">
@@ -168,12 +170,12 @@
                             <div class="icon-box"><a href="case-detail.html"><i class="la la-angle-right"></i></a></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
-            <div class="btn-box">
-                <a href="services.html" class="theme-btn btn-style-three">View All</a>
-            </div>
+            <!-- <div class="btn-box">
+                <a href="{% url 'services' %}" class="theme-btn btn-style-three">View All</a>
+            </div> -->
         </div>
     </section>
     <!--End Cases Section -->
