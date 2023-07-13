@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.views import View
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
-from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services, OurTeam, About, Faqs, Our_keys_of_service, Testimonial, Addvertising, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services, OurTeam, About, Faqs, Our_keys_of_service, \
+        Testimonial, Addvertising, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic, DepartmentContact
 # Create your views here.
 
 def for_all_pages(request):
@@ -81,27 +82,61 @@ def services(request):
 def financial(request):
     finan = Our_keys_of_service.objects.all()
     fina = Our_keys_of_service.objects.all().last()
+    text = Finansial.objects.all().last()
     context = {
         'finan': finan,
         'fina': fina,
+        'text': text,
     }
     return render(request, 'financial-planning.html', context=context)
 
 
 def trade_stock(request):
-    return render(request, 'trade-and-stock.html')
+    finan = Our_keys_of_service.objects.all()
+    fina = Our_keys_of_service.objects.all().last()
+    text = Trade_Stock.objects.all().last()
+    context = {
+        'finan': finan,
+        'fina': fina,
+        'text': text,
+    }
+    return render(request, 'trade-and-stock.html', context=context)
 
 
 def audit_assurance(request):
-    return render(request, 'audit-and-assurance.html')
+    finan = Our_keys_of_service.objects.all()
+    fina = Our_keys_of_service.objects.all().last()
+    text = Audit_Assuranse.objects.all().last()
+    context = {
+        'finan': finan,
+        'fina': fina,
+        'text': text,
+    }
+    return render(request, 'audit-and-assurance.html', context=context)
 
 
 def saving_strategy(request):
-    return render(request, 'saving-strategy.html')
+    finan = Our_keys_of_service.objects.all()
+    fina = Our_keys_of_service.objects.all().last()
+    text = Saving.objects.all().last()
+    context = {
+        'finan': finan,
+        'fina': fina,
+        'text': text,
+    }
+    return render(request, 'saving-strategy.html', context=context)
 
 
 def strategic_planning(request):
-    return render(request, 'Strategic-planning.html')
+    finan = Our_keys_of_service.objects.all()
+    fina = Our_keys_of_service.objects.all().last()
+    text = Strategic.objects.all().last()
+    context = {
+        'finan': finan,
+        'fina': fina,
+        'text': text,
+    }
+    return render(request, 'Strategic-planning.html', context=context)
 
 
 def service_detail(request, servic_id):
@@ -144,8 +179,10 @@ def team(request):
 
 def blog(request):
     blog = Blog.objects.all()
-    page = request.GET.get('page', 1)
+
     paginator = Paginator(blog, 2)
+
+    page = request.GET.get('page', 1)
 
     try:
         posts = paginator.page(page)
@@ -175,6 +212,15 @@ def blog_detail(request, blog_id):
 
 def contact(request):
     contac= Contact.objects.all().last()
+    if request.method == 'POST':
+        contact = DepartmentContact(
+            name=request.POST['username'],
+            email=request.POST['email'],
+            message=request.POST['message'],
+        )
+        contact.save()
+        list(messages.get_messages(request))
+        messages.success(request, "Succesfully Created", fail_silently=True)
     context = {
         'contac': contac, 
         }

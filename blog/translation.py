@@ -64,26 +64,26 @@ class TestimonialTranslationOptions(TranslationOptions):
 
 @register(Finansial)
 class FinansialTranslationOptions(TranslationOptions):
-    fields = ('body')
+    fields = ('body',)
 
 
 
 @register(Trade_Stock)
 class Trade_StockTranslationOptions(TranslationOptions):
-    fields = ('body')
+    fields = ('body',)
 
 
 @register(Audit_Assuranse)
 class Audit_AssuranseTranslationOptions(TranslationOptions):
-    fields = ('body')
+    fields = ('body',)
 
 
 @register(Saving)
 class SavingTranslationOptions(TranslationOptions):
-    fields = ('body')
+    fields = ('body',)
 
 
 @register(Strategic)
 class StrategicTranslationOptions(TranslationOptions):
-    fields = ('body')
+    fields = ('body',)
 

@@ -95,10 +95,16 @@ class AddvertisingModelAdmin(admin.ModelAdmin):
 class FinansialModelAdmin(MyTranslationAdmin):
     list_display = ['body']
 
+    def has_add_permission(self, request):
+        return False if self.model.objects.count() > 0 else super().has_add_permission(request)
+
 
 @admin.register(Trade_Stock)
 class Trade_StockModelAdmin(MyTranslationAdmin):
     list_display = ['body']
+
+    def has_add_permission(self, request):
+        return False if self.model.objects.count() > 0 else super().has_add_permission(request)
 
 
 
@@ -106,11 +112,17 @@ class Trade_StockModelAdmin(MyTranslationAdmin):
 class Audit_AssuranseModelAdmin(MyTranslationAdmin):
     list_display = ['body']
 
+    def has_add_permission(self, request):
+        return False if self.model.objects.count() > 0 else super().has_add_permission(request)
+
 
 
 @admin.register(Saving)
 class SavingModelAdmin(MyTranslationAdmin):
     list_display = ['body']
+
+    def has_add_permission(self, request):
+        return False if self.model.objects.count() > 0 else super().has_add_permission(request)
 
 
 
@@ -118,3 +130,11 @@ class SavingModelAdmin(MyTranslationAdmin):
 @admin.register(Strategic)
 class StrategicModelAdmin(MyTranslationAdmin):
     list_display = ['body']
+
+    def has_add_permission(self, request):
+        return False if self.model.objects.count() > 0 else super().has_add_permission(request)
+    
+
+@admin.register(DepartmentContact)
+class DepartmentContactModelAdmin(admin.ModelAdmin):
+    list_display = ['name', 'email', 'message']

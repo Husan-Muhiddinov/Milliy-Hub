@@ -8,7 +8,7 @@
         <div class="auto-container">
             <h1>Service Detail</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home </a></li>
+                <li><a href="{% url 'index' %}">Home </a></li>
                 <li>Service Detail</li>
             </ul>
         </div>
@@ -23,14 +23,14 @@
                 <div class="content-side order-last col-xl-9 col-lg-8 col-md-12 col-sm-12">
                     <div class="service-detail">
                         <!-- Image Box -->
-                        <div class="image-box"><img src="{% static 'images/resource/service-detail.jpg' %}" alt=""></div>
+                        <!-- <div class="image-box"><img src="{% static 'images/resource/service-detail.jpg' %}" alt=""></div> -->
 
                         <div class="lower-content">
-                            <h2>Financial Planning</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.</p>
-                            <p>Some estate planning needs are unique to many business owners, and an accounting firm helps identify these. By looking at the big picture of a business and its key owners, the accounting firm is able to help develop the right mix of business entity creation and family trust establishment. Firms will work with estate planning attorneys, financial planners and insurance agents to implement long-term strategies for business transfers and to mitigate estate taxes.</p>
+                            <!-- <h2>Financial Planning</h2> -->
+                            <p>{{ text.body|safe }}</p>
+                            <!-- <p>Some estate planning needs are unique to many business owners, and an accounting firm helps identify these. By looking at the big picture of a business and its key owners, the accounting firm is able to help develop the right mix of business entity creation and family trust establishment. Firms will work with estate planning attorneys, financial planners and insurance agents to implement long-term strategies for business transfers and to mitigate estate taxes.</p> -->
 
-                            <div class="two-column">
+                            <!-- <div class="two-column">
                                 <div class="row clearfix">
                                     <div class="info-column col-lg-6 col-md-12 col-sm-12">
                                         <h3>Strategy And Operations</h3>
@@ -42,7 +42,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
 
                         <div class="key-features">
@@ -135,22 +135,22 @@
                         <!-- Services Cat List -->
                         <div class="sidebar-widget categories">
                             <ul class="services--list">
-                                <li><a href="services.html">Services</a></li>
-                                <li class="active"><a href="financial-planning.html">Financial Planning</a></li>
-                                <li><a href="trade-and-stock.html">Trade & Stock</a></li>
-                                <li><a href="audit-and-assurance.html">Audit & Assurance</a></li>
-                                <li><a href="saving-strategy.html">Saving Strategy</a></li>
-                                <li><a href="Strategic-planning.html">Strategic Planning</a></li>
-                                <li><a href="service-detail.html">Products Consulting</a></li>
+                                <li><a href="{% url 'services' %}">{% trans 'Services' %}</a></li>
+                                <li class="active"><a href="{% url 'financial' %}">{% trans 'Financial Planning' %}</a></li>
+                                <li><a href="{% url 'trade_stock' %}">{% trans 'Trade & Stock' %}</a></li>
+                                <li><a href="{% url 'audit_assurance' %}">{% trans 'Audit & Assurance' %}</a></li>
+                                <li><a href="{% url 'saving_strategy' %}">{% trans 'Saving Strategy' %}</a></li>
+                                <li><a href="{% url 'strategic_planning' %}">{% trans 'Strategic Planning' %}</a></li>
+                                <!-- <li><a href="service-detail.html">Products Consulting</a></li> -->
                             </ul>
                         </div>
 
                         <!-- Brochure -->
                         <div class="sidebar-widget brochure">
                             <div class="brochure-box">
-                                <span>Download Our 2017</span>
-                                <h4>Financial Brochure</h4>
-                                <p>From Here.</p>
+                                <span>Reklama uchun banner</span>
+                                <h4>Reklama uchun banner</h4>
+                                <p>Reklama uchun banner</p>
                                 <a href="financial-planning.html#" class="theme-btn btn-style-two">Download</a>
                             </div>
                         </div>

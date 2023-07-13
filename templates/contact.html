@@ -7,7 +7,7 @@
         <div class="auto-container">
             <h1>contact us</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home </a></li>
+                <li><a href="{% url 'index' %}">Home </a></li>
                 <li>contact us</li>
             </ul>
         </div>
@@ -18,12 +18,26 @@
     <section class="contact-form-section">
         <div class="auto-container">
             <div class="inner-container">
+                {% for message in messages %}
+                    <li class="{{ message.tags }}">
+                        <h6 class="alert-success text-center" style="padding-top: 5px; padding-bottom: 5px;">
+                            {{ message }}
+                        </h6>
+                    </li>
+                {% endfor %}
+                <!-- {% for message in messages %}
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Hey!</strong> {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %} -->
                 <div class="sec-title text-center">
                     <span class="title">Write a Message</span>
                     <h2>Have Any Questions?</h2>
                 </div>
                 <div class="contact-form-two">
-                    <form method="post" action="contact.html" id="contact-form" novalidate="novalidate">
+                    <form method="post" action="{% url 'contact' %}" id="contact-form" novalidate="novalidate" enctype="multipart/form-data">
+                        {% csrf_token %}
                         <div class="row clearfix">
                             <div class="col-md-6 col-sm-12 col-xs-12 form-group">
                                 <input type="text" name="username" placeholder="Your Name" required="">
@@ -40,6 +54,21 @@
                             <div class="col-md-12 col-sm-12 col-xs-12 form-group text-center">
                                 <button class="theme-btn btn-style-three" type="submit" name="Submit">Send Massage</button>
                             </div>
+                            <!-- <div class="success-message"> -->
+                            <!-- {% if messages %}
+                                <ul class="messages"> -->
+                                    
+                            <!-- {% for message in messages %}
+                                <li class="{{ message.tags }}">
+                                    <h6 class="alert-success text-center" style="padding-top: 5px; padding-bottom: 5px;">
+                                        {{ message }}
+                                    </h6>
+                                </li>
+                            {% endfor %} -->
+                                    <!-- </ul>
+                                {% endif %} -->
+                            
+                            <!-- </div> -->
                         </div>
                     </form>
                 </div>

@@ -185,19 +185,44 @@ class Addvertising(models.Model):
 class Finansial(models.Model):
     body=RichTextField(verbose_name=_('body'))
 
+    def __str__(self):
+        return self.body
+
 
 
 class Trade_Stock(models.Model):
     body=RichTextField(verbose_name=_('body'))
 
+    def __str__(self):
+        return self.body
+
 
 class Audit_Assuranse(models.Model):
     body=RichTextField(verbose_name=_('body'))
+
+    def __str__(self):
+        return self.body
 
 
 class Saving(models.Model):
     body=RichTextField(verbose_name=_('body'))
 
+    def __str__(self):
+        return self.body
+
 
 class Strategic(models.Model):
     body=RichTextField(verbose_name=_('body'))
+
+    def __str__(self):
+        return self.body
+    
+
+
+class DepartmentContact(models.Model):
+    name = models.CharField(max_length=100, null=True, verbose_name=_('name'))
+    email = models.EmailField(null=True, verbose_name=_('email'))
+    message = models.TextField(null=True, verbose_name=_('message'))
+
+    def __str__(self):
+        return self.name
