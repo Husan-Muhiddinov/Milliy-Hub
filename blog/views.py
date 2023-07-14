@@ -3,13 +3,19 @@ from django.views import View
 from django.contrib import messages
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from .models import Contact, Steps, Card, Team, CallBack, Blog, Comment, Services, OurTeam, About, Faqs, Our_keys_of_service, \
-        Testimonial, Addvertising, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic, DepartmentContact
+        Testimonial, Addvertising, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic, DepartmentContact, Keys_of_service, Footer_Email
 # Create your views here.
 
 def for_all_pages(request):
     blog = Blog.objects.all()
     b=Blog.objects.all().order_by('-id')[:2]
     contac= Contact.objects.all().last()
+    if request.method == 'POST':
+        call = Footer_Email(
+            email=request.POST['email'],
+        )
+        call.save()
+        messages.success(request, "Succesfully Created")
     return {'contac': contac, 'b': b, 'blog': blog}
 
 
@@ -81,7 +87,7 @@ def services(request):
 
 def financial(request):
     finan = Our_keys_of_service.objects.all()
-    fina = Our_keys_of_service.objects.all().last()
+    fina = Keys_of_service.objects.all().first()
     text = Finansial.objects.all().last()
     context = {
         'finan': finan,
@@ -93,7 +99,7 @@ def financial(request):
 
 def trade_stock(request):
     finan = Our_keys_of_service.objects.all()
-    fina = Our_keys_of_service.objects.all().last()
+    fina = Keys_of_service.objects.all().first()
     text = Trade_Stock.objects.all().last()
     context = {
         'finan': finan,
@@ -105,7 +111,7 @@ def trade_stock(request):
 
 def audit_assurance(request):
     finan = Our_keys_of_service.objects.all()
-    fina = Our_keys_of_service.objects.all().last()
+    fina = Keys_of_service.objects.all().first()
     text = Audit_Assuranse.objects.all().last()
     context = {
         'finan': finan,
@@ -117,7 +123,7 @@ def audit_assurance(request):
 
 def saving_strategy(request):
     finan = Our_keys_of_service.objects.all()
-    fina = Our_keys_of_service.objects.all().last()
+    fina = Keys_of_service.objects.all().first()
     text = Saving.objects.all().last()
     context = {
         'finan': finan,
@@ -129,7 +135,7 @@ def saving_strategy(request):
 
 def strategic_planning(request):
     finan = Our_keys_of_service.objects.all()
-    fina = Our_keys_of_service.objects.all().last()
+    fina = Keys_of_service.objects.all().first()
     text = Strategic.objects.all().last()
     context = {
         'finan': finan,

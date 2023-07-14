@@ -356,7 +356,8 @@
                             <div class="widget-content">
                                 <div class="text">{% trans 'Sign up for our mailing list to Get Latest updates And offers.' %}</div>
                                 <div class="newsletter-form">
-                                    <form method="post" action="{% url 'contact' %}">
+                                    <form method="post" action="{% url 'blog' %}">
+                                        {% csrf_token %}
                                         <div class="form-group">
                                             <input type="email" name="email" value="" placeholder="Enter Your Email" required="">
                                             <button type="submit"><i class="la la-paper-plane"></i></button>
@@ -418,19 +419,19 @@
     </div>
     <div class="various-color clearfix">
         <div class="colors-list">
-            <span class="palate default-color active" data-theme-file="css/color-themes/default-theme.css"></span>
+            <span class="palate default-color active" data-theme-file="{% static 'css/color-themes/default-theme.css' %}"></span>
             <span class="palate green-color" data-theme-file="{% static 'css/color-themes/green-theme.css' %}"></span>
             <span class="palate blue-color" data-theme-file="{% static 'css/color-themes/blue-theme.css' %}"></span>
-            <span class="palate orange-color" data-theme-file="css/color-themes/orange-theme.css"></span>
-            <span class="palate purple-color" data-theme-file="css/color-themes/purple-theme.css"></span>
-            <span class="palate teal-color" data-theme-file="css/color-themes/teal-theme.css"></span>
-            <span class="palate brown-color" data-theme-file="css/color-themes/brown-theme.css"></span>
-            <span class="palate redd-color" data-theme-file="css/color-themes/redd-color.css"></span>
+            <span class="palate orange-color" data-theme-file="{% static 'css/color-themes/orange-theme.css' %}"></span>
+            <span class="palate purple-color" data-theme-file="{% static 'css/color-themes/purple-theme.css' %}"></span>
+            <span class="palate teal-color" data-theme-file="{% static 'css/color-themes/teal-theme.css' %}"></span>
+            <span class="palate brown-color" data-theme-file="{% static 'css/color-themes/brown-theme.css' %}"></span>
+            <span class="palate redd-color" data-theme-file="{% static 'css/color-themes/redd-color.css' %}"></span>
         </div>
     </div>
     
     
-    <a href="https://themeforest.net/item/mushawartbusiness-consulting-and-professional-services-html-template/22589400" class="purchase-btn">{% trans 'Purchase now' %}</a>
+    <!-- <a href="https://themeforest.net/item/mushawartbusiness-consulting-and-professional-services-html-template/22589400" class="purchase-btn">{% trans 'Purchase now' %}</a> -->
     
     <div class="palate-foo">
         <span>{% trans 'You will find much more options for colors and styling in admin panel. This color picker is used only for demonstation purposes.' %}</span>

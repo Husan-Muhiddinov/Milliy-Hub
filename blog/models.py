@@ -156,12 +156,26 @@ class Faqs(models.Model):
 class Our_keys_of_service(models.Model):
     title = models.CharField(max_length=250, null=True, verbose_name=_('title'))
     body=models.TextField(null=True, verbose_name=_('body'))
+
+    def __str__(self):
+        return self.title
+    
+
+class Keys_of_service(models.Model):
     benifits=models.TextField(null=True, verbose_name=_('benifits'))
     mutual_funds=models.TextField(null=True, verbose_name=_('mutual_funds'))
     company_growth=models.TextField(null=True, verbose_name=_('company_growth'))
 
     def __str__(self):
-        return self.title
+        return self.benifits
+    
+
+class Footer_Email(models.Model):
+    email = models.EmailField(null=True, verbose_name=_('email'))
+
+    def __str__(self):
+        return self.email
+
     
 
 class Testimonial(models.Model):

@@ -1,6 +1,6 @@
 from modeltranslation.translator import TranslationOptions, register
 from django.contrib import admin
-from .models import Contact, Steps, Card, Team, CallBack, Blog, Services, OurTeam, About, Faqs, Our_keys_of_service, Testimonial, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic
+from .models import Contact, Steps, Card, Team, CallBack, Blog, Services, OurTeam, About, Faqs, Our_keys_of_service, Testimonial, Finansial, Trade_Stock, Audit_Assuranse, Saving, Strategic, Keys_of_service, Footer_Email
 
 
 @register(Contact)
@@ -52,7 +52,12 @@ class FaqsTranslationOptions(TranslationOptions):
 
 @register(Our_keys_of_service)
 class Our_keys_of_serviceTranslationOptions(TranslationOptions):
-    fields = ('title', 'body', 'benifits', 'mutual_funds', 'company_growth')
+    fields = ('title', 'body')
+
+
+@register(Keys_of_service)
+class Keys_of_serviceTranslationOptions(TranslationOptions):
+    fields = ('benifits', 'mutual_funds', 'company_growth')
 
 
 

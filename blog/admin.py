@@ -75,7 +75,15 @@ class FaqsModelAdmin(MyTranslationAdmin):
 
 @admin.register(Our_keys_of_service)
 class Our_keys_of_serviceModelAdmin(MyTranslationAdmin):
-    list_display = ['title', 'body', 'benifits', 'mutual_funds', 'company_growth']
+    list_display = ['title', 'body']
+
+
+@admin.register(Keys_of_service)
+class Keys_of_serviceModelAdmin(MyTranslationAdmin):
+    list_display = ['benifits', 'mutual_funds', 'company_growth']
+
+    def has_add_permission(self, request):
+        return False if self.model.objects.count() > 0 else super().has_add_permission(request)
 
 
 
@@ -88,6 +96,11 @@ class TestimonialModelAdmin(MyTranslationAdmin):
 @admin.register(Addvertising)
 class AddvertisingModelAdmin(admin.ModelAdmin):
     list_display = ['photo', 'link']
+
+
+@admin.register(Footer_Email)
+class Footer_EmailModelAdmin(admin.ModelAdmin):
+    list_display = ['email']
 
 
 
