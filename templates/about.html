@@ -6,10 +6,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>About Us</h1>
+            <h1>{% trans 'About' %} {% trans 'Us' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}">Home </a></li>
-                <li>About Us</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %} </a></li>
+                <li>{% trans 'About' %} {% trans 'Us' %}</li>
             </ul>
         </div>
     </section>
@@ -22,7 +22,7 @@
                 <!-- Content Column -->
                 <div class="content-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
-                        <span class="title">We Are Expert</span>
+                        <span class="title">{% trans 'We Are Expert' %}</span>
                         <h2>{{ abot.title }}</h2>
                         <div class="text">{{ abot.body }}</div>
 
@@ -32,7 +32,7 @@
                                 <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                     <div class="count-box">
                                         <span class="count-text" data-speed="3000" data-stop="{{ abot.consultants }}">0</span>
-                                        <h4 class="counter-title">Consultatns</h4>
+                                        <h4 class="counter-title">{% trans 'Consultatns' %}</h4>
                                     </div>
                                 </div>
 
@@ -40,7 +40,7 @@
                                 <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                     <div class="count-box">
                                         <span class="count-text" data-speed="3000" data-stop="{{ abot.awards }}">0</span>
-                                        <h4 class="counter-title">Awards</h4>
+                                        <h4 class="counter-title">{% trans 'Awards' %}</h4>
                                     </div>
                                 </div>
 
@@ -48,7 +48,7 @@
                                 <div class="counter-column col-lg-4 col-md-4 col-sm-12">
                                     <div class="count-box">
                                         <span class="count-text" data-speed="3000" data-stop="{{ abot.cases }}">0</span>
-                                        <h4 class="counter-title">Cases Completed</h4>
+                                        <h4 class="counter-title">{% trans 'Cases Completed' %}</h4>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@
                                         <div class="image"><a href="about.html#"><img src="{% static 'images/resource/feature-1.jpg' %}" alt=""></a></div>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="about.html#">Our Mission</a></h4>
+                                        <h4><a href="about.html#">{% trans 'Our Mission' %}</a></h4>
                                         <div class="text">{{ abot.our_mission }}</div>
                                     </div>
                                 </div>
@@ -80,7 +80,7 @@
                                         <div class="image"><a href="about.html#"><img src="{% static 'images/resource/feature-2.jpg' %}" alt=""></a></div>
                                     </div>
                                     <div class="lower-content">
-                                        <h4><a href="about.html#">Our Vision</a></h4>
+                                        <h4><a href="about.html#">{% trans 'Our' %} {% trans 'Vision' %}</a></h4>
                                         <div class="text">{{ abot.our_vision }}</div>
                                     </div>
                                 </div>
@@ -176,8 +176,8 @@
             <div class="row clearfix">
                 <div class="accordion-column col-lg-6 col-md-12 col-sm-12">
                     <div class="sec-title light">
-                        <span class="title">Some FAQ’s</span>
-                        <h2>Frequently Asked Questions</h2>
+                        <span class="title">{% trans 'Some FAQ’s' %}</span>
+                        <h2>{% trans 'Frequently Asked Questions' %}</h2>
                     </div>             
                     <!--Accordian Box-->
                     <ul class="accordion-box">
@@ -228,16 +228,16 @@
                 <div class="stat-column col-lg-6 col-md-12 col-sm-12">
                     <div class="inner-column">
                         <div class="sec-title light">
-                            <span class="title">Some State skill</span>
-                            <h2>Our Statistics Rate</h2>
-                            <div class="text">This product is meant for educational purposes only. Resemblance to real persons, living or dead is coincidental.</div>
+                            <span class="title">{% trans 'Some State skill' %}</span>
+                            <h2>{% trans 'Our Statistics Rate' %}</h2>
+                            <div class="text">{% trans 'This product is meant for educational purposes only. Resemblance to real persons, living or dead is coincidental.' %}</div>
                         </div>             
 
                         <div class="progress-bars">
                             <!--Skill Item-->
                             <div class="bar-item">
                                 <div class="skill-header clearfix">
-                                    <div class="skill-title">Strategy &amp; Analysis</div>
+                                    <div class="skill-title">{% trans 'Strategy' %} &amp; {% trans 'Analysis' %}</div>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="bar-inner"><div class="bar progress-line" data-width="74"></div><div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="74">0</span>%</div></div>
@@ -248,7 +248,7 @@
                             <!--Skill Item-->
                             <div class="bar-item">
                                 <div class="skill-header clearfix">
-                                    <div class="skill-title">Eeconomic Growth</div>
+                                    <div class="skill-title">{% trans 'Eeconomic Growth' %}</div>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="bar-inner"><div class="bar progress-line" data-width="90"></div><div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="90">0</span>%</div></div>
@@ -259,7 +259,7 @@
                             <!--Skill Item-->
                             <div class="bar-item">
                                 <div class="skill-header clearfix">
-                                    <div class="skill-title">Achieves Goals</div>
+                                    <div class="skill-title">{% trans 'Achieves Goals' %}</div>
                                 </div>
                                 <div class="skill-bar">
                                     <div class="bar-inner"><div class="bar progress-line" data-width="82"></div><div class="skill-percentage"><div class="count-box"><span class="count-text" data-speed="2000" data-stop="82">0</span>%</div></div>
@@ -281,20 +281,20 @@
             <div class="content-column">
                 <div class="inner-column">
                     <div class="sec-title">
-                        <span class="title">Why Us</span>
-                        <h2>Read Why We Expert <br>in The Market</h2>
-                        <div class="text">This product is meant for educational purposes only. Resemblance to real persons, living or dead is purely coincidental. Void prohibited. Some assembly required. List each check separately by number.</div>
+                        <span class="title">{% trans 'Why Us' %}</span>
+                        <h2>{% trans 'Read Why We Expert' %} <br>{% trans 'in The Market' %}</h2>
+                        <div class="text">{% trans 'This product is meant for educational purposes only. Resemblance to real persons, living or dead is purely coincidental. Void prohibited. Some assembly required. List each check separately by number.' %}</div>
                     </div>
                     <ul class="list-style-one clearfix">
-                        <li><a href="services.html">Audit & Assurance</a></li>
-                        <li><a href="services.html">Dedicated Team</a></li>
-                        <li><a href="services.html">Best Advisors</a></li>
-                        <li><a href="services.html">Network Solutions</a></li>
-                        <li><a href="services.html">24/7 Supports</a></li>
-                        <li><a href="services.html">Work Deadline</a></li>
+                        <li><a href="services.html">{% trans' Audit & Assurance' %}</a></li>
+                        <li><a href="services.html">{% trans 'Dedicated Team' %}</a></li>
+                        <li><a href="services.html">{% trans 'Best Advisors' %}</a></li>
+                        <li><a href="services.html">{% trans 'Network Solutions' %}</a></li>
+                        <li><a href="services.html">24/7 {% trans 'Supports' %}</a></li>
+                        <li><a href="services.html">{% trans 'Work Deadline' %}</a></li>
                     </ul>
                     <div class="btn-box">
-                        <a href="services.html" class="theme-btn btn-style-three">Get Start</a>
+                        <a href="services.html" class="theme-btn btn-style-three">{% trans 'Get Start' %}</a>
                     </div>
                 </div>
             </div>

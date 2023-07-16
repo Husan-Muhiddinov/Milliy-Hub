@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-11 17:03+0500\n"
+"POT-Creation-Date: 2023-07-16 11:19+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\blog\models.py:10 .\blog\models.py:71 .\blog\models.py:127
+#: .\blog\models.py:174 .\blog\models.py:238
 msgid "email"
 msgstr "email"
 
@@ -70,7 +71,8 @@ msgstr "title"
 
 #: .\blog\models.py:28 .\blog\models.py:37 .\blog\models.py:57
 #: .\blog\models.py:83 .\blog\models.py:114 .\blog\models.py:136
-#: .\blog\models.py:158
+#: .\blog\models.py:158 .\blog\models.py:200 .\blog\models.py:208
+#: .\blog\models.py:215 .\blog\models.py:222 .\blog\models.py:229
 msgid "body"
 msgstr "body"
 
@@ -78,7 +80,7 @@ msgstr "body"
 msgid "icon"
 msgstr "icon"
 
-#: .\blog\models.py:50 .\blog\models.py:122 .\blog\models.py:168
+#: .\blog\models.py:50 .\blog\models.py:122 .\blog\models.py:182
 msgid "image"
 msgstr "image"
 
@@ -86,17 +88,17 @@ msgstr "image"
 msgid "work"
 msgstr "work"
 
-#: .\blog\models.py:53 .\blog\models.py:170
+#: .\blog\models.py:53 .\blog\models.py:184
 msgid "position"
 msgstr "position"
 
 #: .\blog\models.py:54
 msgid "status"
-msgstr ""
+msgstr "status"
 
 #: .\blog\models.py:55
 msgid "detail_title"
-msgstr ""
+msgstr "detail_title"
 
 #: .\blog\models.py:56 .\blog\models.py:82 .\blog\models.py:113
 msgid "summary"
@@ -104,7 +106,7 @@ msgstr "summary"
 
 #: .\blog\models.py:58
 msgid "client_name"
-msgstr ""
+msgstr "client_name"
 
 #: .\blog\models.py:59
 #, fuzzy
@@ -114,21 +116,22 @@ msgstr "position"
 
 #: .\blog\models.py:60
 msgid "project_value"
-msgstr ""
+msgstr "project_value"
 
 #: .\blog\models.py:61
 msgid "year_completed"
-msgstr ""
+msgstr "year_completed"
 
 #: .\blog\models.py:62
 msgid "project_under"
-msgstr ""
+msgstr "project_under"
 
 #: .\blog\models.py:63
 msgid "advisor"
-msgstr ""
+msgstr "advisor"
 
-#: .\blog\models.py:70 .\blog\models.py:123 .\blog\models.py:169
+#: .\blog\models.py:70 .\blog\models.py:123 .\blog\models.py:183
+#: .\blog\models.py:237
 msgid "name"
 msgstr "name"
 
@@ -146,7 +149,7 @@ msgstr "Pages"
 msgid "author"
 msgstr "author"
 
-#: .\blog\models.py:85 .\blog\models.py:115 .\blog\models.py:178
+#: .\blog\models.py:85 .\blog\models.py:115 .\blog\models.py:192
 msgid "photo"
 msgstr "photo"
 
@@ -174,11 +177,11 @@ msgstr "job"
 
 #: .\blog\models.py:137
 msgid "consultants"
-msgstr ""
+msgstr "consultants"
 
 #: .\blog\models.py:138
 msgid "awards"
-msgstr ""
+msgstr "awards"
 
 #: .\blog\models.py:139
 #, fuzzy
@@ -188,11 +191,11 @@ msgstr "Cases"
 
 #: .\blog\models.py:140
 msgid "our_mission"
-msgstr ""
+msgstr "our_mission"
 
 #: .\blog\models.py:141
 msgid "our_vision"
-msgstr ""
+msgstr "our_vision"
 
 #: .\blog\models.py:149
 #, fuzzy
@@ -202,71 +205,242 @@ msgstr "position"
 
 #: .\blog\models.py:150
 msgid "answer"
-msgstr ""
+msgstr "answer"
 
-#: .\blog\models.py:159
+#: .\blog\models.py:165
 msgid "benifits"
-msgstr ""
+msgstr "benifits"
 
-#: .\blog\models.py:160
+#: .\blog\models.py:166
 msgid "mutual_funds"
-msgstr ""
+msgstr "mutual_funds"
 
-#: .\blog\models.py:161
+#: .\blog\models.py:167
 msgid "company_growth"
-msgstr ""
+msgstr "company_growth"
 
-#: .\blog\models.py:171
+#: .\blog\models.py:185
 #, fuzzy
 #| msgid "position"
 msgid "description"
 msgstr "position"
 
-#: .\blog\models.py:179
+#: .\blog\models.py:193
 msgid "link"
-msgstr ""
+msgstr "link"
 
-#: .\main\settings.py:121
-msgid "English"
-msgstr ""
+#: .\blog\models.py:239
+#, fuzzy
+#| msgid "Pages"
+msgid "message"
+msgstr "Pages"
 
 #: .\main\settings.py:122
-msgid "Russian"
-msgstr ""
+msgid "English"
+msgstr "English"
 
 #: .\main\settings.py:123
-msgid "Uzbek"
-msgstr ""
+msgid "Russian"
+msgstr "Russian"
 
-#: .\templates\Strategic-planning.html:166
-#: .\templates\audit-and-assurance.html:166 .\templates\blog-detail.html:232
-#: .\templates\blog.html:87 .\templates\case-detail.html:103
-#: .\templates\contact.html:129 .\templates\financial-planning.html:168
-#: .\templates\pricing.html:93 .\templates\saving-strategy.html:166
+#: .\main\settings.py:124
+msgid "Uzbek"
+msgstr "Uzbek"
+
+#: .\templates\Strategic-planning.html:9 .\templates\Strategic-planning.html:12
+#: .\templates\audit-and-assurance.html:9
+#: .\templates\audit-and-assurance.html:12
+#: .\templates\financial-planning.html:9 .\templates\financial-planning.html:12
+#: .\templates\saving-strategy.html:12 .\templates\service-detail.html:9
+#: .\templates\service-detail.html:12 .\templates\trade-and-stock.html:9
+#: .\templates\trade-and-stock.html:12
+#, fuzzy
+#| msgid "Services"
+msgid "Service"
+msgstr "Services"
+
+#: .\templates\Strategic-planning.html:9 .\templates\Strategic-planning.html:12
+#: .\templates\audit-and-assurance.html:9
+#: .\templates\audit-and-assurance.html:12 .\templates\blog-detail.html:8
+#: .\templates\blog-detail.html:11 .\templates\case-detail.html:9
+#: .\templates\case-detail.html:12 .\templates\financial-planning.html:9
+#: .\templates\financial-planning.html:12 .\templates\saving-strategy.html:12
+#: .\templates\service-detail.html:9 .\templates\service-detail.html:12
+#: .\templates\trade-and-stock.html:9 .\templates\trade-and-stock.html:12
+#, fuzzy
+#| msgid "Case Detail"
+msgid "Detail"
+msgstr "Case Detail"
+
+#: .\templates\Strategic-planning.html:11 .\templates\about.html:11
+#: .\templates\audit-and-assurance.html:11 .\templates\base.html:153
+#: .\templates\base.html:243 .\templates\blog-detail.html:10
+#: .\templates\blog.html:11 .\templates\case-detail.html:11
+#: .\templates\cases.html:11 .\templates\contact.html:10
+#: .\templates\financial-planning.html:11 .\templates\pricing.html:11
+#: .\templates\saving-strategy.html:11 .\templates\service-detail.html:11
+#: .\templates\services.html:11 .\templates\team.html:13
+#: .\templates\trade-and-stock.html:11
+msgid "Home"
+msgstr "Home"
+
+#: .\templates\Strategic-planning.html:49
+#: .\templates\audit-and-assurance.html:49
+#: .\templates\financial-planning.html:49 .\templates\saving-strategy.html:49
+#: .\templates\service-detail.html:49 .\templates\trade-and-stock.html:49
+msgid "Our Key Feature of Service"
+msgstr "Our Key Feature of Service"
+
+#: .\templates\Strategic-planning.html:91
+#: .\templates\audit-and-assurance.html:91
+#: .\templates\financial-planning.html:91 .\templates\saving-strategy.html:91
+#: .\templates\service-detail.html:89 .\templates\trade-and-stock.html:91
+msgid "Benefits"
+msgstr "Benefits"
+
+#: .\templates\Strategic-planning.html:92
+#: .\templates\audit-and-assurance.html:92
+#: .\templates\financial-planning.html:92 .\templates\saving-strategy.html:92
+#: .\templates\service-detail.html:90 .\templates\trade-and-stock.html:92
+msgid "Mutual Funds"
+msgstr "Mutual Funds"
+
+#: .\templates\Strategic-planning.html:93
+#: .\templates\audit-and-assurance.html:93
+#: .\templates\financial-planning.html:93 .\templates\saving-strategy.html:93
+#: .\templates\service-detail.html:91 .\templates\trade-and-stock.html:93
+msgid "Company Growht"
+msgstr "Company Growht"
+
+#: .\templates\Strategic-planning.html:138
+#: .\templates\audit-and-assurance.html:138 .\templates\base.html:168
+#: .\templates\base.html:170 .\templates\base.html:258
+#: .\templates\base.html:260 .\templates\financial-planning.html:138
+#: .\templates\index-3.html:89 .\templates\index-3.html:259
+#: .\templates\saving-strategy.html:138 .\templates\service-detail.html:135
+#: .\templates\services.html:9 .\templates\services.html:12
+#: .\templates\trade-and-stock.html:138
+msgid "Services"
+msgstr "Services"
+
+#: .\templates\Strategic-planning.html:139
+#: .\templates\audit-and-assurance.html:139 .\templates\base.html:171
+#: .\templates\base.html:261 .\templates\financial-planning.html:139
+#: .\templates\saving-strategy.html:139 .\templates\service-detail.html:136
+#: .\templates\trade-and-stock.html:139
+msgid "Financial Planning"
+msgstr "Financial Planning"
+
+#: .\templates\Strategic-planning.html:140
+#: .\templates\audit-and-assurance.html:140 .\templates\base.html:172
+#: .\templates\base.html:262 .\templates\financial-planning.html:140
+#: .\templates\saving-strategy.html:140 .\templates\service-detail.html:137
+#: .\templates\trade-and-stock.html:140
+msgid "Trade & Stock"
+msgstr "Trade & Stock"
+
+#: .\templates\Strategic-planning.html:141
+#: .\templates\audit-and-assurance.html:141 .\templates\base.html:173
+#: .\templates\base.html:263 .\templates\financial-planning.html:141
+#: .\templates\saving-strategy.html:141 .\templates\service-detail.html:138
+#: .\templates\trade-and-stock.html:141
+msgid "Audit & Assurance"
+msgstr "Audit & Assurance"
+
+#: .\templates\Strategic-planning.html:142
+#: .\templates\audit-and-assurance.html:142 .\templates\base.html:174
+#: .\templates\base.html:264 .\templates\financial-planning.html:142
+#: .\templates\saving-strategy.html:142 .\templates\service-detail.html:139
+#: .\templates\trade-and-stock.html:142
+msgid "Saving Strategy"
+msgstr "Saving Strategy"
+
+#: .\templates\Strategic-planning.html:143
+#: .\templates\audit-and-assurance.html:143 .\templates\base.html:175
+#: .\templates\base.html:265 .\templates\financial-planning.html:143
+#: .\templates\saving-strategy.html:143 .\templates\service-detail.html:140
+#: .\templates\trade-and-stock.html:143
+msgid "Strategic Planning"
+msgstr "Strategic Planning"
+
+#: .\templates\Strategic-planning.html:154
+#: .\templates\audit-and-assurance.html:154 .\templates\case-detail.html:85
+#: .\templates\financial-planning.html:154 .\templates\saving-strategy.html:154
+#: .\templates\service-detail.html:151 .\templates\trade-and-stock.html:154
+msgid "Download"
+msgstr "Download"
+
+#: .\templates\Strategic-planning.html:169
+#: .\templates\audit-and-assurance.html:169 .\templates\blog-detail.html:223
+#: .\templates\blog.html:87 .\templates\case-detail.html:101
+#: .\templates\contact.html:158 .\templates\financial-planning.html:169
+#: .\templates\pricing.html:93 .\templates\saving-strategy.html:169
 #: .\templates\service-detail.html:166 .\templates\team.html:198
-#: .\templates\trade-and-stock.html:166
+#: .\templates\trade-and-stock.html:169
 msgid "Provide Solutions For the Realiable Growth"
 msgstr "Provide Solutions For the Realiable Growth"
 
-#: .\templates\Strategic-planning.html:171
-#: .\templates\audit-and-assurance.html:171 .\templates\blog-detail.html:237
-#: .\templates\blog.html:92 .\templates\case-detail.html:108
-#: .\templates\contact.html:134 .\templates\financial-planning.html:173
-#: .\templates\pricing.html:98 .\templates\saving-strategy.html:171
+#: .\templates\Strategic-planning.html:174
+#: .\templates\audit-and-assurance.html:174 .\templates\blog-detail.html:228
+#: .\templates\blog.html:92 .\templates\case-detail.html:106
+#: .\templates\contact.html:163 .\templates\financial-planning.html:174
+#: .\templates\pricing.html:98 .\templates\saving-strategy.html:174
 #: .\templates\service-detail.html:171 .\templates\team.html:203
-#: .\templates\trade-and-stock.html:171
+#: .\templates\trade-and-stock.html:174
 msgid "Get A Quotes"
 msgstr "Get A Quotes"
 
-#: .\templates\about.html:103 .\templates\index-3.html:320
+#: .\templates\about.html:9 .\templates\about.html:12
+#: .\templates\about.html:363 .\templates\base.html:167
+#: .\templates\base.html:257 .\templates\base.html:389
+#: .\templates\index-3.html:186 .\templates\index-3.html:190
+msgid "About"
+msgstr "About"
+
+#: .\templates\about.html:9 .\templates\about.html:12 .\templates\base.html:368
+msgid "Us"
+msgstr "Us"
+
+#: .\templates\about.html:25
+msgid "We Are Expert"
+msgstr "We Are Expert"
+
+#: .\templates\about.html:35
+msgid "Consultatns"
+msgstr "Consultatns"
+
+#: .\templates\about.html:43
+msgid "Awards"
+msgstr "Awards"
+
+#: .\templates\about.html:51
+msgid "Cases Completed"
+msgstr "Cases Completed"
+
+#: .\templates\about.html:70
+msgid "Our Mission"
+msgstr "Our Mission"
+
+#: .\templates\about.html:83 .\templates\index-3.html:89
+#: .\templates\index-3.html:259 .\templates\index-3.html:284
+#: .\templates\index-3.html:371 .\templates\team.html:11
+#: .\templates\team.html:24
+msgid "Our"
+msgstr "Our"
+
+#: .\templates\about.html:83
+msgid "Vision"
+msgstr "Vision"
+
+#: .\templates\about.html:103 .\templates\index-3.html:323
 msgid "You are"
 msgstr "You are"
 
-#: .\templates\about.html:103 .\templates\index-3.html:320
+#: .\templates\about.html:103 .\templates\index-3.html:323
 msgid "10 minitues away from the Help you need"
 msgstr "10 minitues away from the Help you need"
 
-#: .\templates\about.html:104 .\templates\index-3.html:321
+#: .\templates\about.html:104 .\templates\index-3.html:324
 msgid ""
 "Capitalize on low hanging fruit to identify a ballpark value added activity "
 "to beta test."
@@ -274,15 +448,16 @@ msgstr ""
 "Capitalize on low hanging fruit to identify a ballpark value added activity "
 "to beta test."
 
-#: .\templates\about.html:113 .\templates\index-3.html:330
+#: .\templates\about.html:113 .\templates\index-3.html:333
 msgid "We are always ready"
 msgstr "We are always ready"
 
-#: .\templates\about.html:114 .\templates\index-3.html:331
+#: .\templates\about.html:114 .\templates\index-3.html:334
 msgid "Request a call back"
 msgstr "Request a call back"
 
-#: .\templates\about.html:135 .\templates\index-3.html:352
+#: .\templates\about.html:135 .\templates\contact.html:55
+#: .\templates\index-3.html:355
 #, fuzzy
 #| msgid "Pages"
 msgid "Send Massage"
@@ -308,6 +483,94 @@ msgstr ""
 msgid "Explore All Cases"
 msgstr "Explore All Cases"
 
+#: .\templates\about.html:179
+msgid "Some FAQ’s"
+msgstr "Some FAQ’s"
+
+#: .\templates\about.html:180
+msgid "Frequently Asked Questions"
+msgstr "Frequently Asked Questions"
+
+#: .\templates\about.html:231
+msgid "Some State skill"
+msgstr "Some State skill"
+
+#: .\templates\about.html:232
+msgid "Our Statistics Rate"
+msgstr "Our Statistics Rate"
+
+#: .\templates\about.html:233
+msgid ""
+"This product is meant for educational purposes only. Resemblance to real "
+"persons, living or dead is coincidental."
+msgstr ""
+"This product is meant for educational purposes only. Resemblance to real "
+"persons, living or dead is coincidental."
+
+#: .\templates\about.html:240
+#, fuzzy
+#| msgid "Saving Strategy"
+msgid "Strategy"
+msgstr "Saving Strategy"
+
+#: .\templates\about.html:240
+msgid "Analysis"
+msgstr "Analysis"
+
+#: .\templates\about.html:251
+msgid "Eeconomic Growth"
+msgstr "Eeconomic Growth"
+
+#: .\templates\about.html:262
+msgid "Achieves Goals"
+msgstr "Achieves Goals"
+
+#: .\templates\about.html:284
+msgid "Why Us"
+msgstr "Why Us"
+
+#: .\templates\about.html:285
+msgid "Read Why We Expert"
+msgstr "Read Why We Expert"
+
+#: .\templates\about.html:285
+msgid "in The Market"
+msgstr "in The Market"
+
+#: .\templates\about.html:286
+msgid ""
+"This product is meant for educational purposes only. Resemblance to real "
+"persons, living or dead is purely coincidental. Void prohibited. Some "
+"assembly required. List each check separately by number."
+msgstr ""
+"This product is meant for educational purposes only. Resemblance to real "
+"persons, living or dead is purely coincidental. Void prohibited. Some "
+"assembly required. List each check separately by number."
+
+#: .\templates\about.html:290
+msgid "Dedicated Team"
+msgstr "Dedicated Team"
+
+#: .\templates\about.html:291
+msgid "Best Advisors"
+msgstr "Best Advisors"
+
+#: .\templates\about.html:292
+msgid "Network Solutions"
+msgstr "Network Solutions"
+
+#: .\templates\about.html:293
+msgid "Supports"
+msgstr "Supports"
+
+#: .\templates\about.html:294
+msgid "Work Deadline"
+msgstr "Work Deadline"
+
+#: .\templates\about.html:297
+msgid "Get Start"
+msgstr "Get Start"
+
 #: .\templates\about.html:314 .\templates\index-3.html:212
 msgid "How We Work"
 msgstr "How We Work"
@@ -319,12 +582,6 @@ msgstr "We Make Successful Business in"
 #: .\templates\about.html:315 .\templates\index-3.html:213
 msgid "Steps"
 msgstr "Steps"
-
-#: .\templates\about.html:363 .\templates\base.html:148
-#: .\templates\base.html:238 .\templates\base.html:371
-#: .\templates\index-3.html:186 .\templates\index-3.html:190
-msgid "About"
-msgstr "About"
 
 #: .\templates\about.html:364 .\templates\index-3.html:187
 msgid "We Aim to Provide Expert Advice and Quality Service."
@@ -348,7 +605,8 @@ msgstr ""
 msgid "About More"
 msgstr "About"
 
-#: .\templates\base.html:8
+#: .\templates\base.html:8 .\templates\blog-detail.html:188
+#: .\templates\blog-detail.html:207
 #, fuzzy
 #| msgid "Grow Your Business"
 msgid "Business"
@@ -358,16 +616,16 @@ msgstr "Grow Your Business"
 msgid "Finance"
 msgstr "Finance"
 
-#: .\templates\base.html:77 .\templates\contact.html:79
+#: .\templates\base.html:77 .\templates\contact.html:108
 msgid "Address"
 msgstr "Address"
 
-#: .\templates\base.html:86 .\templates\base.html:303
-#: .\templates\contact.html:69
+#: .\templates\base.html:86 .\templates\base.html:322
+#: .\templates\contact.html:98
 msgid "to"
 msgstr "to"
 
-#: .\templates\base.html:87 .\templates\contact.html:70
+#: .\templates\base.html:87 .\templates\contact.html:99
 msgid "Sunday Closed"
 msgstr "Sunday Closed"
 
@@ -375,84 +633,51 @@ msgstr "Sunday Closed"
 msgid "Call Us for Any Questions"
 msgstr "Call Us for Any Questions"
 
-#: .\templates\base.html:134 .\templates\base.html:224
-msgid "Home"
-msgstr "Home"
-
-#: .\templates\base.html:149 .\templates\base.html:151
-#: .\templates\base.html:239 .\templates\base.html:241
-#: .\templates\index-3.html:89 .\templates\index-3.html:259
-#: .\templates\service-detail.html:135
-msgid "Services"
-msgstr "Services"
-
-#: .\templates\base.html:152 .\templates\base.html:242
-#: .\templates\service-detail.html:136
-msgid "Financial Planning"
-msgstr "Financial Planning"
-
-#: .\templates\base.html:153 .\templates\base.html:243
-#: .\templates\service-detail.html:137
-msgid "Trade & Stock"
-msgstr "Trade & Stock"
-
-#: .\templates\base.html:154 .\templates\base.html:244
-#: .\templates\service-detail.html:138
-msgid "Audit & Assurance"
-msgstr "Audit & Assurance"
-
-#: .\templates\base.html:155 .\templates\base.html:245
-#: .\templates\service-detail.html:139
-msgid "Saving Strategy"
-msgstr "Saving Strategy"
-
-#: .\templates\base.html:156 .\templates\base.html:246
-#: .\templates\service-detail.html:140
-msgid "Strategic Planning"
-msgstr "Strategic Planning"
-
-#: .\templates\base.html:157 .\templates\base.html:247
+#: .\templates\base.html:176 .\templates\base.html:266
+#: .\templates\saving-strategy.html:9
 msgid "Service Detail"
 msgstr "Service Detail"
 
-#: .\templates\base.html:160 .\templates\base.html:162
-#: .\templates\base.html:250 .\templates\base.html:252
+#: .\templates\base.html:179 .\templates\base.html:181
+#: .\templates\base.html:269 .\templates\base.html:271
+#: .\templates\case-detail.html:9 .\templates\case-detail.html:12
+#: .\templates\cases.html:9 .\templates\cases.html:12
 #: .\templates\index-3.html:284
 msgid "Cases"
 msgstr "Cases"
 
-#: .\templates\base.html:163 .\templates\base.html:253
+#: .\templates\base.html:182 .\templates\base.html:272
 msgid "Case Detail"
 msgstr "Case Detail"
 
-#: .\templates\base.html:166 .\templates\base.html:256
+#: .\templates\base.html:185 .\templates\base.html:275
 msgid "Pages"
 msgstr "Pages"
 
-#: .\templates\base.html:168 .\templates\base.html:258
+#: .\templates\base.html:187 .\templates\base.html:277
 msgid "Pricing"
 msgstr "Pricing"
 
-#: .\templates\base.html:169 .\templates\base.html:259
+#: .\templates\base.html:188 .\templates\base.html:278
 msgid "Our Team"
 msgstr "Our Team"
 
-#: .\templates\base.html:172 .\templates\base.html:174
-#: .\templates\base.html:262 .\templates\base.html:264
-#: .\templates\index-3.html:368
+#: .\templates\base.html:191 .\templates\base.html:193
+#: .\templates\base.html:281 .\templates\base.html:283
+#: .\templates\index-3.html:371
 msgid "Blog"
 msgstr "Blog"
 
-#: .\templates\base.html:175 .\templates\base.html:265
+#: .\templates\base.html:194 .\templates\base.html:284
 msgid "Blog Detail"
 msgstr "Blog Detail"
 
-#: .\templates\base.html:178 .\templates\base.html:268
-#: .\templates\base.html:375
+#: .\templates\base.html:197 .\templates\base.html:287
+#: .\templates\base.html:393
 msgid "Contact"
 msgstr "Contact"
 
-#: .\templates\base.html:301
+#: .\templates\base.html:320
 msgid ""
 "We provide expert Business Coaching to both individuals and businesses. With "
 "over 30 years of experience we’ll ensure that you’re always getting the best "
@@ -462,51 +687,53 @@ msgstr ""
 "years of experience, we always ensure that you get the best guidance from "
 "the best people in the entire industry."
 
-#: .\templates\base.html:315 .\templates\index-3.html:369
+#: .\templates\base.html:334 .\templates\index-3.html:372
 msgid "Latest News"
 msgstr "Latest News"
 
-#: .\templates\base.html:338
+#: .\templates\base.html:355
 msgid "Newsletter"
 msgstr "News letter"
 
-#: .\templates\base.html:340
+#: .\templates\base.html:357
 msgid "Sign up for our mailing list to Get Latest updates And offers."
 msgstr "Sign up for our mailing list to Get Latest updates And offers."
 
-#: .\templates\base.html:350
-msgid "Follow Us"
+#: .\templates\base.html:368
+#, fuzzy
+#| msgid "Follow Us"
+msgid "Follow"
 msgstr "Follow Us"
 
-#: .\templates\base.html:372
+#: .\templates\base.html:390
 msgid "Privacy Policy"
 msgstr "Privacy Policy"
 
-#: .\templates\base.html:373
+#: .\templates\base.html:391
 msgid "Investors"
 msgstr "Investors"
 
-#: .\templates\base.html:374
+#: .\templates\base.html:392
 msgid "Legals"
 msgstr "Legals"
 
-#: .\templates\base.html:379
+#: .\templates\base.html:397
 msgid "Designed By"
 msgstr "Designed By"
 
-#: .\templates\base.html:379
+#: .\templates\base.html:397
 msgid "ARY Themes"
 msgstr "Sanjarbek Usmonov"
 
-#: .\templates\base.html:400
+#: .\templates\base.html:418
 msgid "Choose Your Color"
 msgstr "Choose Your Color"
 
-#: .\templates\base.html:416
+#: .\templates\base.html:434
 msgid "Purchase now"
 msgstr "Purchase now"
 
-#: .\templates\base.html:419
+#: .\templates\base.html:437
 msgid ""
 "You will find much more options for colors and styling in admin panel. This "
 "color picker is used only for demonstation purposes."
@@ -514,9 +741,88 @@ msgstr ""
 "You will find much more options for colors and styling in admin panel. This "
 "color picker is used only for demonstation purposes."
 
+#: .\templates\blog-detail.html:8 .\templates\blog-detail.html:11
+#: .\templates\blog.html:9 .\templates\blog.html:12
+msgid "News"
+msgstr "News"
+
+#: .\templates\blog-detail.html:41
+msgid "Share:"
+msgstr "Share:"
+
 #: .\templates\blog-detail.html:171
 msgid "Recent Posts"
 msgstr "Recent Posts"
+
+#: .\templates\blog-detail.html:186
+msgid "Best Categories"
+msgstr "Best Categories"
+
+#: .\templates\blog-detail.html:189
+msgid "Corporate"
+msgstr "Corporate"
+
+#: .\templates\blog-detail.html:190
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: .\templates\blog-detail.html:191
+msgid "Finince"
+msgstr "Finince"
+
+#: .\templates\blog-detail.html:192
+#, fuzzy
+#| msgid "Investors"
+msgid "Investment planning"
+msgstr "Investors"
+
+#: .\templates\blog-detail.html:200
+msgid "Cool Tags"
+msgstr "Cool Tags"
+
+#: .\templates\blog-detail.html:202
+#, fuzzy
+#| msgid "Designed By"
+msgid "Design"
+msgstr "Designed By"
+
+#: .\templates\blog-detail.html:203
+msgid "Fashion"
+msgstr "Fashion"
+
+#: .\templates\blog-detail.html:204
+msgid "Money"
+msgstr "Money"
+
+#: .\templates\blog-detail.html:205
+msgid "Entertanment"
+msgstr "Entertanment"
+
+#: .\templates\blog-detail.html:206
+msgid "Logo"
+msgstr "Logo"
+
+#: .\templates\blog-detail.html:208
+msgid "Development"
+msgstr "Development"
+
+#: .\templates\blog.html:9
+#, fuzzy
+#| msgid "Latest News"
+msgid "Latest"
+msgstr "Latest News"
+
+#: .\templates\blog.html:33 .\templates\services.html:31
+#, fuzzy
+#| msgid "More"
+msgid "Read More"
+msgstr "More"
+
+#: .\templates\case-detail.html:62
+#, fuzzy
+#| msgid "Strategic Planning"
+msgid "Strategy and Solution"
+msgstr "Strategic Planning"
 
 #: .\templates\cases.html:27
 msgid "All"
@@ -524,15 +830,15 @@ msgstr "All"
 
 #: .\templates\cases.html:28
 msgid "Incubation"
-msgstr ""
+msgstr "Incubation"
 
 #: .\templates\cases.html:28 .\templates\cases.html:29
 msgid "programs"
-msgstr ""
+msgstr "programs"
 
 #: .\templates\cases.html:29
 msgid "Acceleration"
-msgstr ""
+msgstr "Acceleration"
 
 #: .\templates\cases.html:30
 msgid "Marketing"
@@ -543,6 +849,26 @@ msgstr "Marketing"
 #| msgid "Financial Planning"
 msgid "Planning"
 msgstr "Financial Planning"
+
+#: .\templates\contact.html:8 .\templates\contact.html:11
+#, fuzzy
+#| msgid "Contact"
+msgid "contact"
+msgstr "Contact"
+
+#: .\templates\contact.html:8 .\templates\contact.html:11
+msgid "us"
+msgstr "us"
+
+#: .\templates\contact.html:35
+msgid "Write a Message"
+msgstr "Write a Message"
+
+#: .\templates\contact.html:36
+#, fuzzy
+#| msgid "Call Us for Any Questions"
+msgid "Have Any Questions?"
+msgstr "Call Us for Any Questions"
 
 #: .\templates\index-3.html:32
 msgid "Hight Quality Market"
@@ -563,11 +889,6 @@ msgstr ""
 #: .\templates\index-3.html:88 .\templates\index-3.html:169
 msgid "Know MORE"
 msgstr "Know MORE"
-
-#: .\templates\index-3.html:89 .\templates\index-3.html:259
-#: .\templates\index-3.html:284 .\templates\index-3.html:368
-msgid "Our"
-msgstr "Our"
 
 #: .\templates\index-3.html:114
 msgid "We Provide Solution to"
@@ -601,9 +922,72 @@ msgstr "Our Best Work"
 msgid "Successful"
 msgstr "We Make Successful Business in"
 
-#: .\templates\index-3.html:307
+#: .\templates\index-3.html:310
 msgid "View All"
 msgstr "View All"
+
+#: .\templates\index-3.html:386
+#, fuzzy
+#| msgid "comment"
+msgid "Comments"
+msgstr "comment"
+
+#: .\templates\pricing.html:9 .\templates\pricing.html:12
+#: .\templates\pricing.html:22
+msgid "Price List"
+msgstr "Price List"
+
+#: .\templates\pricing.html:23
+#, fuzzy
+#| msgid "Our Best Work"
+msgid "Our Best Package"
+msgstr "Our Best Work"
+
+#: .\templates\service-detail.html:53
+msgid "Client Prospecting"
+msgstr "Client Prospecting"
+
+#: .\templates\service-detail.html:56 .\templates\service-detail.html:66
+#: .\templates\service-detail.html:76
+msgid ""
+"Bring to the table win-win survival strategies to ensure proactive "
+"domination. At the end of the day, going forward, a new normal that has "
+"evolved from generation X is on the runway heading towards a streamlined "
+"cloud solution. User generated content in real-time will have multiple "
+"touchpoints for offshoring."
+msgstr ""
+"Bring to the table win-win survival strategies to ensure proactive "
+"domination. At the end of the day, going forward, a new normal that has "
+"evolved from generation X is on the runway heading towards a streamlined "
+"cloud solution. User generated content in real-time will have multiple "
+"touchpoints for offshoring."
+
+#: .\templates\service-detail.html:63
+#, fuzzy
+#| msgid "Investors"
+msgid "Investment Goals"
+msgstr "Investors"
+
+#: .\templates\service-detail.html:73
+msgid "Document Verification"
+msgstr "Document Verification"
+
+#: .\templates\service-detail.html:102 .\templates\service-detail.html:110
+#: .\templates\service-detail.html:118
+msgid ""
+"Leverage agile frameworks to provide a robust synopsis for high level "
+"overviews. It erative approaches to corporate strategy foster collaborative "
+"thinking to further the overall value proposition. Organically grow the "
+"holistic world view of disruptive innovation via workplace diversity and "
+"empowerment. User generated content in real-time will have multiple "
+"touchpoints for offshoring."
+msgstr ""
+"Leverage agile frameworks to provide a robust synopsis for high level "
+"overviews. It erative approaches to corporate strategy foster collaborative "
+"thinking to further the overall value proposition. Organically grow the "
+"holistic world view of disruptive innovation via workplace diversity and "
+"empowerment. User generated content in real-time will have multiple "
+"touchpoints for offshoring."
 
 #: .\templates\services.html:105
 #, fuzzy
@@ -611,13 +995,18 @@ msgstr "View All"
 msgid "Our Services"
 msgstr "Our Service"
 
+#: .\templates\team.html:11 .\templates\team.html:14 .\templates\team.html:24
+#, fuzzy
+#| msgid "Our Team"
+msgid "Team"
+msgstr "Our Team"
+
+#: .\templates\team.html:25
+msgid "Operations Directors"
+msgstr "Operations Directors"
+
 #~ msgid "Fintech"
 #~ msgstr "Fintech"
-
-#, fuzzy
-#~| msgid "Investors"
-#~ msgid "Investing"
-#~ msgstr "Investors"
 
 #, fuzzy
 #~| msgid "Blog"
@@ -628,8 +1017,3 @@ msgstr "Our Service"
 #~| msgid "Blog"
 #~ msgid "Our Blogs"
 #~ msgstr "Blog"
-
-#, fuzzy
-#~| msgid "Services"
-#~ msgid "Service"
-#~ msgstr "Services"

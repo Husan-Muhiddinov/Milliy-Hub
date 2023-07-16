@@ -5,10 +5,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>News Detail</h1>
+            <h1>{% trans 'News' %} {% trans 'Detail' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li>News Detail</li>
+                <li><a href="index.html">{% trans 'Home' %}</a></li>
+                <li>{% trans 'News' %} {% trans 'Detail' %}</li>
             </ul>
         </div>
     </section>
@@ -38,7 +38,7 @@
                                         <a href="https://{{contac.instagram_link}}"><i class="la la-instagram"></i></a>
                                         <a href="https://{{contac.linkedin_link}}"><i class="la la-linkedin"></i></a>
                                         <a href="https://{{contac.youtube_link}}"><i class="la la-youtube"></i></a>
-                                        <h4>Share:</h4>
+                                        <h4>{% trans 'Share:' %}</h4>
                                     </div>
                                 </div>
                                 <p>{{ blog.body|safe }}</p>
@@ -183,13 +183,13 @@
 
                         <!-- Categories -->
                         <div class="sidebar-widget categories">
-                            <div class="sidebar-title"><h2>Best Categories</h2></div>
+                            <div class="sidebar-title"><h2>{% trans 'Best Categories' %}</h2></div>
                             <ul class="cat-list">
-                                <li><a href="blog-detail.html#">Business <span>(6)</span></a></li>
-                                <li><a href="blog-detail.html#">Corporate <span>(9)</span></a></li>
-                                <li><a href="blog-detail.html#">Portfolio <span>(3)</span></a></li>
-                                <li><a href="blog-detail.html#">Finince <span>(5)</span></a></li>
-                                <li><a href="blog-detail.html#">Investment planning <span>(7)</span></a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Business' %} <span>(6)</span></a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Corporate' %} <span>(9)</span></a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Portfolio' %} <span>(3)</span></a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Finince' %} <span>(5)</span></a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Investment planning' %} <span>(7)</span></a></li>
                             </ul>
                         </div>
 
@@ -197,15 +197,15 @@
 
                         <!-- Tags -->
                         <div class="sidebar-widget tags">
-                            <div class="sidebar-title"><h2>Cool Tags</h2></div>
+                            <div class="sidebar-title"><h2>{% trans 'Cool Tags' %}</h2></div>
                             <ul class="tag-list clearfix">
-                                <li><a href="blog-detail.html#">Design</a></li>
-                                <li><a href="blog-detail.html#">Fashion</a></li>
-                                <li><a href="blog-detail.html#">Money</a></li>
-                                <li><a href="blog-detail.html#">Entertanment</a></li>
-                                <li><a href="blog-detail.html#">Logo</a></li>
-                                <li><a href="blog-detail.html#">Business</a></li>
-                                <li><a href="blog-detail.html#">Development</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Design' %}</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Fashion' %}</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Money' %}</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Entertanment' %}</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Logo' %}</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Business' %}</a></li>
+                                <li><a href="blog-detail.html#">{% trans 'Development' %}</a></li>
                             </ul>
                         </div>              
                     </aside>
@@ -225,7 +225,7 @@
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
+                        <a href="{% url 'contact' %}" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

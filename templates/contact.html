@@ -5,10 +5,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>contact us</h1>
+            <h1>{% trans 'contact' %} {% trans 'us' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}">Home </a></li>
-                <li>contact us</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %} </a></li>
+                <li>{% trans 'contact' %} {% trans 'us' %}</li>
             </ul>
         </div>
     </section>
@@ -32,8 +32,8 @@
                     </div>
                 {% endfor %} -->
                 <div class="sec-title text-center">
-                    <span class="title">Write a Message</span>
-                    <h2>Have Any Questions?</h2>
+                    <span class="title">{% trans 'Write a Message' %}</span>
+                    <h2>{% trans 'Have Any Questions?' %}</h2>
                 </div>
                 <div class="contact-form-two">
                     <form method="post" action="{% url 'contact' %}" id="contact-form" novalidate="novalidate" enctype="multipart/form-data">
@@ -52,7 +52,7 @@
                             </div>
                             
                             <div class="col-md-12 col-sm-12 col-xs-12 form-group text-center">
-                                <button class="theme-btn btn-style-three" type="submit" name="Submit">Send Massage</button>
+                                <button class="theme-btn btn-style-three" type="submit" name="Submit">{% trans 'Send Massage' %}</button>
                             </div>
                             <!-- <div class="success-message"> -->
                             <!-- {% if messages %}
@@ -160,7 +160,7 @@
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
+                        <a href="{% url 'contact' %}" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

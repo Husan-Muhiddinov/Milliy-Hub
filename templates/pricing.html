@@ -6,10 +6,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Price List</h1>
+            <h1>{% trans 'Price List' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home </a></li>
-                <li>Price List</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %} </a></li>
+                <li>{% trans 'Price List' %}</li>
             </ul>
         </div>
     </section>
@@ -19,8 +19,8 @@
     <section class="pricing-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="title">Price List</span>
-                <h2>Our Best Package</h2>
+                <span class="title">{% trans 'Price List' %}</span>
+                <h2>{% trans 'Our Best Package' %}</h2>
             </div>
             <div class="row clearfix">
                 <!--Pricing Column-->

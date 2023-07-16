@@ -383,7 +383,7 @@
                             <h3><a href="{% url 'blog_detail' blog_id=i.id %}">{{ i.title }}</a></h3>
                             <div class="text">{{ i.summary }}</div>
                             <ul class="info">
-                                <li><i class="la la-comments"></i> Comments</li>
+                                <li><i class="la la-comments"></i> {% trans 'Comments' %}</li>
                                 <li><i class="la la-user"></i> {{ i.author }}</li>
                                 <li><i class="la la-calendar-check-o"></i> {{ i.day }}</li>
                             </ul>

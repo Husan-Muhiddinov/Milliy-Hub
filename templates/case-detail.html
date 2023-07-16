@@ -6,10 +6,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Cases Detail</h1>
+            <h1>{% trans 'Cases' %} {% trans 'Detail' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home</a></li>
-                <li>Cases Detail</li>
+                <li><a href="index.html">{% trans 'Home' %}</a></li>
+                <li>{% trans 'Cases' %} {% trans 'Detail' %}</li>
             </ul>
         </div>
     </section>
@@ -59,7 +59,7 @@
                         </div>
                     </div>
 
-                    <h3>Strategy and Solution</h3>
+                    <h3>{% trans 'Strategy and Solution' %}</h3>
                     <div class="text">
                         <p>{{ team.body|safe }}</p>
                     </div>
@@ -82,7 +82,7 @@
                                     </ul>
                                     <h3>Savings of US $ 52,000</h3> -->
                                     <!-- <p>Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail.</p> -->
-                                    <a href="case-detail.html#" class="link">Download PDF <i class="la la-file-pdf-o"></i></a>
+                                    <a href="case-detail.html#" class="link">{% trans 'Download' %} PDF <i class="la la-file-pdf-o"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -103,7 +103,7 @@
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
+                        <a href="{% url 'contact' %}" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

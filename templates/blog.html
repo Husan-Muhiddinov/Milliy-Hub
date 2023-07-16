@@ -6,10 +6,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Latest News</h1>
+            <h1>{% trans 'Latest' %} {% trans 'News' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li>News</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %}</a></li>
+                <li>{% trans 'News' %}</li>
             </ul>
         </div>
     </section>
@@ -30,7 +30,7 @@
                             <h3><a href="{% url 'blog_detail' blog_id=i.id %}">{{ i.title }}</a></h3>
                             <span class="date">Post: {{ i.day }}</span>
                             <div class="text">{{ i.summary }}</div>
-                            <div class="link-box"><a href="{% url 'blog_detail' blog_id=i.id %}">Read More</a></div>
+                            <div class="link-box"><a href="{% url 'blog_detail' blog_id=i.id %}">{% trans 'Read More' %}</a></div>
                         </div>
                     </div>
                 </div>
@@ -89,7 +89,7 @@
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
+                        <a href="{% url 'contact' %}" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

@@ -6,10 +6,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Services</h1>
+            <h1>{% trans 'Services' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}">Home </a></li>
-                <li>Services</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %} </a></li>
+                <li>{% trans 'Services' %}</li>
             </ul>
         </div>
     </section>
@@ -28,7 +28,7 @@
                             <span class="icon flaticon-{{ i.icon }}"></span>
                             <h3><a href="{% url 'service_detail' servic_id=i.id %}">{{ i.title }}</a></h3>
                             <div class="text">{{ i.summary }}</div>
-                            <div class="link-box"><a href="{% url 'service_detail' servic_id=i.id %}">Read More <i class="la la-angle-double-right"></i></a></div>
+                            <div class="link-box"><a href="{% url 'service_detail' servic_id=i.id %}">{% trans 'Read More' %} <i class="la la-angle-double-right"></i></a></div>
                         </div>
                     </div>
                 </div>

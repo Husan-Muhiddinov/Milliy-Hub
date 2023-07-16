@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-11 17:04+0500\n"
+"POT-Creation-Date: 2023-07-16 11:19+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: .\blog\models.py:10 .\blog\models.py:71 .\blog\models.py:127
+#: .\blog\models.py:174 .\blog\models.py:238
 msgid "email"
 msgstr "email"
 
@@ -70,7 +71,8 @@ msgstr "sarlavha"
 
 #: .\blog\models.py:28 .\blog\models.py:37 .\blog\models.py:57
 #: .\blog\models.py:83 .\blog\models.py:114 .\blog\models.py:136
-#: .\blog\models.py:158
+#: .\blog\models.py:158 .\blog\models.py:200 .\blog\models.py:208
+#: .\blog\models.py:215 .\blog\models.py:222 .\blog\models.py:229
 msgid "body"
 msgstr "tanasi"
 
@@ -78,7 +80,7 @@ msgstr "tanasi"
 msgid "icon"
 msgstr "ikon"
 
-#: .\blog\models.py:50 .\blog\models.py:122 .\blog\models.py:168
+#: .\blog\models.py:50 .\blog\models.py:122 .\blog\models.py:182
 msgid "image"
 msgstr "rasm"
 
@@ -86,17 +88,17 @@ msgstr "rasm"
 msgid "work"
 msgstr "ish"
 
-#: .\blog\models.py:53 .\blog\models.py:170
+#: .\blog\models.py:53 .\blog\models.py:184
 msgid "position"
 msgstr "lavozimi"
 
 #: .\blog\models.py:54
 msgid "status"
-msgstr ""
+msgstr "holat"
 
 #: .\blog\models.py:55
 msgid "detail_title"
-msgstr ""
+msgstr "batafsil sarlavha"
 
 #: .\blog\models.py:56 .\blog\models.py:82 .\blog\models.py:113
 msgid "summary"
@@ -104,7 +106,7 @@ msgstr "xulosa"
 
 #: .\blog\models.py:58
 msgid "client_name"
-msgstr ""
+msgstr "mijoz nomi"
 
 #: .\blog\models.py:59
 #, fuzzy
@@ -114,21 +116,22 @@ msgstr "lavozimi"
 
 #: .\blog\models.py:60
 msgid "project_value"
-msgstr ""
+msgstr "loyiha qiymati"
 
 #: .\blog\models.py:61
 msgid "year_completed"
-msgstr ""
+msgstr "yil yakunlandi"
 
 #: .\blog\models.py:62
 msgid "project_under"
-msgstr ""
+msgstr "ostidagi loyiha"
 
 #: .\blog\models.py:63
 msgid "advisor"
-msgstr ""
+msgstr "maslahatchi"
 
-#: .\blog\models.py:70 .\blog\models.py:123 .\blog\models.py:169
+#: .\blog\models.py:70 .\blog\models.py:123 .\blog\models.py:183
+#: .\blog\models.py:237
 msgid "name"
 msgstr "ismi"
 
@@ -146,7 +149,7 @@ msgstr "Sahifalar"
 msgid "author"
 msgstr "avtor"
 
-#: .\blog\models.py:85 .\blog\models.py:115 .\blog\models.py:178
+#: .\blog\models.py:85 .\blog\models.py:115 .\blog\models.py:192
 msgid "photo"
 msgstr "rasm"
 
@@ -174,11 +177,11 @@ msgstr "kasb"
 
 #: .\blog\models.py:137
 msgid "consultants"
-msgstr ""
+msgstr "maslahatchilar"
 
 #: .\blog\models.py:138
 msgid "awards"
-msgstr ""
+msgstr "mukofotlari"
 
 #: .\blog\models.py:139
 #, fuzzy
@@ -188,11 +191,11 @@ msgstr "Ishlar"
 
 #: .\blog\models.py:140
 msgid "our_mission"
-msgstr ""
+msgstr "bizning_missiyamiz"
 
 #: .\blog\models.py:141
 msgid "our_vision"
-msgstr ""
+msgstr "bizning_vizionimiz"
 
 #: .\blog\models.py:149
 #, fuzzy
@@ -202,71 +205,242 @@ msgstr "lavozimi"
 
 #: .\blog\models.py:150
 msgid "answer"
-msgstr ""
+msgstr "savollar"
 
-#: .\blog\models.py:159
+#: .\blog\models.py:165
 msgid "benifits"
-msgstr ""
+msgstr "foyda"
 
-#: .\blog\models.py:160
+#: .\blog\models.py:166
 msgid "mutual_funds"
-msgstr ""
+msgstr "o'zaro_fondlar"
 
-#: .\blog\models.py:161
+#: .\blog\models.py:167
 msgid "company_growth"
-msgstr ""
+msgstr "kompaniya_o'sishi"
 
-#: .\blog\models.py:171
+#: .\blog\models.py:185
 #, fuzzy
 #| msgid "position"
 msgid "description"
 msgstr "lavozimi"
 
-#: .\blog\models.py:179
+#: .\blog\models.py:193
 msgid "link"
-msgstr ""
+msgstr "link"
 
-#: .\main\settings.py:121
+#: .\blog\models.py:239
+#, fuzzy
+#| msgid "Pages"
+msgid "message"
+msgstr "Sahifalar"
+
+#: .\main\settings.py:122
 msgid "English"
 msgstr "English"
 
-#: .\main\settings.py:122
+#: .\main\settings.py:123
 msgid "Russian"
 msgstr "Russian"
 
-#: .\main\settings.py:123
+#: .\main\settings.py:124
 msgid "Uzbek"
 msgstr "Uzbek"
 
-#: .\templates\Strategic-planning.html:166
-#: .\templates\audit-and-assurance.html:166 .\templates\blog-detail.html:232
-#: .\templates\blog.html:87 .\templates\case-detail.html:103
-#: .\templates\contact.html:129 .\templates\financial-planning.html:168
-#: .\templates\pricing.html:93 .\templates\saving-strategy.html:166
+#: .\templates\Strategic-planning.html:9 .\templates\Strategic-planning.html:12
+#: .\templates\audit-and-assurance.html:9
+#: .\templates\audit-and-assurance.html:12
+#: .\templates\financial-planning.html:9 .\templates\financial-planning.html:12
+#: .\templates\saving-strategy.html:12 .\templates\service-detail.html:9
+#: .\templates\service-detail.html:12 .\templates\trade-and-stock.html:9
+#: .\templates\trade-and-stock.html:12
+#, fuzzy
+#| msgid "Services"
+msgid "Service"
+msgstr "Xizmatlar"
+
+#: .\templates\Strategic-planning.html:9 .\templates\Strategic-planning.html:12
+#: .\templates\audit-and-assurance.html:9
+#: .\templates\audit-and-assurance.html:12 .\templates\blog-detail.html:8
+#: .\templates\blog-detail.html:11 .\templates\case-detail.html:9
+#: .\templates\case-detail.html:12 .\templates\financial-planning.html:9
+#: .\templates\financial-planning.html:12 .\templates\saving-strategy.html:12
+#: .\templates\service-detail.html:9 .\templates\service-detail.html:12
+#: .\templates\trade-and-stock.html:9 .\templates\trade-and-stock.html:12
+#, fuzzy
+#| msgid "Case Detail"
+msgid "Detail"
+msgstr "Ish tafsilotlari"
+
+#: .\templates\Strategic-planning.html:11 .\templates\about.html:11
+#: .\templates\audit-and-assurance.html:11 .\templates\base.html:153
+#: .\templates\base.html:243 .\templates\blog-detail.html:10
+#: .\templates\blog.html:11 .\templates\case-detail.html:11
+#: .\templates\cases.html:11 .\templates\contact.html:10
+#: .\templates\financial-planning.html:11 .\templates\pricing.html:11
+#: .\templates\saving-strategy.html:11 .\templates\service-detail.html:11
+#: .\templates\services.html:11 .\templates\team.html:13
+#: .\templates\trade-and-stock.html:11
+msgid "Home"
+msgstr "Bosh sahifa"
+
+#: .\templates\Strategic-planning.html:49
+#: .\templates\audit-and-assurance.html:49
+#: .\templates\financial-planning.html:49 .\templates\saving-strategy.html:49
+#: .\templates\service-detail.html:49 .\templates\trade-and-stock.html:49
+msgid "Our Key Feature of Service"
+msgstr "Xizmatning asosiy xususiyati"
+
+#: .\templates\Strategic-planning.html:91
+#: .\templates\audit-and-assurance.html:91
+#: .\templates\financial-planning.html:91 .\templates\saving-strategy.html:91
+#: .\templates\service-detail.html:89 .\templates\trade-and-stock.html:91
+msgid "Benefits"
+msgstr "Foyda"
+
+#: .\templates\Strategic-planning.html:92
+#: .\templates\audit-and-assurance.html:92
+#: .\templates\financial-planning.html:92 .\templates\saving-strategy.html:92
+#: .\templates\service-detail.html:90 .\templates\trade-and-stock.html:92
+msgid "Mutual Funds"
+msgstr "O'zaro fondlar"
+
+#: .\templates\Strategic-planning.html:93
+#: .\templates\audit-and-assurance.html:93
+#: .\templates\financial-planning.html:93 .\templates\saving-strategy.html:93
+#: .\templates\service-detail.html:91 .\templates\trade-and-stock.html:93
+msgid "Company Growht"
+msgstr "Kompaniyaning o'sishi"
+
+#: .\templates\Strategic-planning.html:138
+#: .\templates\audit-and-assurance.html:138 .\templates\base.html:168
+#: .\templates\base.html:170 .\templates\base.html:258
+#: .\templates\base.html:260 .\templates\financial-planning.html:138
+#: .\templates\index-3.html:89 .\templates\index-3.html:259
+#: .\templates\saving-strategy.html:138 .\templates\service-detail.html:135
+#: .\templates\services.html:9 .\templates\services.html:12
+#: .\templates\trade-and-stock.html:138
+msgid "Services"
+msgstr "Xizmatlar"
+
+#: .\templates\Strategic-planning.html:139
+#: .\templates\audit-and-assurance.html:139 .\templates\base.html:171
+#: .\templates\base.html:261 .\templates\financial-planning.html:139
+#: .\templates\saving-strategy.html:139 .\templates\service-detail.html:136
+#: .\templates\trade-and-stock.html:139
+msgid "Financial Planning"
+msgstr "Moliyaviy rejalashtirish"
+
+#: .\templates\Strategic-planning.html:140
+#: .\templates\audit-and-assurance.html:140 .\templates\base.html:172
+#: .\templates\base.html:262 .\templates\financial-planning.html:140
+#: .\templates\saving-strategy.html:140 .\templates\service-detail.html:137
+#: .\templates\trade-and-stock.html:140
+msgid "Trade & Stock"
+msgstr "Savdo & birja"
+
+#: .\templates\Strategic-planning.html:141
+#: .\templates\audit-and-assurance.html:141 .\templates\base.html:173
+#: .\templates\base.html:263 .\templates\financial-planning.html:141
+#: .\templates\saving-strategy.html:141 .\templates\service-detail.html:138
+#: .\templates\trade-and-stock.html:141
+msgid "Audit & Assurance"
+msgstr "Audit & Ishonchnoma"
+
+#: .\templates\Strategic-planning.html:142
+#: .\templates\audit-and-assurance.html:142 .\templates\base.html:174
+#: .\templates\base.html:264 .\templates\financial-planning.html:142
+#: .\templates\saving-strategy.html:142 .\templates\service-detail.html:139
+#: .\templates\trade-and-stock.html:142
+msgid "Saving Strategy"
+msgstr "Saqlash strategiyasi"
+
+#: .\templates\Strategic-planning.html:143
+#: .\templates\audit-and-assurance.html:143 .\templates\base.html:175
+#: .\templates\base.html:265 .\templates\financial-planning.html:143
+#: .\templates\saving-strategy.html:143 .\templates\service-detail.html:140
+#: .\templates\trade-and-stock.html:143
+msgid "Strategic Planning"
+msgstr "Strategik rejalashtirish"
+
+#: .\templates\Strategic-planning.html:154
+#: .\templates\audit-and-assurance.html:154 .\templates\case-detail.html:85
+#: .\templates\financial-planning.html:154 .\templates\saving-strategy.html:154
+#: .\templates\service-detail.html:151 .\templates\trade-and-stock.html:154
+msgid "Download"
+msgstr "Yuklab olish"
+
+#: .\templates\Strategic-planning.html:169
+#: .\templates\audit-and-assurance.html:169 .\templates\blog-detail.html:223
+#: .\templates\blog.html:87 .\templates\case-detail.html:101
+#: .\templates\contact.html:158 .\templates\financial-planning.html:169
+#: .\templates\pricing.html:93 .\templates\saving-strategy.html:169
 #: .\templates\service-detail.html:166 .\templates\team.html:198
-#: .\templates\trade-and-stock.html:166
+#: .\templates\trade-and-stock.html:169
 msgid "Provide Solutions For the Realiable Growth"
 msgstr "Haqiqiy o'sish uchun yechimlarni taqdim eting"
 
-#: .\templates\Strategic-planning.html:171
-#: .\templates\audit-and-assurance.html:171 .\templates\blog-detail.html:237
-#: .\templates\blog.html:92 .\templates\case-detail.html:108
-#: .\templates\contact.html:134 .\templates\financial-planning.html:173
-#: .\templates\pricing.html:98 .\templates\saving-strategy.html:171
+#: .\templates\Strategic-planning.html:174
+#: .\templates\audit-and-assurance.html:174 .\templates\blog-detail.html:228
+#: .\templates\blog.html:92 .\templates\case-detail.html:106
+#: .\templates\contact.html:163 .\templates\financial-planning.html:174
+#: .\templates\pricing.html:98 .\templates\saving-strategy.html:174
 #: .\templates\service-detail.html:171 .\templates\team.html:203
-#: .\templates\trade-and-stock.html:171
+#: .\templates\trade-and-stock.html:174
 msgid "Get A Quotes"
 msgstr "Iqtibos olish"
 
-#: .\templates\about.html:103 .\templates\index-3.html:320
+#: .\templates\about.html:9 .\templates\about.html:12
+#: .\templates\about.html:363 .\templates\base.html:167
+#: .\templates\base.html:257 .\templates\base.html:389
+#: .\templates\index-3.html:186 .\templates\index-3.html:190
+msgid "About"
+msgstr "Biz haqimizda"
+
+#: .\templates\about.html:9 .\templates\about.html:12 .\templates\base.html:368
+msgid "Us"
+msgstr "Biz"
+
+#: .\templates\about.html:25
+msgid "We Are Expert"
+msgstr "Biz Mutaxassismiz"
+
+#: .\templates\about.html:35
+msgid "Consultatns"
+msgstr "Maslahatchilar"
+
+#: .\templates\about.html:43
+msgid "Awards"
+msgstr "Mukofotlar"
+
+#: .\templates\about.html:51
+msgid "Cases Completed"
+msgstr "Ishlar tugallandi"
+
+#: .\templates\about.html:70
+msgid "Our Mission"
+msgstr "Bizning missiyamiz"
+
+#: .\templates\about.html:83 .\templates\index-3.html:89
+#: .\templates\index-3.html:259 .\templates\index-3.html:284
+#: .\templates\index-3.html:371 .\templates\team.html:11
+#: .\templates\team.html:24
+msgid "Our"
+msgstr "Bizning"
+
+#: .\templates\about.html:83
+msgid "Vision"
+msgstr "Vizyon"
+
+#: .\templates\about.html:103 .\templates\index-3.html:323
 msgid "You are"
 msgstr "Siz"
 
-#: .\templates\about.html:103 .\templates\index-3.html:320
+#: .\templates\about.html:103 .\templates\index-3.html:323
 msgid "10 minitues away from the Help you need"
 msgstr "Sizga kerak bo'lgan yordamdan 10 daqiqa uzoqlikda"
 
-#: .\templates\about.html:104 .\templates\index-3.html:321
+#: .\templates\about.html:104 .\templates\index-3.html:324
 msgid ""
 "Capitalize on low hanging fruit to identify a ballpark value added activity "
 "to beta test."
@@ -274,15 +448,16 @@ msgstr ""
 "Beta-testga qo'shilgan qiymatli faollikni aniqlash uchun past osilgan "
 "mevalarni kapitallashtiring."
 
-#: .\templates\about.html:113 .\templates\index-3.html:330
+#: .\templates\about.html:113 .\templates\index-3.html:333
 msgid "We are always ready"
 msgstr "Biz har doim tayyormiz"
 
-#: .\templates\about.html:114 .\templates\index-3.html:331
+#: .\templates\about.html:114 .\templates\index-3.html:334
 msgid "Request a call back"
 msgstr "Qayta qo'ng'iroq qilishimiz uchun"
 
-#: .\templates\about.html:135 .\templates\index-3.html:352
+#: .\templates\about.html:135 .\templates\contact.html:55
+#: .\templates\index-3.html:355
 #, fuzzy
 #| msgid "Pages"
 msgid "Send Massage"
@@ -309,6 +484,89 @@ msgstr ""
 msgid "Explore All Cases"
 msgstr "Barcha holatlarni o'rganing"
 
+#: .\templates\about.html:179
+msgid "Some FAQ’s"
+msgstr "Ba'zi tez-tez so'raladigan savollar"
+
+#: .\templates\about.html:180
+msgid "Frequently Asked Questions"
+msgstr "tez-tez so'raladigan savollar"
+
+#: .\templates\about.html:231
+msgid "Some State skill"
+msgstr "Ba'zi davlat mahorati"
+
+#: .\templates\about.html:232
+msgid "Our Statistics Rate"
+msgstr "Bizning statistika kursimiz"
+
+#: .\templates\about.html:233
+msgid ""
+"This product is meant for educational purposes only. Resemblance to real "
+"persons, living or dead is coincidental."
+msgstr "Ushbu mahsulot faqat ta'lim maqsadlari uchun mo'ljallangan. Haqiqiy odamlarga, tirik yoki o'liklarga o'xshashlik tasodifdir."
+
+#: .\templates\about.html:240
+#, fuzzy
+#| msgid "Saving Strategy"
+msgid "Strategy"
+msgstr "Saqlash strategiyasi"
+
+#: .\templates\about.html:240
+msgid "Analysis"
+msgstr "Tahlil"
+
+#: .\templates\about.html:251
+msgid "Eeconomic Growth"
+msgstr "Iqtisodiy o'sish"
+
+#: .\templates\about.html:262
+msgid "Achieves Goals"
+msgstr "Maqsadlarga erishadi"
+
+#: .\templates\about.html:284
+msgid "Why Us"
+msgstr "Nima uchun Biz"
+
+#: .\templates\about.html:285
+msgid "Read Why We Expert"
+msgstr "Nima uchun biz ekspertizni o'qing"
+
+#: .\templates\about.html:285
+msgid "in The Market"
+msgstr "Bozorda"
+
+#: .\templates\about.html:286
+msgid ""
+"This product is meant for educational purposes only. Resemblance to real "
+"persons, living or dead is purely coincidental. Void prohibited. Some "
+"assembly required. List each check separately by number."
+msgstr "Ushbu mahsulot faqat ta'lim maqsadlari uchun mo'ljallangan. Haqiqiy odamlarga, tirik yoki o'liklarga o'xshashlik mutlaqo tasodifdir. Bekor qilish taqiqlangan. Ba'zi yig'ish kerak. Har bir chekni raqam bo'yicha alohida ko'rsating."
+
+#: .\templates\about.html:290
+msgid "Dedicated Team"
+msgstr "Maxsus jamoa"
+
+#: .\templates\about.html:291
+msgid "Best Advisors"
+msgstr "Eng yaxshi maslahatchilar"
+
+#: .\templates\about.html:292
+msgid "Network Solutions"
+msgstr "Tarmoq yechimlari"
+
+#: .\templates\about.html:293
+msgid "Supports"
+msgstr "Qo'llab-quvvatlaydi"
+
+#: .\templates\about.html:294
+msgid "Work Deadline"
+msgstr "Ishning oxirgi muddati"
+
+#: .\templates\about.html:297
+msgid "Get Start"
+msgstr "Boshlash"
+
 #: .\templates\about.html:314 .\templates\index-3.html:212
 msgid "How We Work"
 msgstr "Biz qanday ishlaymiz"
@@ -320,12 +578,6 @@ msgstr "Biz muvaffaqiyatli biznes qilamiz"
 #: .\templates\about.html:315 .\templates\index-3.html:213
 msgid "Steps"
 msgstr "ta Qadam"
-
-#: .\templates\about.html:363 .\templates\base.html:148
-#: .\templates\base.html:238 .\templates\base.html:371
-#: .\templates\index-3.html:186 .\templates\index-3.html:190
-msgid "About"
-msgstr "Biz haqimizda"
 
 #: .\templates\about.html:364 .\templates\index-3.html:187
 msgid "We Aim to Provide Expert Advice and Quality Service."
@@ -348,7 +600,8 @@ msgstr ""
 msgid "About More"
 msgstr "Biz haqimizda"
 
-#: .\templates\base.html:8
+#: .\templates\base.html:8 .\templates\blog-detail.html:188
+#: .\templates\blog-detail.html:207
 #, fuzzy
 #| msgid "Grow Your Business"
 msgid "Business"
@@ -358,16 +611,16 @@ msgstr "Biznes"
 msgid "Finance"
 msgstr "Moliya"
 
-#: .\templates\base.html:77 .\templates\contact.html:79
+#: .\templates\base.html:77 .\templates\contact.html:108
 msgid "Address"
 msgstr "Manzil"
 
-#: .\templates\base.html:86 .\templates\base.html:303
-#: .\templates\contact.html:69
+#: .\templates\base.html:86 .\templates\base.html:322
+#: .\templates\contact.html:98
 msgid "to"
 msgstr "dan"
 
-#: .\templates\base.html:87 .\templates\contact.html:70
+#: .\templates\base.html:87 .\templates\contact.html:99
 msgid "Sunday Closed"
 msgstr "Yakshanba Yopiq"
 
@@ -375,84 +628,51 @@ msgstr "Yakshanba Yopiq"
 msgid "Call Us for Any Questions"
 msgstr "Har qanday savol uchun bizga qo'ng'iroq qiling"
 
-#: .\templates\base.html:134 .\templates\base.html:224
-msgid "Home"
-msgstr "Bosh sahifa"
-
-#: .\templates\base.html:149 .\templates\base.html:151
-#: .\templates\base.html:239 .\templates\base.html:241
-#: .\templates\index-3.html:89 .\templates\index-3.html:259
-#: .\templates\service-detail.html:135
-msgid "Services"
-msgstr "Xizmatlar"
-
-#: .\templates\base.html:152 .\templates\base.html:242
-#: .\templates\service-detail.html:136
-msgid "Financial Planning"
-msgstr "Moliyaviy rejalashtirish"
-
-#: .\templates\base.html:153 .\templates\base.html:243
-#: .\templates\service-detail.html:137
-msgid "Trade & Stock"
-msgstr "Savdo & birja"
-
-#: .\templates\base.html:154 .\templates\base.html:244
-#: .\templates\service-detail.html:138
-msgid "Audit & Assurance"
-msgstr "Audit & Ishonchnoma"
-
-#: .\templates\base.html:155 .\templates\base.html:245
-#: .\templates\service-detail.html:139
-msgid "Saving Strategy"
-msgstr "Saqlash strategiyasi"
-
-#: .\templates\base.html:156 .\templates\base.html:246
-#: .\templates\service-detail.html:140
-msgid "Strategic Planning"
-msgstr "Strategik rejalashtirish"
-
-#: .\templates\base.html:157 .\templates\base.html:247
+#: .\templates\base.html:176 .\templates\base.html:266
+#: .\templates\saving-strategy.html:9
 msgid "Service Detail"
 msgstr "Xizmat tafsilotlari"
 
-#: .\templates\base.html:160 .\templates\base.html:162
-#: .\templates\base.html:250 .\templates\base.html:252
+#: .\templates\base.html:179 .\templates\base.html:181
+#: .\templates\base.html:269 .\templates\base.html:271
+#: .\templates\case-detail.html:9 .\templates\case-detail.html:12
+#: .\templates\cases.html:9 .\templates\cases.html:12
 #: .\templates\index-3.html:284
 msgid "Cases"
 msgstr "Ishlar"
 
-#: .\templates\base.html:163 .\templates\base.html:253
+#: .\templates\base.html:182 .\templates\base.html:272
 msgid "Case Detail"
 msgstr "Ish tafsilotlari"
 
-#: .\templates\base.html:166 .\templates\base.html:256
+#: .\templates\base.html:185 .\templates\base.html:275
 msgid "Pages"
 msgstr "Sahifalar"
 
-#: .\templates\base.html:168 .\templates\base.html:258
+#: .\templates\base.html:187 .\templates\base.html:277
 msgid "Pricing"
 msgstr "Narxlash"
 
-#: .\templates\base.html:169 .\templates\base.html:259
+#: .\templates\base.html:188 .\templates\base.html:278
 msgid "Our Team"
 msgstr "Bizning Jamoamiz"
 
-#: .\templates\base.html:172 .\templates\base.html:174
-#: .\templates\base.html:262 .\templates\base.html:264
-#: .\templates\index-3.html:368
+#: .\templates\base.html:191 .\templates\base.html:193
+#: .\templates\base.html:281 .\templates\base.html:283
+#: .\templates\index-3.html:371
 msgid "Blog"
 msgstr "Blog"
 
-#: .\templates\base.html:175 .\templates\base.html:265
+#: .\templates\base.html:194 .\templates\base.html:284
 msgid "Blog Detail"
 msgstr "Blog tafsilotlari"
 
-#: .\templates\base.html:178 .\templates\base.html:268
-#: .\templates\base.html:375
+#: .\templates\base.html:197 .\templates\base.html:287
+#: .\templates\base.html:393
 msgid "Contact"
 msgstr "Bog'lanish"
 
-#: .\templates\base.html:301
+#: .\templates\base.html:320
 msgid ""
 "We provide expert Business Coaching to both individuals and businesses. With "
 "over 30 years of experience we’ll ensure that you’re always getting the best "
@@ -462,53 +682,55 @@ msgstr ""
 "taqdim etamiz. Ancha yillik tajribamiz bilan biz har doim butun sohadagi eng "
 "yaxshi odamlardan eng yaxshi yo'l-yo'riq olishingizni ta'minlaymiz."
 
-#: .\templates\base.html:315 .\templates\index-3.html:369
+#: .\templates\base.html:334 .\templates\index-3.html:372
 msgid "Latest News"
 msgstr "So'ngi yangiliklar"
 
-#: .\templates\base.html:338
+#: .\templates\base.html:355
 msgid "Newsletter"
 msgstr "Yangiliklar xati"
 
-#: .\templates\base.html:340
+#: .\templates\base.html:357
 msgid "Sign up for our mailing list to Get Latest updates And offers."
 msgstr ""
 "So'nggi yangilanishlar va takliflarni olish uchun pochta ro'yxatimizga obuna "
 "bo'ling."
 
-#: .\templates\base.html:350
-msgid "Follow Us"
+#: .\templates\base.html:368
+#, fuzzy
+#| msgid "Follow Us"
+msgid "Follow"
 msgstr "Bizni kuzatib boring"
 
-#: .\templates\base.html:372
+#: .\templates\base.html:390
 msgid "Privacy Policy"
 msgstr "Maxfiylik siyosati"
 
-#: .\templates\base.html:373
+#: .\templates\base.html:391
 msgid "Investors"
 msgstr "Investorlar"
 
-#: .\templates\base.html:374
+#: .\templates\base.html:392
 msgid "Legals"
 msgstr "Qonunchilik"
 
-#: .\templates\base.html:379
+#: .\templates\base.html:397
 msgid "Designed By"
 msgstr "Tomonidan ishlab chiqilgan:"
 
-#: .\templates\base.html:379
+#: .\templates\base.html:397
 msgid "ARY Themes"
 msgstr "Sanjarbek Usmonov"
 
-#: .\templates\base.html:400
+#: .\templates\base.html:418
 msgid "Choose Your Color"
 msgstr "Rangingizni tanlang"
 
-#: .\templates\base.html:416
+#: .\templates\base.html:434
 msgid "Purchase now"
 msgstr "Hozir sotib oling"
 
-#: .\templates\base.html:419
+#: .\templates\base.html:437
 msgid ""
 "You will find much more options for colors and styling in admin panel. This "
 "color picker is used only for demonstation purposes."
@@ -516,9 +738,88 @@ msgstr ""
 "Administrator panelida ranglar va uslublar uchun ko'proq variantlarni "
 "topasiz. Ushbu rang tanlash vositasi faqat namoyish qilish uchun ishlatiladi."
 
+#: .\templates\blog-detail.html:8 .\templates\blog-detail.html:11
+#: .\templates\blog.html:9 .\templates\blog.html:12
+msgid "News"
+msgstr "Yangiliklar"
+
+#: .\templates\blog-detail.html:41
+msgid "Share:"
+msgstr "Ulashish:"
+
 #: .\templates\blog-detail.html:171
 msgid "Recent Posts"
 msgstr "So'nggi xabarlar"
+
+#: .\templates\blog-detail.html:186
+msgid "Best Categories"
+msgstr "Eng yaxshi toifalar"
+
+#: .\templates\blog-detail.html:189
+msgid "Corporate"
+msgstr "Korporativ"
+
+#: .\templates\blog-detail.html:190
+msgid "Portfolio"
+msgstr "Portfel"
+
+#: .\templates\blog-detail.html:191
+msgid "Finince"
+msgstr "Moliya"
+
+#: .\templates\blog-detail.html:192
+#, fuzzy
+#| msgid "Investors"
+msgid "Investment planning"
+msgstr "Investorlar"
+
+#: .\templates\blog-detail.html:200
+msgid "Cool Tags"
+msgstr "Ajoyib teglar"
+
+#: .\templates\blog-detail.html:202
+#, fuzzy
+#| msgid "Designed By"
+msgid "Design"
+msgstr "Tomonidan ishlab chiqilgan:"
+
+#: .\templates\blog-detail.html:203
+msgid "Fashion"
+msgstr "Moda"
+
+#: .\templates\blog-detail.html:204
+msgid "Money"
+msgstr "Pul"
+
+#: .\templates\blog-detail.html:205
+msgid "Entertanment"
+msgstr "O'yin-kulgi"
+
+#: .\templates\blog-detail.html:206
+msgid "Logo"
+msgstr "Logotip"
+
+#: .\templates\blog-detail.html:208
+msgid "Development"
+msgstr "Rivojlanish"
+
+#: .\templates\blog.html:9
+#, fuzzy
+#| msgid "Latest News"
+msgid "Latest"
+msgstr "So'ngi yangiliklar"
+
+#: .\templates\blog.html:33 .\templates\services.html:31
+#, fuzzy
+#| msgid "More"
+msgid "Read More"
+msgstr "bilish"
+
+#: .\templates\case-detail.html:62
+#, fuzzy
+#| msgid "Strategic Planning"
+msgid "Strategy and Solution"
+msgstr "Strategik rejalashtirish"
 
 #: .\templates\cases.html:27
 msgid "All"
@@ -526,15 +827,15 @@ msgstr "Hammasi"
 
 #: .\templates\cases.html:28
 msgid "Incubation"
-msgstr ""
+msgstr "Inkubatsiya"
 
 #: .\templates\cases.html:28 .\templates\cases.html:29
 msgid "programs"
-msgstr ""
+msgstr "dasturlari"
 
 #: .\templates\cases.html:29
 msgid "Acceleration"
-msgstr ""
+msgstr "Tezlashtirish"
 
 #: .\templates\cases.html:30
 msgid "Marketing"
@@ -545,6 +846,26 @@ msgstr "Marketing"
 #| msgid "Financial Planning"
 msgid "Planning"
 msgstr "Moliyaviy rejalashtirish"
+
+#: .\templates\contact.html:8 .\templates\contact.html:11
+#, fuzzy
+#| msgid "Contact"
+msgid "contact"
+msgstr "Bog'lanish"
+
+#: .\templates\contact.html:8 .\templates\contact.html:11
+msgid "us"
+msgstr "Biz"
+
+#: .\templates\contact.html:35
+msgid "Write a Message"
+msgstr "Xabar yozing"
+
+#: .\templates\contact.html:36
+#, fuzzy
+#| msgid "Call Us for Any Questions"
+msgid "Have Any Questions?"
+msgstr "Har qanday savol uchun bizga qo'ng'iroq qiling"
 
 #: .\templates\index-3.html:32
 msgid "Hight Quality Market"
@@ -565,11 +886,6 @@ msgstr ""
 #: .\templates\index-3.html:88 .\templates\index-3.html:169
 msgid "Know MORE"
 msgstr "KO'PROQ BILISH"
-
-#: .\templates\index-3.html:89 .\templates\index-3.html:259
-#: .\templates\index-3.html:284 .\templates\index-3.html:368
-msgid "Our"
-msgstr "Bizning"
 
 #: .\templates\index-3.html:114
 msgid "We Provide Solution to"
@@ -603,9 +919,61 @@ msgstr "Bizning eng yaxshi ishimiz"
 msgid "Successful"
 msgstr "muvaffaqiyatli"
 
-#: .\templates\index-3.html:307
+#: .\templates\index-3.html:310
 msgid "View All"
 msgstr "Hammasini ko'rish"
+
+#: .\templates\index-3.html:386
+#, fuzzy
+#| msgid "comment"
+msgid "Comments"
+msgstr "izoh"
+
+#: .\templates\pricing.html:9 .\templates\pricing.html:12
+#: .\templates\pricing.html:22
+msgid "Price List"
+msgstr "Narxlar ro'yxati"
+
+#: .\templates\pricing.html:23
+#, fuzzy
+#| msgid "Our Best Work"
+msgid "Our Best Package"
+msgstr "Bizning eng yaxshi ishimiz"
+
+#: .\templates\service-detail.html:53
+msgid "Client Prospecting"
+msgstr "Mijozlarni qidirish"
+
+#: .\templates\service-detail.html:56 .\templates\service-detail.html:66
+#: .\templates\service-detail.html:76
+msgid ""
+"Bring to the table win-win survival strategies to ensure proactive "
+"domination. At the end of the day, going forward, a new normal that has "
+"evolved from generation X is on the runway heading towards a streamlined "
+"cloud solution. User generated content in real-time will have multiple "
+"touchpoints for offshoring."
+msgstr "Proaktiv hukmronlikni ta'minlash uchun g'alaba qozonish omon qolish strategiyalarini stolga keltiring. Oxir oqibat, oldinga X avloddan boshlab yangi norma uchish-qo'nish yo'lagida qulay bulutli yechim tomon yo'l oladi. Haqiqiy vaqtda foydalanuvchi tomonidan yaratilgan kontent offshoring uchun bir nechta aloqa nuqtalariga ega bo'ladi."
+
+#: .\templates\service-detail.html:63
+#, fuzzy
+#| msgid "Investors"
+msgid "Investment Goals"
+msgstr "Investorlar"
+
+#: .\templates\service-detail.html:73
+msgid "Document Verification"
+msgstr "Hujjatni tekshirish"
+
+#: .\templates\service-detail.html:102 .\templates\service-detail.html:110
+#: .\templates\service-detail.html:118
+msgid ""
+"Leverage agile frameworks to provide a robust synopsis for high level "
+"overviews. It erative approaches to corporate strategy foster collaborative "
+"thinking to further the overall value proposition. Organically grow the "
+"holistic world view of disruptive innovation via workplace diversity and "
+"empowerment. User generated content in real-time will have multiple "
+"touchpoints for offshoring."
+msgstr "Yuqori darajadagi sharhlar uchun ishonchli konspektni taqdim etish uchun tezkor ramkalardan foydalaning. Korporativ strategiyaga yangi yondashuvlar umumiy qiymat taklifini ilgari surish uchun hamkorlikda fikrlashni rivojlantiradi. Ish joyidagi xilma-xillik va imkoniyatlarni kengaytirish orqali buzg'unchi innovatsiyalarning yaxlit dunyoqarashini organik ravishda rivojlantiring. Haqiqiy vaqtda foydalanuvchi tomonidan yaratilgan kontent offshoring uchun bir nechta aloqa nuqtalariga ega bo'ladi."
 
 #: .\templates\services.html:105
 #, fuzzy
@@ -613,13 +981,18 @@ msgstr "Hammasini ko'rish"
 msgid "Our Services"
 msgstr "Bizning xizmatlarimiz"
 
+#: .\templates\team.html:11 .\templates\team.html:14 .\templates\team.html:24
+#, fuzzy
+#| msgid "Our Team"
+msgid "Team"
+msgstr "Bizning Jamoamiz"
+
+#: .\templates\team.html:25
+msgid "Operations Directors"
+msgstr "Operatsion direktorlar"
+
 #~ msgid "Fintech"
 #~ msgstr "Fintech"
-
-#, fuzzy
-#~| msgid "Investors"
-#~ msgid "Investing"
-#~ msgstr "Investorlar"
 
 #, fuzzy
 #~| msgid "Blog"
@@ -630,8 +1003,3 @@ msgstr "Bizning xizmatlarimiz"
 #~| msgid "Blog"
 #~ msgid "Our Blogs"
 #~ msgstr "Blog"
-
-#, fuzzy
-#~| msgid "Services"
-#~ msgid "Service"
-#~ msgstr "Xizmatlar"

@@ -8,10 +8,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Our Team</h1>
+            <h1>{% trans 'Our' %} {% trans 'Team' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}">Home </a></li>
-                <li>Team</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %} </a></li>
+                <li>{% trans 'Team' %}</li>
             </ul>
         </div>
     </section>
@@ -21,8 +21,8 @@
     <section class="team-page-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <span class="title">Our Team</span>
-                <h2>Operations Directors</h2>
+                <span class="title">{% trans 'Our' %} {% trans 'Team' %}</span>
+                <h2>{% trans 'Operations Directors' %}</h2>
             </div>
 
             <div class="row clearfix">
@@ -200,7 +200,7 @@
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
+                        <a href="{% url 'contact' %}" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>

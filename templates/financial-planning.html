@@ -6,10 +6,10 @@
      <!--Page Title-->
     <section class="page-title" style="background-image:url(/static/images/background/8.jpg);">
         <div class="auto-container">
-            <h1>Service Detail</h1>
+            <h1>{% trans 'Service' %} {% trans 'Detail' %}</h1>
             <ul class="bread-crumb clearfix">
-                <li><a href="{% url 'index' %}">Home </a></li>
-                <li>Service Detail</li>
+                <li><a href="{% url 'index' %}">{% trans 'Home' %} </a></li>
+                <li>{% trans 'Service' %} {% trans 'Detail' %}</li>
             </ul>
         </div>
     </section>
@@ -46,7 +46,7 @@
                         </div>
 
                         <div class="key-features">
-                            <h3>Our Key Feature of Service</h3>
+                            <h3>{% trans 'Our Key Feature of Service' %}</h3>
                             <ul class="accordion-box style-two">
                                 <!--Block-->
                                 {% for i in finan %}
@@ -88,9 +88,9 @@
                                 
                                     <!--Tab Btns-->
                                     <ul class="tab-btns tab-buttons clearfix">
-                                        <li data-tab="#info-1" class="tab-btn">Benefits</li>
-                                        <li data-tab="#info-2" class="tab-btn active-btn">Mutual Funds</li>
-                                        <li data-tab="#info-3" class="tab-btn">Company Growht</li>
+                                        <li data-tab="#info-1" class="tab-btn">{% trans 'Benefits' %}</li>
+                                        <li data-tab="#info-2" class="tab-btn active-btn">{% trans 'Mutual Funds' %}</li>
+                                        <li data-tab="#info-3" class="tab-btn">{% trans 'Company Growht' %}</li>
                                     </ul>
 
                                     <!--Tabs Container-->
@@ -151,7 +151,7 @@
                                 <span>Reklama uchun banner</span>
                                 <h4>Reklama uchun banner</h4>
                                 <p>Reklama uchun banner</p>
-                                <a href="financial-planning.html#" class="theme-btn btn-style-two">Download</a>
+                                <a href="financial-planning.html#" class="theme-btn btn-style-two">{% trans 'Download' %}</a>
                             </div>
                         </div>
                     </aside>
@@ -171,7 +171,7 @@
 
                 <div class="btn-column">
                     <div class="btn-box">
-                        <a href="contact.html" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
+                        <a href="{% url 'contact' %}" class="theme-btn btn-style-one">{% trans 'Get A Quotes' %}</a>
                     </div>
                 </div>
             </div>
