@@ -66,7 +66,8 @@
             <div class="auto-container">
                 <div class="clearfix">
                     <div class="logo-outer">
-                        <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-2.png' %}" alt="" title=""></a></div>
+                        <a href="{% url 'index' %}"><h1 style="color: white;">MilliyHub</h1></a>
+                        <!-- <div class="logo"><a href="{% url 'index' %}"><img src="{% static 'images/logo-2.png' %}" alt="" title=""></a></div> -->
                     </div>
 
                     <div class="pull-left upper-left clearfix">
@@ -204,14 +205,14 @@
                             <!--Search Box-->
                             <div class="search-box-outer">
                                 <div class="dropdown">
-                                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="la la-search"></span></button>
+                                    <!-- <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="la la-search"></span></button> -->
                                     <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
                                         <li class="panel-outer">
                                             <div class="form-container">
                                                 <form method="post" action="{% url 'blog' %}">
                                                     <div class="form-group">
                                                         <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                                        <button type="submit" class="search-btn"><span class="la la-search"></span></button>
+                                                        <!-- <button type="submit" class="search-btn"><span class="la la-search"></span></button> -->
                                                     </div>
                                                 </form>
                                             </div>
@@ -231,7 +232,8 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="{% url 'index' %}}" title=""><img src="{% static 'images/logo-small.png' %}" alt="" title=""></a>
+                    <a href="{% url 'index' %}"><h1 style="color: white;">MilliyHub</h1></a>
+                    <!-- <a href="{% url 'index' %}}" title=""><img src="{% static 'images/logo-small.png' %}" alt="" title=""></a> -->
                 </div>
 
                 <!--Right Col-->
@@ -315,7 +317,8 @@
                     <div class="footer-column col-lg-4 col-md-6 col-sm-12">
                         <div class="footer-widget about-widget">
                             <div class="logo">
-                                <a href="index.html"><img src="{% static 'images/footer-logo.png' %}" alt="" /></a>
+                                <a href="{% url 'index' %}"><h1 style="color: white;">MilliyHub</h1></a>
+                                <!-- <a href="index.html"><img src="{% static 'images/footer-logo.png' %}" alt="" /></a> -->
                             </div>
                             <div class="text">{% trans 'We provide expert Business Coaching to both individuals and businesses. With over 30 years of experience we’ll ensure that you’re always getting the best guidance from the top people in the entire industry.' %}</div>
                             <ul class="info-list">
@@ -365,7 +368,7 @@
                                     </form>
                                 </div>
                                 <div class="social-links">
-                                    <h4>{% trans 'Follow' %} {% trans 'Us' %}</h4>
+                                    <h4>{% trans 'Follow Us' %}</h4>
                                     <ul class="social-icon-two">
                                         <li><a href="https://{{contac.facebook_link}}"><i class="la la-facebook-official"></i></a></li>
                                         <li><a href="https://{{contac.instagram_link}}"><i class="la la-instagram"></i></a></li>

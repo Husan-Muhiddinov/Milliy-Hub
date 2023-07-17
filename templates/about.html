@@ -286,15 +286,15 @@
                         <div class="text">{% trans 'This product is meant for educational purposes only. Resemblance to real persons, living or dead is purely coincidental. Void prohibited. Some assembly required. List each check separately by number.' %}</div>
                     </div>
                     <ul class="list-style-one clearfix">
-                        <li><a href="services.html">{% trans' Audit & Assurance' %}</a></li>
-                        <li><a href="services.html">{% trans 'Dedicated Team' %}</a></li>
-                        <li><a href="services.html">{% trans 'Best Advisors' %}</a></li>
-                        <li><a href="services.html">{% trans 'Network Solutions' %}</a></li>
-                        <li><a href="services.html">24/7 {% trans 'Supports' %}</a></li>
-                        <li><a href="services.html">{% trans 'Work Deadline' %}</a></li>
+                        <li><a href="{% url 'audit_assurance' %}">{% trans 'Audit & Assurance' %}</a></li>
+                        <li><a href="{% url 'team' %}">{% trans 'Dedicated Team' %}</a></li>
+                        <li><a href="{% url 'services' %}">{% trans 'Best Advisors' %}</a></li>
+                        <li><a href="{% url 'services' %}">{% trans 'Network Solutions' %}</a></li>
+                        <li><a href="{% url 'services' %}">24/7 {% trans 'Supports' %}</a></li>
+                        <li><a href="{% url 'services' %}">{% trans 'Work Deadline' %}</a></li>
                     </ul>
                     <div class="btn-box">
-                        <a href="services.html" class="theme-btn btn-style-three">{% trans 'Get Start' %}</a>
+                        <a href="{% url 'services' %}" class="theme-btn btn-style-three">{% trans 'Get Start' %}</a>
                     </div>
                 </div>
             </div>
