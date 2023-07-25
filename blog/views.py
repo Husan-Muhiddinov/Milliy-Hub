@@ -188,7 +188,7 @@ def blog(request):
 
     paginator = Paginator(blog, 2)
 
-    page = request.GET.get('page', 1)
+    page = request.GET.get('page')
 
     try:
         posts = paginator.page(page)
