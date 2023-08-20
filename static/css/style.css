@@ -1078,7 +1078,8 @@ img{
 .header-style-three .header-top{
 	position:relative;
 	border-bottom: 1px solid #777777;
-	background-color: #222222 !important;
+	/* rang */
+	background-color: hsl(240, 93%, 30%) !important;       
 }
 
 .header-style-three .header-top .top-left ul li{
@@ -1120,7 +1121,8 @@ img{
 /*=== Header Upper ===*/
 .header-style-three .header-upper{
 	position:relative;
-	background-color:#222222;
+	/* rang */
+	background-color:hsl(240, 93%, 30%);
 }
 
 .header-style-three .logo-outer{
@@ -1227,7 +1229,7 @@ img{
 	position: absolute;
 	left: 0;
 	width: 100%;
-	background-color: rgba(34,34,34,.50);
+	background-color: rgba(70, 68, 68, 0.5);
 }
 
 .header-style-three .header-lower .nav-outer{
@@ -5805,7 +5807,9 @@ img{
 	position:relative;
 	background-repeat: repeat;
 	background-position: center;
-	background-image: url(../images/icons/bg-pattern.jpg);
+	/* rang */
+	background-color: hsl(240, 93%, 30%) !important;
+	/* background-image: url(../images/icons/bg-pattern.jpg); */
 }
 
 .main-footer .footer-upper{
@@ -6119,7 +6123,8 @@ img{
 
 .main-footer .footer-bottom{
 	position:relative;
-	background-color: #222222;
+	/* rang */
+	background-color: hsl(240, 93%, 30%);
 }
 
 .main-footer .footer-bottom .inner-container{
